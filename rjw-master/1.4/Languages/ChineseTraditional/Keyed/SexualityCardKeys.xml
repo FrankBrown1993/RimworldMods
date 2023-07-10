@@ -1,83 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<!--Sexuality card-->
-	<SexcardTooltip>表現性慾</SexcardTooltip>
-	<WhorePrice>賣淫身價範圍：</WhorePrice>
-	<Quirks>怪癖：</Quirks>
-	<NoQuirks>沒有怪癖，原版。</NoQuirks>
-	<MessyQuirk><![CDATA[骯髒癖
--增加液體輸出。
--性生活/自慰后很少打掃衛生。]]></MessyQuirk>
-	<PodophileQuirk><![CDATA[戀足癖（又名足崇拜者）
--如果有選擇的話，更喜歡與腳有關的性行為。
--從足交中獲得更高的滿意度。]]></PodophileQuirk>
-	<TeratophileQuirk><![CDATA[畸胎怪癖（受畸形和毀容的吸引）
--喜歡有著醜陋、丑絕人寰和噁心的呼吸聲特性的伴侶。
--發現傷疤很有吸引力。
--如果喜歡動物，更喜歡更大更野的動物。]]></TeratophileQuirk>
-	<EndytophileQuirk><![CDATA[穿衣癖（穿衣服的性）
--如果有選擇的話，穿著衣服做愛。
--從穿衣服的性愛中獲得更多的滿足感。
--從裸體性愛中得到的滿足感會降低。]]></EndytophileQuirk>
-	<ExhibitionistQuirk><![CDATA[裸露者
--從公共性愛和手淫中獲得更多的滿足感。
--如果有其他人在場，更容易自慰。]]></ExhibitionistQuirk>
-	<GerontophileQuirk><![CDATA[老年癖（吸引老年人）
--喜歡老年性伴侶。
--從與老人的性生活中獲得更多的滿足感。]]></GerontophileQuirk>
-	<SomnophileQuirk><![CDATA[嗜睡者（對睡眠/無意識伴侶的吸引力）
--如果伴侶處於睡眠/無意識狀態，從性中獲得更多的滿足感。
--如果有強姦犯特性或心情非常沮喪，會試圖強姦無意識的小人。]]></SomnophileQuirk>
-	<SapiosexualQuirk><![CDATA[智慧癖（對智力的吸引力）
--被「聰明」的小人所吸引，比如速學者、聰明過人的小人。
--討厭沒有智力的小人。]]></SapiosexualQuirk>
-	<FertileQuirk><![CDATA[善育的
--具有異常高的基礎生育能力。
+    <!--Sexuality card-->
+    <SexcardTooltip>表現性慾</SexcardTooltip>
+    <Quirks>怪癖：</Quirks>
+    <NoQuirks>沒有怪癖，原版。</NoQuirks>
+	<MessyQuirk><![CDATA[
+{pawn}不僅在性交時流出令人咂舌的大量體液，{pawn_pronoun}在完事之後還不喜歡清理{pawn_possessive}自己。
+]]></MessyQuirk>
+	<PodophileQuirk><![CDATA[
+{pawn}喜歡足部並極其享受與之相關的性交方式。
+]]></PodophileQuirk>
+	<CumslutQuirk><![CDATA[
+{pawn}熱愛精液在口中的感覺並希望在每一次性愛中享受之。
+]]></CumslutQuirk>
+	<ButtslutQuirk><![CDATA[
+{pawn}深諳肛交之道並每每與人實踐。
+]]></ButtslutQuirk>
+	<TeratophileQuirk><![CDATA[
+{pawn}喜歡醜陋的性伴侶。假如{pawn_pronoun}「喜歡」動物，那麼{pawn_pronoun}也更會選擇大而狂野的品種。
+]]></TeratophileQuirk>
+	<EndytophileQuirk><![CDATA[
+{pawn}傾向於穿著{pawn_possessive}的衣服「辦事」。
+]]></EndytophileQuirk>
+	<ExhibitionistQuirk><![CDATA[
+{pawn}喜歡在做愛的時候被別人看著。
+]]></ExhibitionistQuirk>
+	<GerontophileQuirk><![CDATA[
+{pawn}喜歡與長者(55歲以上，人類視角)交歡。
+]]></GerontophileQuirk>
+	<SomnophileQuirk><![CDATA[
+{pawn}喜歡{pawn_possessive}的性伴侶睡著再來。
+]]></SomnophileQuirk>
+	<SapiosexualQuirk><![CDATA[
+{pawn}喜歡聰明的性伴侶。
+]]></SapiosexualQuirk>
+	<FertileQuirk><![CDATA[
+{pawn}極其多產。
 ]]></FertileQuirk>
-	<InfertileQuirk><![CDATA[不育的
--基礎生育率低，不太可能有孩子。
+	<InfertileQuirk><![CDATA[
+{pawn}近乎不孕不育。
 ]]></InfertileQuirk>
-	<ImpregnationFetishQuirk><![CDATA[受精愛好者
--從可能導致懷孕的性姿勢中獲得更多的滿足感。
--如果給予選擇（並且伴侶有合適的部分）通常會有陰道性行為。]]></ImpregnationFetishQuirk>
-	<PregnancyFetishQuirk><![CDATA[孕婦癖
--被明顯懷孕的人吸引。
+	<ImpregnationFetishQuirk><![CDATA[
+{pawn}非常喜歡強迫別人懷孕。{pawn_pronoun}喜歡選擇讓對方容易懷孕的體位。{pawn_pronoun}不在乎是{pawn_pronoun}或{pawn_possessive}的性伴侶懷孕—只要有個人懷孕了就行。
+]]></ImpregnationFetishQuirk>
+	<PregnancyFetishQuirk><![CDATA[
+{pawn}喜歡西瓜肚。
 ]]></PregnancyFetishQuirk>
 	<IncubatorQuirk><![CDATA[
-{pawn}生了這麼多的蛋，{pawn_possessive}的身體已經適應了生蛋，生蛋的速度加快了。
+{pawn}產下了太多的卵以至於{pawn_possessive}的身體逐漸適應了這種生產方式。{pawn_possessive}卵孵化速度加快。
 ]]></IncubatorQuirk>
 	<BreederQuirk><![CDATA[
-{pawn}生了這麼多孩子，{pawn_possessive}的身體已經適應了繁殖，{pawn_possessive}的懷孕期更短，並且日後將會帶來更多的後代。
+{pawn}生了太多寶寶以至於{pawn_possessive}的身體逐漸適應了連續生育。{pawn_possessive}的子宮可以讓胎兒加速成長並在一次懷孕中生下更多孩子。
 ]]></BreederQuirk>
-	<VigorousQuirk><![CDATA[充滿活力
--精力充沛，不因做愛而感到疲倦。
+	<VigorousQuirk><![CDATA[
+{pawn}在每次性交之後顯得容光滿面。{pawn_pronoun}在性交活動中不容易產生疲勞。
 ]]></VigorousQuirk>
-	<ChitinLoverQuirk><![CDATA[甲殼愛好者
-{pawn}喜愛光滑的甲殼質的外骨骼。{pawn_pronoun}偏愛和巨型蜘蛛或昆蟲做性伴侶。
+	<ChitinLoverQuirk><![CDATA[
+{pawn}喜歡角質外骨骼如此之甚，{pawn_pronoun}竟然願意選擇蜘蛛或昆蟲作為性伴侶。
 ]]></ChitinLoverQuirk>
-	<DemonLoverQuirk><![CDATA[惡魔愛好者
-{pawn}在追逐淘氣的人。{pawn_pronoun}更喜歡{pawn_possessive}夥伴來自地獄的字面深度，或者{pawn_pronoun}至少會尋找這個部分。
+	<DemonLoverQuirk><![CDATA[
+{pawn}十分淘氣。{pawn_pronoun}偏好{pawn_possessive}性伴侶出身於下界、煉獄甚至地獄。
 ]]></DemonLoverQuirk>
-	<FeatherLoverQuirk><![CDATA[羽毛愛好者
-{pawn}喜歡絨毛。{pawn_pronoun}更喜歡鳥類或恐龍伴侶。因為恐龍是鳥，有羽毛，所以{pawn_pronoun}如果有機會會花很長時間解釋。
+	<FeatherLoverQuirk><![CDATA[
+{pawn}喜歡毛茸茸和順滑的觸感。{pawn_pronoun}喜歡鳥類和爬蟲類作為性伴侶。甚至恐龍也行，根據{pawn_pronoun}冗長的解釋，「恐龍和爬蟲類只不過是鳥類的進化先祖罷了。」
 ]]></FeatherLoverQuirk>
-	<FurLoverQuirk><![CDATA[皮毛愛好者
-{pawn}更喜歡一個有著厚厚的、奢華的、柔軟的皮毛的伴侶。
+	<FurLoverQuirk><![CDATA[
+{pawn}喜歡有厚實、大氣又柔軟皮毛的性伴侶。
 ]]></FurLoverQuirk>
-	<PlantLoverQuirk><![CDATA[植物愛好者
-{pawn}喜歡給植物澆水，如果你知道我的意思（手衝冠軍？）
+	<PlantLoverQuirk><![CDATA[
+{pawn}喜歡澆水。懂我意思吧。譯者：我真的不懂，原文watering plants，請自行考量。
 ]]></PlantLoverQuirk>
-	<RobotLoverQuirk><![CDATA[機器人愛好者
-2D和3D哪個更好？{pawn}知道3D列印能讓你兩全其美。
+	<RobotLoverQuirk><![CDATA[
+到底是紙片人好還是真人好？{pawn}說他全都要，一台3D列印設備能解決的問題為什麼要做選擇？
 ]]></RobotLoverQuirk>
-	<ScaleLoverQuirk><![CDATA[龍騎士
-誰不想操一條龍？絕對不是{pawn}。{pawn}想操龍。
+	<ScaleLoverQuirk><![CDATA[
+誰不想要肏龍？絕對不會是{pawn}。{pawn}超想。
 ]]></ScaleLoverQuirk>
-	<SkinLoverQuirk><![CDATA[面板愛好者
-{pawn}更喜歡{pawn_possessive}伴侶擁有光滑敏感的面板，沒有毛髮或鱗片妨礙。幸運的是{pawn_objective}人類到處都是。
+	<SkinLoverQuirk><![CDATA[
+{pawn}偏好{pawn_possessive}性伴侶有光滑敏感的皮膚；沒有毛皮、沒有鱗甲擋住手指的觸感。{pawn_objective}很幸運，畢竟人類很好找。
 ]]></SkinLoverQuirk>
-	<SlimeLoverQuirk><![CDATA[史萊姆愛好者
-因為它們的滑性和可塑性，能變大、變粗、變緊、變成你想要的任何樣子。如果你聽{pawn}的話，你會聽到一遍又一遍的復讀。
+	<SlimeLoverQuirk><![CDATA[
+「史萊姆滑溜溜、可塑性強的身體真乃宇宙第一適合做愛的種族！」嗯，你已經聽{pawn}說了不知道多少遍了。
 ]]></SlimeLoverQuirk>
-	<SexPartWants>想成為：</SexPartWants>
+	<SexPartWants>想要成為：</SexPartWants>
 </LanguageData>

@@ -7,11 +7,20 @@ namespace rjw
 {
 	public class RJWDebugSettings : ModSettings
 	{
+		private static Vector2 scrollPosition;
+		private static float height_modifier = 0f;
+
 		public static void DoWindowContents(Rect inRect)
 		{
+			Rect outRect = new Rect(0f, 30f, inRect.width, inRect.height - 30f);
+			Rect viewRect = new Rect(0f, 0f, inRect.width - 16f, inRect.height + height_modifier);
+
+			Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect); // scroll
+
 			Listing_Standard listingStandard = new Listing_Standard();
-			listingStandard.ColumnWidth = inRect.width / 2.05f;
-			listingStandard.Begin(inRect);
+			listingStandard.maxOneColumn = true;
+			listingStandard.ColumnWidth = viewRect.width / 2.05f;
+			listingStandard.Begin(viewRect);
 			listingStandard.Gap(5f);
 			listingStandard.CheckboxLabeled("submit_button_enabled".Translate(), ref RJWSettings.submit_button_enabled, "submit_button_enabled_desc".Translate());
 			listingStandard.Gap(5f);
@@ -57,6 +66,8 @@ namespace rjw
 			listingStandard.CheckboxLabeled("Allow_RMB_DeepTalk".Translate(), ref RJWSettings.Allow_RMB_DeepTalk, "Allow_RMB_DeepTalk_desc".Translate());
 			listingStandard.Gap(5f);
 			listingStandard.CheckboxLabeled("Disable_bestiality_pregnancy_relations".Translate(), ref RJWSettings.Disable_bestiality_pregnancy_relations, "Disable_bestiality_pregnancy_relations_desc".Translate());
+			listingStandard.Gap(5f);
+			listingStandard.CheckboxLabeled("Disable_egg_pregnancy_relations".Translate(), ref RJWSettings.Disable_egg_pregnancy_relations, "Disable_egg_pregnancy_relations_desc".Translate());
 			listingStandard.Gap(5f);
 			listingStandard.CheckboxLabeled("Disable_MeditationFocusDrain".Translate(), ref RJWSettings.Disable_MeditationFocusDrain, "Disable_MeditationFocusDrain_desc".Translate());
 			listingStandard.Gap(5f);
@@ -109,6 +120,8 @@ namespace rjw
 			RJWSettings.maxDistancePathCost = listingStandard.Slider((int)RJWSettings.maxDistancePathCost, 0, 5000);
 
 			listingStandard.End();
+			height_modifier = listingStandard.CurHeight;
+			Widgets.EndScrollView();
 		}
 
 		public override void ExposeData()
@@ -134,6 +147,7 @@ namespace rjw
 			Scribe_Values.Look(ref RJWSettings.Allow_RMB_DeepTalk, "Allow_RMB_DeepTalk", RJWSettings.Allow_RMB_DeepTalk, true);
 			Scribe_Values.Look(ref RJWSettings.Allow_RMB_DeepTalk, "Allow_RMB_DeepTalk", RJWSettings.Allow_RMB_DeepTalk, true);
 			Scribe_Values.Look(ref RJWSettings.Disable_bestiality_pregnancy_relations, "Disable_bestiality_pregnancy_relations", RJWSettings.Disable_bestiality_pregnancy_relations, true);
+			Scribe_Values.Look(ref RJWSettings.Disable_egg_pregnancy_relations, "Disable_egg_pregnancy_relations", RJWSettings.Disable_egg_pregnancy_relations, true);
 			Scribe_Values.Look(ref RJWSettings.Disable_MeditationFocusDrain, "Disable_MeditationFocusDrain", RJWSettings.Disable_MeditationFocusDrain, true);
 			Scribe_Values.Look(ref RJWSettings.Disable_RecreationDrain, "Disable_RecreationDrain", RJWSettings.Disable_RecreationDrain, true);
 

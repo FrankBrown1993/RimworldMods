@@ -26,6 +26,8 @@ namespace rjw
 		public static bool NymphosCanHomewreck = true;
 		public static bool NymphosCanHomewreckReverse = true;
 
+		private static Vector2 scrollPosition;
+		private static float height_modifier = 0f;
 
 		public static void DoWindowContents(Rect inRect)
 		{
@@ -33,9 +35,15 @@ namespace rjw
 			MinimumAttractivenessToHookup = Mathf.Clamp(MinimumAttractivenessToHookup, 0.0f, 1f);
 			MinimumRelationshipToHookup = Mathf.Clamp(MinimumRelationshipToHookup, -100, 100);
 
+			Rect outRect = new Rect(0f, 30f, inRect.width, inRect.height - 30f);
+			Rect viewRect = new Rect(0f, 0f, inRect.width - 16f, inRect.height + height_modifier);
+
+			Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect); // scroll
+
 			Listing_Standard listingStandard = new Listing_Standard();
-			listingStandard.ColumnWidth = inRect.width / 2.05f;
-			listingStandard.Begin(inRect);
+			listingStandard.maxOneColumn = true;
+			listingStandard.ColumnWidth = viewRect.width / 2.05f;
+			listingStandard.Begin(viewRect);
 			listingStandard.Gap(4f);
 
 			// Casual sex settings
@@ -75,6 +83,8 @@ namespace rjw
 			listingStandard.Gap(4f);
 
 			listingStandard.End();
+			height_modifier = listingStandard.CurHeight;
+			Widgets.EndScrollView();
 		}
 
 		public override void ExposeData()

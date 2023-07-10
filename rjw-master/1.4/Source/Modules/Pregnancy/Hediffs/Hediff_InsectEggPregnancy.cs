@@ -300,8 +300,7 @@ namespace rjw
 				relationWithExtraPawnChanceFactor: 0,
 				//forceNoIdeo: true,
 				forbidAnyTitle: true,
-				forceNoBackstory: true
-				);
+				forceNoBackstory: true);
 
 			Pawn baby = PawnGenerator.GeneratePawn(request);
 			// If we have genes, and the baby has not set any, add the ones stored from fertilization as endogenes
@@ -318,6 +317,8 @@ namespace rjw
 			}
 
 			DetermineIfBabyIsPrisonerOrSlave(mother, baby);
+
+			SetBabyRelations(baby,implanter,father, mother);
 
 			PawnUtility.TrySpawnHatchedOrBornPawn(baby, mother);
 
@@ -341,6 +342,22 @@ namespace rjw
 				}
 
 			return baby;
+		}
+
+		private void SetBabyRelations(Pawn Baby, Pawn EggProducer, Pawn Fertilizer, Pawn Host)
+		{
+			if (RJWSettings.DevMode) ModLog.Message($"Setting Relations for {Baby}: Egg-Mother={EggProducer}, Egg-Fertilizer={Fertilizer}, Egg-Host={Host}");
+            if (!RJWSettings.Disable_egg_pregnancy_relations)
+				if (Baby.RaceProps.IsFlesh)
+				{
+					if (EggProducer != null)
+						Baby.relations.AddDirectRelation(PawnRelationDefOf.Parent, EggProducer);
+					// Note: Depending on the Sex of the Fertilizer, it's labelled as "Mother" too.
+					if (Fertilizer != null)
+						Baby.relations.AddDirectRelation(PawnRelationDefOf.Parent, Fertilizer);
+					if (Host != null && Host != EggProducer)
+						Baby.relations.AddDirectRelation(PawnRelationDefOf.ParentBirth, Host);
+				}
 		}
 
 		private static void DetermineIfBabyIsPrisonerOrSlave(Pawn mother, Pawn baby)

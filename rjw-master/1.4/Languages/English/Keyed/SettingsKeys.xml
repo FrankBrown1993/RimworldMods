@@ -184,6 +184,8 @@
 		<Allow_RMB_DeepTalk_desc>Allows RMB-Social-DeepTalk interaction (+12 relations)\n YOU CHEATER</Allow_RMB_DeepTalk_desc>
 		<Disable_bestiality_pregnancy_relations>Disable bestiality pregnancy relations</Disable_bestiality_pregnancy_relations>
 		<Disable_bestiality_pregnancy_relations_desc>Disable relations(mother/father/siblings) from bestiality pregnancy.\n YOU CHEATER</Disable_bestiality_pregnancy_relations_desc>
+		<Disable_egg_pregnancy_relations>Disable egg pregnancy relations</Disable_egg_pregnancy_relations>
+		<Disable_egg_pregnancy_relations_desc>Disable relations(mother/father/siblings) from egg pregnancy.\n YOU CHEATER</Disable_egg_pregnancy_relations_desc>
 		<Disable_MeditationFocusDrain>Disable meditation focus drain</Disable_MeditationFocusDrain>
 		<Disable_MeditationFocusDrain_desc>When pawns are frustrated, they don't lose focus.\n YOU CHEATER</Disable_MeditationFocusDrain_desc>
 		<Disable_RecreationDrain>Disable recreation drain</Disable_RecreationDrain>

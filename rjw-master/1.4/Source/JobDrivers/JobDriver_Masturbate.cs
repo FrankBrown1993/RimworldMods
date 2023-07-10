@@ -15,12 +15,18 @@ namespace rjw
 		public virtual IntVec3 cell => (IntVec3)job.GetTarget(iCell);
 
 		[SyncMethod]
-		new public void setup_ticks()
+		protected override void SetupDurationTicks()
 		{
-			base.setup_ticks();
 			// Faster fapping when frustrated.
 			duration = (int)(xxx.is_frustrated(pawn) ? 2500.0f * Rand.Range(0.2f, 0.7f) : 2500.0f * Rand.Range(0.2f, 0.4f));
 			ticks_left = duration;
+		}
+
+		protected override void SetupOrgasmTicks()
+		{
+			orgasmstick = 180;
+			sex_ticks = duration;
+			orgasmStartTick = sex_ticks;
 		}
 
 		protected override IEnumerable<Toil> MakeNewToils()

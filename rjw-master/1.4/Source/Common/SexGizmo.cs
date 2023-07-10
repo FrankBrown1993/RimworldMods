@@ -32,32 +32,26 @@ namespace rjw
 				Rect rect2 = rect.ContractedBy(6f);
 				Widgets.DrawWindowBackground(rect);
 
-				//row1 label1
+				//row1 label1 - Orgasm
 				Text.Font = GameFont.Small;
 				Rect rect3 = rect2;
 				rect3.y += 6f;
 				rect3.height = Text.LineHeight;
 				Widgets.Label(rect3, "RJW_SexGizmo_Orgasm".Translate());
 
-				//row2 label2
+				//row2 label2 - Stamina
 				Rect rect4 = rect2;
 				rect4.y += 38f;
 				rect4.height = Text.LineHeight;
 				Widgets.Label(rect4, "RJW_SexGizmo_RestNeed".Translate());
 
-				//row1 meter bar fill
+				//row1 meter bar fill up
 				Rect rect5 = rect2;
 				rect5.x += 63f;
 				rect5.y += 6f;
 				rect5.width = 100f;
 				rect5.height = 22f;
-				float duration = (pawn.jobs?.curDriver as JobDriver_Sex).duration;
-				//float ticks_left = ((JobDriver_Sex)pawn.jobs?.curDriver).ticks_left;
-				float sex_ticks = (pawn.jobs?.curDriver as JobDriver_Sex).sex_ticks;
-				float orgasm = 0;
-				//Log.Message("duration:" +duration+", ticks_left:" +ticks_left+ ", ticks_left/duration:" + duration/ticks_left);
-				//Log.Message(""+ ((ticks_left/duration) - 1f));
-				orgasm = (1f - sex_ticks / duration);
+				float orgasm = (pawn.jobs?.curDriver as JobDriver_Sex).OrgasmProgress;
 				//orgasm = sex_ticks;
 				Widgets.FillableBar(rect5, Mathf.Max(orgasm, 0f), SexGizmo.EntropyBarTex, SexGizmo.EmptyBarTex, true);
 
@@ -102,7 +96,7 @@ namespace rjw
 				if (!MP.IsInMultiplayer)   //TODO: someday write mp synchronizers?
 					if (pawn.IsColonistPlayerControlled && pawn.CanChangeDesignationColonist())
 					{
-						//row1 toggle
+						//row1 toggle - SexOverdrive
 						if (pawn.jobs?.curDriver is JobDriver_SexBaseInitiator)
 						{
 							float num = 32f;
@@ -128,7 +122,7 @@ namespace rjw
 							TooltipHandler.TipRegionByKey(rect9, "RJW_SexGizmo_SexOverdriveTooltip");
 						}
 
-						//row2 toggle
+						//row2 toggle - HitPawn
 						if (pawn.jobs?.curDriver is JobDriver_SexBaseInitiator)   //TODO: maybe allow for receiver control someday?
 						{
 							if ((pawn.jobs?.curDriver as JobDriver_Sex).Sexprops != null)

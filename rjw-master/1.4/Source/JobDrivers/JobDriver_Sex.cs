@@ -27,7 +27,11 @@ namespace rjw
 		public int ticks_left = 1000;	//toil ticks
 		public int sex_ticks = 1000;	//orgasm ticks
 		public int orgasms = 0;
+
+		// Sex ticks will decrease until it hits the orgasm tick, then orgasm happens and sex_ticks may be reset
+		// Sex continues for around 3 seconds
 		public int orgasmstick = 180; // ~3 sec
+		public int orgasmStartTick = 5000;
 		public int duration = 5000;
 
 		public bool face2face = false;
@@ -105,7 +109,9 @@ namespace rjw
 		[SyncMethod]
 		public void setup_ticks()
 		{
-			ticks_left = (int)(2000.0f * Rand.Range(0.50f, 0.90f));
+			SetupDurationTicks();
+			SetupOrgasmTicks();
+
 			ticks_between_hearts = Rand.RangeInclusive(70, 130);
 			ticks_between_hits = Rand.Range(xxx.config.min_ticks_between_hits, xxx.config.max_ticks_between_hits);
 			if (xxx.is_bloodlust(pawn))
@@ -113,15 +119,20 @@ namespace rjw
 			if (xxx.is_brawler(pawn))
 				ticks_between_hits = (int)(ticks_between_hits * 0.90);
 			ticks_between_thrusts = 120;
-			duration = ticks_left;
-			sex_ticks = Roll_Orgasm_Duration_Reset();
-			//if (isRape && orgasms < 1 && ticks_left < sex_ticks && pawn.jobs?.curDriver is JobDriver_SexBaseInitiator)
-			//	ticks_left += duration / 3;
 		}
 
 		public void Set_bed(Building_Bed newBed)
 		{
 			pBed = newBed;
+		}
+
+		public float OrgasmProgress {
+			get {
+				var orgasmDuration = orgasmStartTick - orgasmstick;
+				var ticksUntilOrgasm = sex_ticks - orgasmstick;
+				
+				return 1f - (ticksUntilOrgasm / (float) orgasmDuration);
+			}
 		}
 
 		public override void ExposeData()
@@ -135,6 +146,7 @@ namespace rjw
 			Scribe_Values.Look(ref sex_ticks, "sex_ticks", 0, false);
 			Scribe_Values.Look(ref orgasms, "orgasms", 0, false);
 			Scribe_Values.Look(ref orgasmstick, "orgasmstick", 0, false);
+			Scribe_Values.Look(ref orgasmStartTick, "orgasmStartTick", 0, false);
 
 			Scribe_References.Look(ref pBed, "pBed");
 			Scribe_References.Look(ref PartnerPawn, "PartnerPawn");
@@ -507,20 +519,32 @@ namespace rjw
 			//else
 			//	SexUtility.SatisfyPersonal(pawn, ((JobDriver_SexBaseReciever)pawn.jobs?.curDriver).parteners.FirstOrFallback(), Sexprops, Sexprops.isRapist, satisfaction);
 
-			sex_ticks = Roll_Orgasm_Duration_Reset();
+			SetupOrgasmTicks();
 
 			if (neverendingsex)
 				ticks_left = duration;
 		}
 
 		[SyncMethod]
-		public int Roll_Orgasm_Duration_Reset()
+		protected virtual void SetupDurationTicks()
 		{
-			var need = 1.0f + xxx.need_some_sex(pawn); //1-4
-			if (!xxx.is_human(pawn))
+			ticks_left = (int)(2000.0f * Rand.Range(0.50f, 0.90f));
+			duration = ticks_left;
+		}
+
+		[SyncMethod]
+		protected virtual void SetupOrgasmTicks()
+		{
+			float need;
+			if (xxx.is_human(pawn)) {
+				need = 1.0f + xxx.need_some_sex(pawn); //1-4
+			} else {
 				need = 1.0f;
-			return (int)(duration / need * Rand.Range(0.75f, 0.90f));
-			//return (int)(duration * Rand.Range(0.50f, 1.0f));
+			}
+
+			orgasmstick = 180;
+			sex_ticks = (int)((duration / need) * Rand.Range(0.75f, 0.90f));
+			orgasmStartTick = sex_ticks;
 		}
 
 		public void CalculateSatisfactionPerTick()

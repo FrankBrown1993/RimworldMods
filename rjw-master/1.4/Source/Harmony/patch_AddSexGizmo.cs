@@ -1,14 +1,10 @@
 ﻿using System.Collections.Generic;
 using Verse;
 using HarmonyLib;
-using UnityEngine;
-using System;
-using RimWorld;
-using Multiplayer.API;
 
 namespace rjw
 {
-	//adds new gizmo for adding semen for testing
+	//adds new gizmo for sex
 	[HarmonyPatch(typeof(Pawn), "GetGizmos")]
 	class Patch_AddSexGizmo
 	{

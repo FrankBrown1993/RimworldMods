@@ -84,6 +84,7 @@ namespace rjw
 		public static bool AddTrait_ButtSlut = true;
 		public static bool Allow_RMB_DeepTalk = false;
 		public static bool Disable_bestiality_pregnancy_relations = false;
+		public static bool Disable_egg_pregnancy_relations = false;
 		public static bool Disable_MeditationFocusDrain = false;
 		public static bool Disable_RecreationDrain = false;
 		public static bool UseAdvancedAgeScaling = true;
@@ -107,24 +108,8 @@ namespace rjw
 			nonFutaWomenRaping_MaxVulnerability = Mathf.Clamp(nonFutaWomenRaping_MaxVulnerability, 0.0f, 3.0f);
 			rapee_MinVulnerability_human = Mathf.Clamp(rapee_MinVulnerability_human, 0.0f, 3.0f);
 
-			//some cluster fuck code barely working
-			//something like that:
-			//inRect - label, close button
-			//outRect - slider
-			//viewRect - options
-
-			//30f for top page description and bottom close button
 			Rect outRect = new Rect(0f, 30f, inRect.width, inRect.height - 30f);
-
-			//-16 for slider, height_modifier - additional height for hidden options toggles
 			Rect viewRect = new Rect(0f, 0f, inRect.width - 16f, inRect.height + height_modifier);
-
-			//-16 for slider, height_modifier - additional height for options
-			//Rect viewRect = new Rect(0f, 0f, inRect.width - 16f, inRect.height + height_modifier);
-			//Log.Message("1 - " + inRect.width);
-			//Log.Message("2 - " + outRect.width);
-			//Log.Message("3 - " + viewRect.width);
-			//GUI.Button(new Rect(10, 10, 200, 20), "Meet the flashing button");
 
 			Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect); // scroll
 
@@ -298,8 +283,8 @@ namespace rjw
 
 
 			listingStandard.End();
+			height_modifier = listingStandard.CurHeight;
 			Widgets.EndScrollView();
-			//height_modifier = listingStandard.CurHeight;
 		}
 
 		public override void ExposeData()

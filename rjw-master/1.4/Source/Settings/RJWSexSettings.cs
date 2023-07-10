@@ -71,6 +71,9 @@ namespace rjw
 		public static AllowedSex Malesex = AllowedSex.All;
 		public static AllowedSex FeMalesex = AllowedSex.All;
 
+		private static Vector2 scrollPosition;
+		private static float height_modifier = 0f;
+
 		// For checking whether the player has tried to pseudo-disable a particular sex type
 		public static bool PlayerIsButtSlut => !(anal == 0.01f && rimming == 0.01f && fisting == 0.01f); // Omitting DP since that could also just be two tabs in one slot
 		public static bool PlayerIsFootSlut => footjob != 0.01f;
@@ -111,9 +114,15 @@ namespace rjw
 
 		public static void DoWindowContents(Rect inRect)
 		{
+			Rect outRect = new Rect(0f, 30f, inRect.width, inRect.height - 30f);
+			Rect viewRect = new Rect(0f, 0f, inRect.width - 16f, inRect.height + height_modifier);
+
+			Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect); // scroll
+
 			Listing_Standard listingStandard = new Listing_Standard();
-			listingStandard.ColumnWidth = inRect.width / 3.15f;
-			listingStandard.Begin(inRect);
+			listingStandard.maxOneColumn = true;
+			listingStandard.ColumnWidth = viewRect.width / 3.15f;
+			listingStandard.Begin(viewRect);
 			listingStandard.Gap(4f);
 			listingStandard.Label("SexTypeFrequency".Translate());
 			listingStandard.Gap(6f);
@@ -272,6 +281,8 @@ namespace rjw
 			MaxQuirks = (int)listingStandard.Slider(MaxQuirks, 0, 10);
 
 			listingStandard.End();
+			height_modifier = listingStandard.CurHeight;
+			Widgets.EndScrollView();
 		}
 
 		public static float GetTotal()
