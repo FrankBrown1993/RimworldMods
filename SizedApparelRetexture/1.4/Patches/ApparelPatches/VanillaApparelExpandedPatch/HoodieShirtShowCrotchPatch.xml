@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+			<!-- +++++  +++++ -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "VAE_Apparel_Hoodie"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "VAE_Apparel_Hoodie"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "VAE_Apparel_Hoodie"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

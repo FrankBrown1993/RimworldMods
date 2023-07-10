@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <ThoughtDef>
+    <defName>S16DressITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+	  <li>Nudist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>open dress</label>
+        <description>Being exposed like this is worse than being naked!</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>I'm still very uncomfortable with this dress. I can't stop think everyone is looking at my naked butt...</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>I'm dressed like a sex doll and I don't like it</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIThMasochist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>open dress</label>
+        <description>I kinda like being exposed like this...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>Uhhh, I can be used at any time, this is so arousing!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>Spank my shameless butt, masters!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIThNymphomaniac</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nymphomaniac</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>open dress</label>
+        <description>Awwww, this dress is so cute!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>What if I bend over... like this?.. Huh! Caught you, perverts!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>I love to see some people blushing, he-he! Have a good look!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIThNudist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>open dress</label>
+        <description>Not as bad as other clothes</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>Hmmmm... I feel weird wearing this...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>open dress</label>
+        <description>This is... kinda fun?</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+
+    <ThoughtDef>
+    <defName>S16DressZTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressZHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Z dress</label>
+        <description>I wouldn't call it a dress...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Z dress</label>
+        <description>Maybe it's good for a party..</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Z dress</label>
+        <description>My hips look so sexy... Wow...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16_MaidA_Th</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_MaidA_Hed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>skimpy dress</label>
+        <description>You perverts!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy dress</label>
+        <description>My breasts, ass and pussy are open to everyone's' eyes! So shameful!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy dress</label>
+        <description>*tries to cover* You happy, pervert? *blushes*</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+</Defs>

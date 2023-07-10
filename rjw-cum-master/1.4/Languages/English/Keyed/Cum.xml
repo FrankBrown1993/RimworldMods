@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+		<debug>Debug</debug>
+		<debug_desc></debug_desc>
+		<cum_on_body>Enable cum on body (Hediffs)</cum_on_body>
+		<cum_on_body_desc>Enables cum hediffs in health tab.</cum_on_body_desc>
+		<cum_on_body_amount>Adjust cum amount on body</cum_on_body_amount>
+		<cum_on_body_amount_desc>All cum applied to pawn bodies will be multiplied by this amount. </cum_on_body_amount_desc>
+		<cum_overlays>Enable cum overlays (Visuals)</cum_overlays>
+		<cum_overlays_desc>Enables cum overlay for pawn drawer(may have conflicts with mods that change pawn appearance and other issues).\nRequires Cum on body option enabled.</cum_overlays_desc>
+		<manual_hero_CleanSelf>Hero manual CleanSelf</manual_hero_CleanSelf>
+		<manual_hero_CleanSelf_desc>Hero pawn will only clean cum from body if manually told so.</manual_hero_CleanSelf_desc>
+		<dubsDBH_block_CleanSelf>DubsBadHygiene block CleanSelf</dubsDBH_block_CleanSelf>
+		<dubsDBH_block_CleanSelf_desc>If DubsBadHygiene installed, pawns will only clean cum from body in buckets, showers, baths, hottubs etc.</dubsDBH_block_CleanSelf_desc>
+</LanguageData>

@@ -1,0 +1,15 @@
+ShirtButton has full variation of boobed apparel texture.
+It's easy to draw with an additional layer from ShirtBotton's texture
+
+
+
+others have some missing boob size :
+
+if correct texture doesn't exist, it tries to find bigger one.
+for example:
+1. make micro, average, huge boob texture only
+2. pawn who has large breast.
+3. system tries to find large breasts texture but doesn't exist
+4. then system tries to find bigger one(large->huge)
+5. huge texture exist.
+6. apparel is changed to huge boob texture. 

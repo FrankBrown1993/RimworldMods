@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/IssueDef[defName="Masturbation"]/iconPath</xpath>
+				<value>
+					<iconPath>UI/Issues/Masturbation</iconPath>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>

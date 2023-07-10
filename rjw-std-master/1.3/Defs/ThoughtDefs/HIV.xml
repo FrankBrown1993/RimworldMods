@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>WastingAway</defName>
+		<workerClass>rjwstd.ThoughtWorker_WastingAway</workerClass>
+		<stages>
+			<li>
+				<label>wasting away</label>
+				<description>Every day I feel weaker than the day before. I can feel my life slowly slipping away.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

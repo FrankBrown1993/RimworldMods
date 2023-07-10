@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="STDBase">
+		<defName>Herpes</defName>
+		<label>Herpes</label>
+		<description>Genital sores that spread through sexual contact.</description>
+		<makesSickThought>false</makesSickThought>
+		<minSeverity>0.001</minSeverity>
+		<maxSeverity>0.650</maxSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>false</sendLetterWhenDiscovered>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>240</baseTendDurationHours>
+				<!-- Every 10 days -->
+				<severityPerDayTended>-0.050</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.035</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.000</minSeverity>
+				<label>minor</label>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.250</minSeverity>
+				<label>moderate</label>
+				<painOffset>0.10</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.500</minSeverity>
+				<label>major</label>
+				<painOffset>0.15</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

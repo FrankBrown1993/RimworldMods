@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>Infidelity</defName>
+		<label>infidelity</label>
+		<iconPath>UI/Issues/Infidelity</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->	
+	<PreceptDef>
+		<defName>Infidelity_Heartbreaking</defName>
+		<issue>Infidelity</issue>
+		<label>heartbreaking</label>
+		<description>Infidelity is a betrayal that will not soon be forgiven, or forgotten.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>100</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>Infidelity_Disapproved</defName>
+		<issue>Infidelity</issue>
+		<label>disapproved</label>
+		<description>Cheating on a partner is considered disrespectful to them.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>20</defaultSelectionWeight>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>Infidelity_Acceptable</defName>
+		<issue>Infidelity</issue>
+		<label>acceptable</label>
+		<description>Sex is something to be explored freely, even if they cross the bounds set by traditional relationships.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>5</defaultSelectionWeight>
+	</PreceptDef>
+
+</Defs>

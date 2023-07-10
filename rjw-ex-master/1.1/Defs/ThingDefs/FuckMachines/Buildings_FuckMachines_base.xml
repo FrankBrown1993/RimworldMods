@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingCategoryDef>
+		<defName>BuildingsFuckMachines</defName>
+		<label>fuck machines</label>
+		<parent>Buildings</parent>
+	</ThingCategoryDef>
+
+	<ThingDef Name="FuckMachineBase" Abstract="True">
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFuckMachines</li>
+		</thingCategories>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<designationCategory>Misc</designationCategory>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>20</Mass>
+			<Beauty>10</Beauty>
+		</statBases>
+		<fillPercent>0.2</fillPercent>
+		<pathCost>30</pathCost>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<techLevel>Industrial</techLevel>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<passability>PassThroughOnly</passability>
+		<socialPropernessMatters>False</socialPropernessMatters>
+	</ThingDef>
+</Defs>

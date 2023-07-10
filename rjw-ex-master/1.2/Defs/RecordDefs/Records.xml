@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RecordDef>
+		<defName>TimePluggedAnal</defName>
+		<label>wearing anal plug</label>
+		<description>Total time wearing plug in butthole.</description>
+		<type>Time</type>
+		<workerClass>rjwex.RecordWorker_TimePluggedAnal</workerClass>
+	</RecordDef>
+	
+	<RecordDef>
+		<defName>TimeOnFuckMachine</defName>
+		<label>time on fuck machine</label>
+		<description>Total time spent using fuck machine (or bound to it).</description>
+		<type>Time</type>
+		<measuredTimeJobs>
+			<li>UseFM</li>
+		</measuredTimeJobs>
+	</RecordDef>
+	
+	<!--RecordDef>
+		<defName>TimesDominated</defName>
+		<label>time on fuck machine</label>
+		<description>Total time spent using fuck machine (or bound to it).</description>
+		<type>Int</type>
+	</RecordDef>
+	
+	<RecordDef>
+		<defName>TimesDominatedOthers</defName>
+		<label>time on fuck machine</label>
+		<description>Total time spent using fuck machine (or bound to it).</description>
+		<type>Int</type>
+	</RecordDef-->
+</Defs>

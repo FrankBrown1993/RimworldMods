@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Plugged.label>插入</Plugged.label>
+  <Plugged.description>插入.</Plugged.description>
+  <Plugged.stages.0.label>非常松</Plugged.stages.0.label>
+  <Plugged.stages.1.label>松</Plugged.stages.1.label>
+  <Plugged.stages.2.label>紧</Plugged.stages.2.label>
+  <Plugged.stages.3.label>非常紧</Plugged.stages.3.label>
+  <Plugged.stages.4.label>极其紧</Plugged.stages.4.label>
+</LanguageData>

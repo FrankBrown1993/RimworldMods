@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>ConvertToHucow</defName>
+		<label>convert to hucow</label>
+		<description>Multiply this pawn's lactation duration and amplify their production for as long as they are lactating.</description>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+        <iconPath>UI/Abilities/WorkDrive</iconPath>
+        <warmupMoteSocialSymbol>UI/Issues/Lactating</warmupMoteSocialSymbol>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+
+		<overrideGroupCooldown>True</overrideGroupCooldown>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+
+		<hotKey>Misc12</hotKey>
+        <uiOrder>4</uiOrder>
+        <warmupStartSound>WorkDrive_Warmup</warmupStartSound>
+        <statBases>
+          <Ability_Duration>3000</Ability_Duration>
+        </statBases>
+        <verbProperties>
+          <verbClass>Verb_CastAbilityTouch</verbClass>
+          <drawAimPie>False</drawAimPie>
+          <range>-1</range>
+          <warmupTime>3.0</warmupTime>
+          <targetParams>
+            <canTargetAnimals>false</canTargetAnimals>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetMechs>false</canTargetMechs>
+			<onlyTargetColonistsOrPrisonersOrSlaves>true</onlyTargetColonistsOrPrisonersOrSlaves>
+          </targetParams>
+        </verbProperties>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>Hucow</hediffDef>
+            <applicableToMechs>False</applicableToMechs>
+          </li>
+		  <li Class="CRIALactation.CompProperties_AbilityConvertHucow" />
+        </comps>
+	    </AbilityDef>
+
+	<AbilityDef>
+		<defName>BeginInducingLactation</defName>
+		<label>begin inducing lactation</label>
+		<description>Stimulate someone's milk ducts to begin the process of lactation without childbirth.</description>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<iconPath>UI/Abilities/WorkDrive</iconPath>
+		<warmupMoteSocialSymbol>UI/Issues/Lactating</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+
+		<overrideGroupCooldown>True</overrideGroupCooldown>
+		<cooldownTicksRange>3000</cooldownTicksRange>
+
+		<hotKey>Misc12</hotKey>
+		<uiOrder>4</uiOrder>
+		<warmupStartSound>WorkDrive_Warmup</warmupStartSound>
+		<statBases>
+			<Ability_Duration>3000</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>3.0</warmupTime>
+			<targetParams>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<onlyTargetColonistsOrPrisonersOrSlaves>true</onlyTargetColonistsOrPrisonersOrSlaves>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>InducingLactation</hediffDef>
+				<applicableToMechs>False</applicableToMechs>
+			</li>
+			<li Class="CRIALactation.CompProperties_AbilityBeginInducingLactation" />
+		</comps>
+	</AbilityDef>
+</Defs>

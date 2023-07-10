@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F56CA94-1AB6-4A74-8C5E-E2CEFD8F871B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>s16_extension</RootNamespace>
+    <AssemblyName>s16-extension</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.1.1\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <Private>False</Private>
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.IMGUIModule">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comp\CompHediffApparel.cs" />
+    <Compile Include="Comp\CompProperties_HediffApparel.cs" />
+    <Compile Include="Comp\FilterMode.cs" />
+    <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Harmony\Patch_Pawn_ApparelTracker_Notify_ApparelRemoved.cs" />
+    <Compile Include="Harmony\Patch_Pawn_ApparelTracker_Notify_ApparelAdded.cs" />
+    <Compile Include="Hediff\HediffComp_ItemSpawner.cs" />
+    <Compile Include="Hediff\HediffCompProperties_ItemSpawner.cs" />
+    <Compile Include="Hediff\HediffComp_ResetSeverity.cs" />
+    <Compile Include="Hediff\HediffComp_AddTraitBase.cs" />
+    <Compile Include="Hediff\HediffComp_AddTrait.cs" />
+    <Compile Include="Hediff\HediffComp_AddRandomTrait.cs" />
+    <Compile Include="Hediff\HeddifComp_SeverityFactor.cs" />
+    <Compile Include="Hediff\HediffCompProperties_AddTraitBase.cs" />
+    <Compile Include="Hediff\HediffCompProperties_AddTrait.cs" />
+    <Compile Include="Hediff\HediffCompProperties_AddRandomTrait.cs" />
+    <Compile Include="Hediff\HediffCompProperties_ResetSeverity.cs" />
+    <Compile Include="Hediff\HediffCompProperties_SeverityFactor.cs" />
+    <Compile Include="Comp\SeverityMode.cs" />
+    <Compile Include="Hediff\TraitInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Link>README.md</Link>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\About\About.xml">
+      <Link>About\About.xml</Link>
+    </Content>
+    <Content Include="..\About\changenote.txt">
+      <Link>About\changenote.txt</Link>
+    </Content>
+    <Content Include="..\About\Preview.png">
+      <Link>About\Preview.png</Link>
+    </Content>
+    <Content Include="..\Defs\ApparelLayerDefs\ApparelLayerDefs.xml">
+      <Link>Defs\ApparelLayerDefs\ApparelLayerDefs.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Armor.xml">
+      <Link>Defs\Apparel\Apparel_Armor.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Base.xml">
+      <Link>Defs\Apparel\Apparel_Base.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Bondage.xml">
+      <Link>Defs\Apparel\Apparel_Bondage.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Dress.xml">
+      <Link>Defs\Apparel\Apparel_Dress.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_NipplePiercing.xml">
+      <Link>Defs\Apparel\Apparel_NipplePiercing.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_NippleStickers.xml">
+      <Link>Defs\Apparel\Apparel_NippleStickers.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Panties.xml">
+      <Link>Defs\Apparel\Apparel_Panties.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Skirt.xml">
+      <Link>Defs\Apparel\Apparel_Skirt.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Top.xml">
+      <Link>Defs\Apparel\Apparel_Top.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Apparel\Apparel_Vibrators.xml">
+      <Link>Defs\Apparel\Apparel_Vibrators.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Buildings\Buildings_Production.xml">
+      <Link>Defs\Buildings\Buildings_Production.xml</Link>
+    </Content>
+    <Content Include="..\Defs\DamageDefs\Damages_BDSM.xml">
+      <Link>Defs\DamageDefs\Damages_BDSM.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Drugs\Lactine.xml">
+      <Link>Defs\Drugs\Lactine.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Drugs\Lactine_A.xml">
+      <Link>Defs\Drugs\Lactine_A.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Effects\Effecter_Milk.xml">
+      <Link>Defs\Effects\Effecter_Milk.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Effects\Effecter_Vibrator.xml">
+      <Link>Defs\Effects\Effecter_Vibrator.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Effects\Mote_Milk.xml">
+      <Link>Defs\Effects\Mote_Milk.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_ApparelBase.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_ApparelBase.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_Bondage.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_Bondage.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_Dress.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_Dress.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_NipplePiercing.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_NipplePiercing.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_NippleStickers.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_NippleStickers.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_Panties.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_Panties.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_Skirt.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_Skirt.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_Top.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_Top.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Apparel\Hediffs_Vibrators.xml">
+      <Link>Defs\HediffDefs\Apparel\Hediffs_Vibrators.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Food&amp;Drugs\Hediffs_DrugsLong.xml">
+      <Link>Defs\HediffDefs\Food&amp;Drugs\Hediffs_DrugsLong.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Food&amp;Drugs\Hediffs_ThoughtsFood.xml">
+      <Link>Defs\HediffDefs\Food&amp;Drugs\Hediffs_ThoughtsFood.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Sextoys\Hediffs_Sextoy_Long.xml">
+      <Link>Defs\HediffDefs\Sextoys\Hediffs_Sextoy_Long.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Sextoys\Hediffs_Sextoy_Medium.xml">
+      <Link>Defs\HediffDefs\Sextoys\Hediffs_Sextoy_Medium.xml</Link>
+    </Content>
+    <Content Include="..\Defs\HediffDefs\Sextoys\Hediffs_Sextoy_Short.xml">
+      <Link>Defs\HediffDefs\Sextoys\Hediffs_Sextoy_Short.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Items\Items_Cum.xml">
+      <Link>Defs\Items\Items_Cum.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Items\Items_FoodCum.xml">
+      <Link>Defs\Items\Items_FoodCum.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Items\Items_Milk.xml">
+      <Link>Defs\Items\Items_Milk.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RecipeDefs\Recipes_ApparelProduction.xml">
+      <Link>Defs\RecipeDefs\Recipes_ApparelProduction.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RecipeDefs\Recipes_ChangeVibratorMode.xml">
+      <Link>Defs\RecipeDefs\Recipes_ChangeVibratorMode.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RecipeDefs\Recipes_DrugProduction.xml">
+      <Link>Defs\RecipeDefs\Recipes_DrugProduction.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RecipeDefs\Recipes_Meals.xml">
+      <Link>Defs\RecipeDefs\Recipes_Meals.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RecipeDefs\Recipes_SextoysProduction.xml">
+      <Link>Defs\RecipeDefs\Recipes_SextoysProduction.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ResearchProjectDefs\ResearchProjects.xml">
+      <Link>Defs\ResearchProjectDefs\ResearchProjects.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ResearchProjectDefs\ResearchTabs.xml">
+      <Link>Defs\ResearchProjectDefs\ResearchTabs.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RF_BTE\ExBodyTypes.xml">
+      <Link>Defs\RF_BTE\ExBodyTypes.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RF_BTE\PlasticDevice.xml">
+      <Link>Defs\RF_BTE\PlasticDevice.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RF_BTE\RF_Apparel_OS.xml">
+      <Link>Defs\RF_BTE\RF_Apparel_OS.xml</Link>
+    </Content>
+    <Content Include="..\Defs\RF_BTE\ScenPart_GenCustomBodyType.xml">
+      <Link>Defs\RF_BTE\ScenPart_GenCustomBodyType.xml</Link>
+    </Content>
+    <Content Include="..\Defs\SoundDefs\Interact_Ingest.xml">
+      <Link>Defs\SoundDefs\Interact_Ingest.xml</Link>
+    </Content>
+    <Content Include="..\Defs\SoundDefs\SoundWeapons.xml">
+      <Link>Defs\SoundDefs\SoundWeapons.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Storyteller\S16_Storyteller.xml">
+      <Link>Defs\Storyteller\S16_Storyteller.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThingCategoryDefs\ThingCategories.xml">
+      <Link>Defs\ThingCategoryDefs\ThingCategories.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_Bondage.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_Bondage.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_Dress.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_Dress.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_NipplePiercing.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_NipplePiercing.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_NippleStickers.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_NippleStickers.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_Panties.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_Panties.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_Skirt.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_Skirt.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_Top.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_Top.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Apparel\Thoughts_Vibrators.xml">
+      <Link>Defs\ThoughtDefs\Apparel\Thoughts_Vibrators.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Food\Thoughts_CumFood.xml">
+      <Link>Defs\ThoughtDefs\Food\Thoughts_CumFood.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Food\Thoughts_CumFoodCookie.xml">
+      <Link>Defs\ThoughtDefs\Food\Thoughts_CumFoodCookie.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Food\Thoughts_CumFoodNectar.xml">
+      <Link>Defs\ThoughtDefs\Food\Thoughts_CumFoodNectar.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Food\Thoughts_Milk.xml">
+      <Link>Defs\ThoughtDefs\Food\Thoughts_Milk.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Sextoys\Thoughts_Flogger.xml">
+      <Link>Defs\ThoughtDefs\Sextoys\Thoughts_Flogger.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Training\Thoughts_BDSM_Bad.xml">
+      <Link>Defs\ThoughtDefs\Training\Thoughts_BDSM_Bad.xml</Link>
+    </Content>
+    <Content Include="..\Defs\ThoughtDefs\Training\Thoughts_Harsh.xml">
+      <Link>Defs\ThoughtDefs\Training\Thoughts_Harsh.xml</Link>
+    </Content>
+    <Content Include="..\Defs\TraderKindDefs\TraderKinds_Orbital_Misc.xml">
+      <Link>Defs\TraderKindDefs\TraderKinds_Orbital_Misc.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Traits\S16_Traits.xml">
+      <Link>Defs\Traits\S16_Traits.xml</Link>
+    </Content>
+    <Content Include="..\Defs\Weapons\Weapon_Sex.xml">
+      <Link>Defs\Weapons\Weapon_Sex.xml</Link>
+    </Content>
+    <Content Include="..\Defs\WorkGiverDefs\WorkGivers.xml">
+      <Link>Defs\WorkGiverDefs\WorkGivers.xml</Link>
+    </Content>
+    <Content Include="..\Patches\FoodTitle.xml">
+      <Link>Patches\FoodTitle.xml</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjw.bondage_gear_def ParentName="BondageGearBase">
+		<defName>Blindfold</defName>
+		<label>blindfold</label>
+		<description>A blindfold. A restraint device that blocks the wearer's vision.</description>
+		<thingClass>rjw.armbinder</thingClass>
+		<graphicData>
+			<texPath>Items/Blindfold/Blindfold</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<MarketValue>550</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<apparel>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+				<wornGraphicPath>Items/Blindfold/Blindfold</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<!-- <commonality>0</commonality> -->
+		</apparel>
+		<soul_type>rjw.bondage_gear_soul</soul_type>
+		<equipped_hediff>Blindfold</equipped_hediff>
+		<gives_bound_moodlet>true</gives_bound_moodlet>
+		<blocks_hands>false</blocks_hands>
+		<HediffTargetBodyPartDefs>
+			<li>Eye</li>
+		</HediffTargetBodyPartDefs>
+		<BoundBodyPartGroupDefs>
+			<li>Eyes</li>
+		</BoundBodyPartGroupDefs>
+	</rjw.bondage_gear_def>
+</Defs>

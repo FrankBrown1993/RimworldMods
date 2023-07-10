@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Australia</li>
+			<li>Vanilla Animals Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_PlatypusBody</li>
+						<li>AEXP_TailedBiped</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_PlatypusBody</li>
+						<li>AEXP_TailedBiped</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Ice Sheet</li>
+			<li>Vanilla Animals Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_SimplePinniped</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_SimplePinniped</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Tropical Rainforest</li>
+			<li>Vanilla Animals Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_GreatApe</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_GreatApe</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Tropical Swamp</li>
+			<li>Vanilla Animals Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_LargeLizardlike</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_LargeLizardlike</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Tundra</li>
+			<li>Vanilla Animals Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_AntleredQuadruped</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_AntleredQuadruped</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Endangered</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_GreatApe_Bonobo</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>AEXP_GreatApe_Bonobo</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Caves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>VAE_InsectoidHulkBody</li>
+						<li>VAE_WyvernBody</li>
+						<li>VAE_Arachnid</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>VAE_InsectoidHulkBody</li>
+						<li>VAE_WyvernBody</li>
+						<li>VAE_Arachnid</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Royal Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>VAERoy_GreatApe</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>VAERoy_GreatApe</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Waste Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>VAEWaste_Hydra</li>
+						<li>VAEWaste_Megatardi</li>
+						<li>VAEWaste_LargeLizardlike</li>
+						<li>VAEWaste_BipedalLizard</li>
+						<li>VAEWaste_ScorpionLike</li>
+						<li>VAEWaste_Wasteboar</li>
+						<li>VAEWaste_Wasteffalo_Body</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>VAEWaste_Hydra</li>
+						<li>VAEWaste_Megatardi</li>
+						<li>VAEWaste_LargeLizardlike</li>
+						<li>VAEWaste_BipedalLizard</li>
+						<li>VAEWaste_ScorpionLike</li>
+						<li>VAEWaste_Wasteboar</li>
+						<li>VAEWaste_Wasteffalo_Body</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

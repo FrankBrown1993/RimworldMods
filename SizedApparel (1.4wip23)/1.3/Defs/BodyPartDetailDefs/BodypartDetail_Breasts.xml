@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- "null" and "default" varName will be no variation. -->
+<Defs>
+	<SizedApparel.SizedApparelBodyPartVariationDef>
+		<defName>BreastDetail</defName>
+		<bodyPartName>Breasts</bodyPartName>
+		<variations>
+			<li>
+			<!--Default Breasts-->
+				<hediffName>Breasts</hediffName>
+				<varName>
+					<li>default</li>
+					<li>InvertedNipple</li>
+				</varName>
+			</li>
+			<li>
+				<!-- <hediffName>SlimeBreasts</hediffName> -->
+				<!-- <varName> -->
+					<!-- <li>null</li> -->
+					<!-- <li>InvertedNipple</li> -->
+				<!-- </varName> -->
+			</li>
+		</variations>
+	</SizedApparel.SizedApparelBodyPartVariationDef>
+</Defs>

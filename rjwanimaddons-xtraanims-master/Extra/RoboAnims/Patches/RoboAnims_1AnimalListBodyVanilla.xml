@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd"><!--Fucking Animals-->
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_FaceFuckF" or defName="Beast_FaceFuckM" or defName="CentaurBeast_DoggystyleF" or defName="CentaurBeast_DoggystyleM" or defName="CentaurBeast_CowgirlF" or defName="CentaurBeast_CowgirlM"]/actors/li[2]/bodyDefTypes</xpath>
+		<value>
+			<li>Bird</li>
+			<li>BeetleLike</li>
+			<li>BeetleLikeWithClaw</li>
+			<li>QuadrupedAnimalWithPaws</li>
+			<li>QuadrupedAnimalWithPawsAndTail</li>
+			<li>QuadrupedAnimalWithHooves</li>
+			<li>QuadrupedAnimalWithHoovesAndHump</li>
+			<li>QuadrupedAnimalWithHoovesAndTusks</li>
+			<li>QuadrupedAnimalWithHoovesTusksAndTrunk</li>
+			<li>QuadrupedAnimalWithHoovesAndHorn</li>
+			<li>QuadrupedAnimalWithClawsTailAndJowl</li>
+			<li>TurtleLike</li>
+			<li>Snake</li>
+			<li>Monkey</li>
+			<li>MechanicalCentipede</li>
+			<li>Lancer</li>
+			<li>Pikeman</li>
+			<li>Scyther</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd"><!--Fucking Animals-->
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Snake_FaceF" or defName="Snake_FaceM" or defName="Snake_SexF" or defName="Snake_SexM"]/actors/li[2]/bodyDefTypes</xpath>
+		<value>
+			<li>Snake</li>
+		</value>
+	</Operation>
+	<!--Fucked Animals<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName=""]/actors/li[1]/bodyDefTypes</xpath>
+		<value>
+			<li>Bird</li>
+			<li>BeetleLike</li>
+			<li>BeetleLikeWithClaw</li>
+			<li>QuadrupedAnimalWithPaws</li>
+			<li>QuadrupedAnimalWithPawsAndTail</li>
+			<li>QuadrupedAnimalWithHooves</li>
+			<li>QuadrupedAnimalWithHoovesAndHump</li>
+			<li>QuadrupedAnimalWithHoovesAndTusks</li>
+			<li>QuadrupedAnimalWithHoovesTusksAndTrunk</li>
+			<li>QuadrupedAnimalWithHoovesAndHorn</li>
+			<li>QuadrupedAnimalWithClawsTailAndJowl</li>
+			<li>TurtleLike</li>
+			<li>Snake</li>
+			<li>Monkey</li>
+			<li>MechanicalCentipede</li>
+			<li>Lancer</li>
+			<li>Pikeman</li>
+			<li>Scyther</li>
+		</value>
+	</Operation>-->
+</Patch>

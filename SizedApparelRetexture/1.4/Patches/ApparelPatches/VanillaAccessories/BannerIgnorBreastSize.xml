@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded — Accessories</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "VAEA_Apparel_BattleBanner"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "VAEA_Apparel_BattleBanner"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+								<li>SizedApparel_IgnorBreastSize</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "VAEA_Apparel_BattleBanner"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+							<li>SizedApparel_IgnorBreastSize</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

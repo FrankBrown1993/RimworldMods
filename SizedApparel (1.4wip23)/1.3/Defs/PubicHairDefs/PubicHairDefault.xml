@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SizedApparel.PubicHairDef>
+		<!-- Sized Apparel will Use defName for TextureSearch -->
+		<defName>Default</defName>
+		<!-- texPath must be set for styling station! -->
+		<texPath>SizedApparel/BodyParts/Human/PubicHair/Default</texPath>
+		<!-- Actual Texture must have "_south" name. -->
+		<!-- for example of this: Default_south.png -->
+	</SizedApparel.PubicHairDef>
+</Defs>

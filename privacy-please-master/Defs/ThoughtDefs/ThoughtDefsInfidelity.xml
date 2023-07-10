@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!-- Pawn thoughts -->
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInInfidelity_Heartbreaking</defName>
+		<durationDays>25</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>caught cheating</label>
+			<description>I'm so sorry, my love. Please, forgive me...</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>	
+		<replaceThoughts>
+			<li>PartookInInfidelity_Disapproved</li>
+			<li>PartookInInfidelity_Acceptable</li>
+			<li>PartookInInfidelity_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInInfidelity_Disapproved</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>caught fooling around</label>
+			<description>Um, sorry, dear. Please don't be too mad?</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>PartookInInfidelity_Heartbreaking</li>
+			<li>PartookInInfidelity_Acceptable</li>
+			<li>PartookInInfidelity_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInInfidelity_Acceptable</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>partner passed by while lovin'</label>
+			<description>Oh hey babe, you wanna join us?</description>
+			<baseMoodEffect>0.01</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>PartookInInfidelity_Heartbreaking</li>
+			<li>PartookInInfidelity_Disapproved</li>
+			<li>PartookInInfidelity_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInInfidelity_Approved</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>cuckolded partner</label>
+			<description>The look on their face... It sent my heart racing!</description>
+			<baseMoodEffect>5</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>PartookInInfidelity_Heartbreaking</li>
+			<li>PartookInInfidelity_Disapproved</li>
+			<li>PartookInInfidelity_Acceptable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+
+	<!-- Witness thoughts -->
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawInfidelity_Heartbreaking</defName>
+		<durationDays>25</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>caught partner cheating</label>
+			<description>I feel numb inside.</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>	
+		<replaceThoughts>
+			<li>SawInfidelity_Disapproved</li>
+			<li>SawInfidelity_Acceptable</li>
+			<li>SawInfidelity_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Panic</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawInfidelity_Disapproved</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>caught partner fooling around</label>
+			<description>What, aren't I enough for you?</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>SawInfidelity_Heartbreaking</li>
+			<li>SawInfidelity_Acceptable</li>
+			<li>SawInfidelity_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawInfidelity_Acceptable</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>saw that partner got some lovin'</label>
+			<description>Hey, save some of that energy for me later, OK?</description>
+			<baseMoodEffect>0.01</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>SawInfidelity_Heartbreaking</li>
+			<li>SawInfidelity_Disapproved</li>
+			<li>SawInfidelity_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawInfidelity_Approved</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>cukolded by partner</label>
+			<description>Wicked thing! I'm gunna have to punish you for this...</description>
+			<baseMoodEffect>5</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>SawInfidelity_Heartbreaking</li>
+			<li>SawInfidelity_Disapproved</li>
+			<li>SawInfidelity_Acceptable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+</Defs>

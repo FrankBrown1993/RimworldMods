@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--Counts whoring stuff -->
+	<RecordDef>
+		<defName>CountOfWhore</defName>
+		<label>times whored</label>
+		<description>The number of times I whored myself.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>EarnedMoneyByWhore</defName>
+		<label>silvers earned as a whore</label>
+		<description>The amount of silvers I have earned as a whore.</description>
+		<type>Int</type>
+	</RecordDef>
+</Defs>

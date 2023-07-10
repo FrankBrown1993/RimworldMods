@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<InteractionDef>
+		<defName>InviteToHaveSex</defName>
+		<label>invited to have sex</label>
+		<workerClass>Privacy_Please.InteractionWorker_NullWorker</workerClass>
+		<symbol>UI/Interactions/Lovin</symbol>
+		<logRulesInitiator>
+		  <rulesStrings>
+			<li>r_logentry->[INITIATOR_nameDef] shyly invited [RECIPIENT_nameDef] to have sex with [INITIATOR_objective].</li>
+			<li>r_logentry->[INITIATOR_nameDef] waved [RECIPIENT_nameDef] over to join in [INITIATOR_objective] fun.</li>
+			<li>r_logentry->[INITIATOR_nameDef] enticed [RECIPIENT_nameDef] over to [INITIATOR_objective] side.</li>
+		  </rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	
+	<InteractionDef>
+		<defName>InviteToHaveGroupSex</defName>
+		<label>invited to have group sex</label>
+		<workerClass>Privacy_Please.InteractionWorker_NullWorker</workerClass>
+		<symbol>UI/Interactions/Lovin</symbol>
+		<logRulesInitiator>
+		  <rulesStrings>
+			<li>r_logentry->[INITIATOR_nameDef] huskily invited [RECIPIENT_nameDef] to join [INITIATOR_objective] for a threesome.</li>
+			<li>r_logentry->[INITIATOR_nameDef] joking asked if [RECIPIENT_nameDef] wanted to do a 'group activity' together.</li>
+			<li>r_logentry->[INITIATOR_nameDef] archly inquired if [RECIPIENT_nameDef] would like to join [INITIATOR_objective] for some fun.</li>
+		  </rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	
+	<InteractionDef>
+		<defName>InviteVoyeurism</defName>
+		<label>invited to watch</label>
+		<workerClass>Privacy_Please.InteractionWorker_NullWorker</workerClass>
+		<symbol>UI/Interactions/Voyeurism</symbol>
+		<logRulesInitiator>
+		  <rulesStrings>
+			<li>r_logentry->[INITIATOR_nameDef] bade [RECIPIENT_nameDef] to come closer and take a good look at what [INITIATOR_pronoun] was doing.</li>
+			<li>r_logentry->[INITIATOR_nameDef] put on a lewd display for [RECIPIENT_nameDef].</li>
+			<li>r_logentry->[INITIATOR_nameDef] let [RECIPIENT_nameDef] know that [INITIATOR_pronoun] didn't mind if [RECIPIENT_pronoun] watched [INITIATOR_objective].</li>
+		  </rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	
+	<InteractionDef>
+		<defName>InterruptedSex</defName>
+		<label>interrupted sex</label>
+		<workerClass>Privacy_Please.InteractionWorker_NullWorker</workerClass>
+		<symbol>UI/Interactions/Exclaimation</symbol>
+		<ignoreTimeSinceLastInteraction>true</ignoreTimeSinceLastInteraction>
+		<logRulesInitiator>
+		  <rulesStrings>
+			<li>r_logentry->[INITIATOR_nameDef]'s sudden appearance startled [RECIPIENT_nameDef].</li>
+			<li>r_logentry->[INITIATOR_nameDef] accidently gatecrashed [RECIPIENT_nameDef]'s private party.</li>
+			<li>r_logentry->[INITIATOR_nameDef] unintentionally intruded upon [RECIPIENT_nameDef]'s privacy.</li>
+			<li>r_logentry->[INITIATOR_nameDef] rudely interrupted while [RECIPIENT_nameDef] was getting it on.</li>
+		  </rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+	
+</Defs>

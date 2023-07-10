@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<LBTSettings>Lewd Biotech</LBTSettings>
+  <EnableLBTDevLogging>Enable development logging</EnableLBTDevLogging>
+  <EnableLBTDevLoggingDesc>When enabled, this setting provides additional Lewd Biotech related logging in the development mode log.</EnableLBTDevLoggingDesc>
+	<RegretStealingLovinThoughtDisabled>Disable "Regrets stealing lovin'" thought</RegretStealingLovinThoughtDisabled>
+	<RegretStealingLovinThoughtDisabledDesc>By default, the limbic stimulator implant allows for pawns without the Rapist trait to steal lovin'. When this occurs, the non-rapist pawn will receive a -5 mood negative thought that stacks up to 3 times. When enabled, this setting disables generation of that thought.</RegretStealingLovinThoughtDisabledDesc>
+</LanguageData>

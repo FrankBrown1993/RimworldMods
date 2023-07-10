@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>RJW_Beautyfuck</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stackedEffectMultiplier>1.0</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>Fucked staggeringly ugly</label>
+				<description>Had sex with staggeringly ugly pawn</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Fucked ugly</label>
+				<description>Had sex with ugly pawn</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Fucked pretty</label>
+				<description>Had sex with pretty pawn</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Fucked beautiful</label>
+				<description>Had sex with beautiful pawn</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

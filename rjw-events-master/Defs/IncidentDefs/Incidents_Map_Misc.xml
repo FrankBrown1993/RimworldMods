@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IncidentDef>
+		<defName>PsychicArouse</defName>
+		<label>psychic arouse</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>RJW_Events.IncidentWorker_PsychicArouse</workerClass>
+		<gameCondition>PsychicArouse</gameCondition>
+		<baseChance>1.0</baseChance>
+		<minRefireDays>15</minRefireDays>
+		<durationDays>0.75~1.75</durationDays>
+	</IncidentDef>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GeneticRim Alpha Animals Patch</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_FaceFuckF" or defName="Beast_FaceFuckM" or defName="CentaurBeast_DoggystyleF" or defName="CentaurBeast_DoggystyleM" or defName="CentaurBeast_CowgirlF" or defName="CentaurBeast_CowgirlM"]/actors/li[2]/bodyDefTypes</xpath>
+		<success>Always</success>
+					<value>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTail</li>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</li>
+					</value>
+				</li>
+				<!--Fucked Animals<li Class="PatchOperationAdd">
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName=""]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTail</li>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</li>
+					</value>
+				</li>-->
+			</operations>
+		</match>
+	</Operation>
+</Patch>

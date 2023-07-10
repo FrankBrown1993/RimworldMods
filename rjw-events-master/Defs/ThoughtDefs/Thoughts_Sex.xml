@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>AttendedOrgy</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>10</stackLimit>
+		<stages>
+			<li>
+				<label>attended orgy</label>
+				<description>I got very intimate with everyone at that orgy.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

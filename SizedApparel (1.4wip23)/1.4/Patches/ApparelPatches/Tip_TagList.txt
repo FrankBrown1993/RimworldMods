@@ -1,0 +1,18 @@
+
+SizedApparel_ShowBelly
+	-don't hide belly even the apparel covers torso
+
+SizedApparel_ShowPrivateCrotch
+	-don't hide crotch(genitals and anus) even the apparel covers genitals
+
+SizedApparel_ShowUdder
+	-don't hide udder even the apparel covers udder
+	-wip (not work yet)
+
+SizedApparel_IgnorBreastSize
+	-sized apparel mod will just ignore the apparel during calculate breasts size of apparels
+	-this tag is useful to skip. good example is ratkin shield (the shield is covering breasts)
+
+SizedApparel_IgnorePose
+	-when the custom pose is checking posed apparel texture, skip current apparel
+	-wip

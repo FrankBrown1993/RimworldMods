@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- "null" and "default" varName will be no variation. -->
+<Defs>
+	<SizedApparel.SizedApparelBodyPartVariationDef>
+		<defName>PenisDetail</defName>
+		<bodyPartName>Penis</bodyPartName>
+		<variations>
+			<li>
+			<!--Default Penis-->
+				<hediffName>Penis</hediffName>
+				<varName>
+					<li>default</li>
+					<!-- <li>Uncircumcised</li> -->
+				</varName>
+			</li>
+		</variations>
+	</SizedApparel.SizedApparelBodyPartVariationDef>
+</Defs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+		<defName>MassageBreasts</defName>
+		<label>massage TargetA's breasts</label>
+		<giverClass>CRIALactation.WorkGiver_MassageBreasts</giverClass>
+		<workType>Handling</workType>
+		<verb>massage</verb>
+		<gerund>stimulating the breasts of</gerund>
+		<priorityInType>91</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+</Defs>

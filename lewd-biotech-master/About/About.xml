@@ -1,0 +1,51 @@
+<ModMetaData>
+	<name>Lewd Biotech</name>
+	<author>leboeuf</author>
+  <packageId>leboeuf.lewdbiotech</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>rim.job.world</packageId>
+			<displayName>RimJobWorld</displayName>
+			<downloadUrl>https://gitgud.io/Ed86/rjw</downloadUrl>
+		</li>
+	</modDependencies>
+	<incompatibleWith />
+	<loadAfter>
+		<li>rim.job.world</li>
+	</loadAfter>
+  <description>
+Lewd Biotech is a small RimWorld: Biotech compatible expansion for RimJobWorld. This mod provides several new, unique ways to interact with pawns using existing RimJobWorld features, like vulnerability and sex need stats, while also providing some of its own features:
+
+Features:
+
+  • Biotech pregnancy compatible multibirth system, allowing
+    pawns to have random twins with a default 1-in-100 chance.
+  • Littered births gene, where pawns can have guaranteed
+    litters of multiple babies.
+  • Bioscaffolds: craftable glittertech that can significantly
+    increase the speed of Biotech pregnancies.
+  • Limbic stimulators and scramblers: brain implants that
+    can make pawns ravenous with sexual need, or confused and
+    highly vulnerable.
+  • Ovary agitators: crude, permanent slave implants that can
+    artificially incease the chance of having multiple babies -
+    at the cost of eventual early infertility.
+
+Many additional features are planned, including:
+
+  • Milkable Colonist integration and/or new human milk system 
+    and lactation expansion
+  • New, well-integrated serum system similar to Licentia Labs
+  • More new and unique implants
+  • Lewd specialist mechanoids
+  • Genes/xenohumans for sci-fi succubi/incubi that fit
+    RimWorld's lore
+  • ... and more!
+
+For all feature requests and bugs/issues:
+  https://gitgud.io/leboeuf/lewd-biotech/-/issues
+  </description>
+</ModMetaData>

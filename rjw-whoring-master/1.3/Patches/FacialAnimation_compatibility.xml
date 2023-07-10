@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[NL] Facial Animation - WIP</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/targetJobs</xpath>
+          <success>Always</success>
+          <value>
+            <li>WhoreIsServingVisitors</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="StandAndBeSociallyActive"]/targetJobs</xpath>
+          <success>Always</success>
+          <value>
+            <li>WhoreInvitingVisitors</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

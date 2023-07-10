@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjwstd.std_def>
+		<defName>Warts</defName>
+		<label>warts</label>
+		<description>Genital warts are unsightly and cause an itching/burning sensation. They are easily treated and never fatal.</description>
+		<hediff_def>Warts</hediff_def>
+		<catch_chance>0.20</catch_chance>
+		<environment_pitch_chance>0.07</environment_pitch_chance>
+		<appliedOnFixedBodyParts>
+			<li>Genitals</li>
+		</appliedOnFixedBodyParts>
+	</rjwstd.std_def>
+</Defs>

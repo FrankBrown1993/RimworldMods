@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <ForceOffArmbinder.label>принудительно снять моноперчатку</ForceOffArmbinder.label>
+  <ForceOffArmbinder.description>Насильно снимает моноперчатку без ключа ценой значительных повреждений владельца.</ForceOffArmbinder.description>
+  <ForceOffArmbinder.jobString>Насильственное снятие моноперчатки.</ForceOffArmbinder.jobString>
+
+  <ForceOffGagBall.label>принудительно вынуть кляп</ForceOffGagBall.label>
+  <ForceOffGagBall.description>Насильственное снятие кляпа без ключа ценой значительного повреждения владельца.</ForceOffGagBall.description>
+  <ForceOffGagBall.jobString>Насильственное снятие кляпа.</ForceOffGagBall.jobString>
+
+  <ForceOffGagRing.label>принудительно вынуть кляп</ForceOffGagRing.label>
+  <ForceOffGagRing.description>Насильственное снятие кляпа без ключа ценой значительного повреждения владельца.</ForceOffGagRing.description>
+  <ForceOffGagRing.jobString>Насильственное снятие кляпа.</ForceOffGagRing.jobString>
+
+  <ForceOffChastityBelt.label>принудительно снять пояс целомудрия</ForceOffChastityBelt.label>
+  <ForceOffChastityBelt.description>Насильно снимает пояс целомудрия без ключа ценой значительного ущерба для владельца.</ForceOffChastityBelt.description>
+  <ForceOffChastityBelt.jobString>Насильственное снятие пояса целомудрия.</ForceOffChastityBelt.jobString>
+
+  <ForceOffChastityBeltOpen.label>принудительно снять пояс целомудрия</ForceOffChastityBeltOpen.label>
+  <ForceOffChastityBeltOpen.description>Насильно снимает пояс целомудрия без ключа ценой значительного ущерба для владельца.</ForceOffChastityBeltOpen.description>
+  <ForceOffChastityBeltOpen.jobString>Насильственное снятие пояса целомудрия.</ForceOffChastityBeltOpen.jobString>
+
+  <ForceOffChastityCage.label>принудительно снять клетку целомудрия</ForceOffChastityCage.label>
+  <ForceOffChastityCage.description>Насильно снимает клетку целомудрия без ключа ценой значительного ущерба для владельца.</ForceOffChastityCage.description>
+  <ForceOffChastityCage.jobString>Насильственное снятие клетки целомудрия.</ForceOffChastityCage.jobString>
+
+  <ForceOffLegbinder.label>принудительно снять моносапог</ForceOffLegbinder.label>
+  <ForceOffLegbinder.description>Насильно снимает моносапог без ключа ценой значительных повреждений владельца.</ForceOffLegbinder.description>
+  <ForceOffLegbinder.jobString>Насильственное снятие моносапога.</ForceOffLegbinder.jobString>
+
+  <ForceOffBlindfold.label>принудительно снять повязку с глаз</ForceOffBlindfold.label>
+  <ForceOffBlindfold.description>Насильно снимает повязку с глаз без ключа ценой значительных повреждений владельца.</ForceOffBlindfold.description>
+  <ForceOffBlindfold.jobString>Насильственное снятие повязки с глаз.</ForceOffBlindfold.jobString>
+
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HistoryEventDef>
+    <defName>DrankMilkRaw</defName>
+    <label>Drank milk Raw</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>DrankMilkMeal</defName>
+    <label>Drank milk with meal</label>
+  </HistoryEventDef>
+
+	<HistoryEventDef>
+		<defName>DrankNonMilkMeal</defName>
+		<label>Ate meal without milk</label>
+	</HistoryEventDef>
+
+</Defs>

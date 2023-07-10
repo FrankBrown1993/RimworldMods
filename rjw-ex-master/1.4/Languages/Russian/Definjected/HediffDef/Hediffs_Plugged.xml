@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <Plugged.label>Вставлен</Plugged.label>
+  <Plugged.description>Вставлен.</Plugged.description>
+  <Plugged.stages.0.label>свободно</Plugged.stages.0.label>
+  <Plugged.stages.1.label>удобно</Plugged.stages.1.label>
+  <Plugged.stages.2.label>плотно</Plugged.stages.2.label>
+  <Plugged.stages.3.label>очень плотно</Plugged.stages.3.label>
+  <Plugged.stages.4.label>плотно растрескивается</Plugged.stages.4.label>
+
+</LanguageData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>VirusPerma</defName>
+		<hediffClass>Hediff_Injury</hediffClass>
+		<tendable>false</tendable>
+		<displayWound>true</displayWound>
+		<chanceToCauseNoPain>1.0</chanceToCauseNoPain>
+		<description>Viral damage.</description>
+		<label>viral damage</label>
+		<comps>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>permanent viral damage</permanentLabel>
+				<instantlyPermanentLabel>permanent viral damage</instantlyPermanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0</averagePainPerSeverityPermanent>
+			<destroyedLabel>Destroyed by disease</destroyedLabel>
+			<destroyedOutLabel>Destroyed by disease</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,37 @@
+RJWAnimAddons-XtraAnims: 
+
+2/15/2023: 0.4.0 Added Roboslob's  animations. (only loads if RoboAnims is not active)
+
+2/6/2023: 0.3.3 Updated Loadfolders.xml for 1.4
+
+10/27/2022: 0.3.2 Disabled an unfinished group anim that caused errors
+
+10/25/2022: 0.3.1 Added 1.4 tag
+
+8/19/2022: 0.3.0 Restructured for better compatibility for AC's animation patch
+
+6/22/2022: 0.2.10 Added genital rotation to AC's Butterfly anim, thanks Shaua!
+
+7/22/2021: 0.2.9 Added 1.3 tag. Added URI to manifest to keep track of future versions in mod manager
+
+6/28/2021: 0.2.8 Fixed a mistake I made back in March update. Fast moan sounds should play again.
+
+6/23/2021: 0.2.7 Actually more accurate gender detection this time. fixed requireGender error for 1.1 users Requires Animation Framework V:1.1.5 from June 23rd 2021
+
+6/23/2021: 0.2.6 Updated defs for increased gender detection accuracy for Voice Patch
+
+3/20/2021: 0.2.5 Added support for Animation Framework patching in voiceline volume slider
+
+2/19/2021: 0.2.4 Added interactionDefs for AC's Butterfly anim and removed female only initiator. Should give it a chance to play now.
+
+2/19/2021: 0.2.3 Fixed interaction def errors for 1.1 users
+
+2/9/2021: 0.2.2 Added load folders. Updated interactionDefs and sexTypes for RJW 4.6.0
+
+2/1/2021: 0.2.1 Fixed an error that would show if not using Voice Patch
+
+1/30/2021: 0.2.0 New group (MMMxF) animation. Added interactionDef nodes for increased accuracy for Oral type animations. Enabled AC's Cunnilingus animation.
+
+8/26/2020: 0.1.0 Moved Abstract Concepts animations to this mod. Now it's easy to add his animations without being forced to use Voice Patch
+
+8/24/2020: 0.0.1 Initial upload, Adds Double Penetration animation

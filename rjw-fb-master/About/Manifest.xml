@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+	<identifier>RimJobWorld FB</identifier>
+	<version>1.3.0</version>
+	<dependencies>
+		<li>RimJobWorld</li>
+	</dependencies>
+	<loadAfter>
+		<li>RimJobWorld</li>
+	</loadAfter>
+	<manifestUri>https://gitgud.io/Ed86/rjw-fb/raw/master/About/Manifest.xml</manifestUri>
+	<downloadUri>https://gitgud.io/Ed86/rjw-fb</downloadUri>
+</Manifest>

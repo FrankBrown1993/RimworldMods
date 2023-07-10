@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DutyDef>
+		<defName>Orgy</defName>
+		<label>orgy</label>
+		<hook>MediumPriority</hook>
+
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalInGatheringArea">
+					<subNodes>
+						<li Class="RJW_Events.ThinkNode_ConditionalNude">
+							<subNodes>
+								<li Class="ThinkNode_ConditionalRandom">
+									<chance>0.25</chance>
+									<subNodes>
+										<li Class="JobGiver_StandAndBeSociallyActive"></li>
+									</subNodes>
+								</li>
+
+								<li Class="ThinkNode_ConditionalRandom">
+									<chance>0.40</chance>
+									<subNodes>
+										<li Class="RJW_Events.JobGiver_FindOrgyPartner"></li>
+										<li Class="JobGiver_WanderInGatheringArea">
+											<ticksBetweenWandersRange>200~250</ticksBetweenWandersRange>
+										</li>
+									</subNodes>
+								</li>
+
+								<li Class="JobGiver_WanderInGatheringArea">
+									<ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+								</li>
+							</subNodes>
+
+						</li>
+						<li Class="RJW_Events.JobGiver_GetNaked"></li>
+					</subNodes>
+				</li>
+			
+					<!--Go to gathering area-->
+				<li Class="JobGiver_WanderInGatheringArea">
+					<locomotionUrgency>Jog</locomotionUrgency>
+					<ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+				</li>
+			</subNodes>
+		</thinkNode>
+		
+	</DutyDef>
+	
+</Defs>

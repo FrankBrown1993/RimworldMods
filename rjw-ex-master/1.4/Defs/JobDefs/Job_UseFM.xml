@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<JobDef>
+		<defName>UseFM</defName>
+		<driverClass>rjwex.JobDriver_UseFM</driverClass>
+		<reportString>using fuck machine</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

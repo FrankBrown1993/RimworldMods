@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>SyphiliticThoughts</defName>
+		<workerClass>rjwstd.ThoughtWorker_SyphiliticThoughts</workerClass>
+		<stages>
+			<li>
+				<label>syphilitic thoughts</label>
+				<description>Everyone's so stupid and everything's so annoying. Even me, I just can't think clearly.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>extreme syphilitic thoughts</label>
+				<description>OK, what I need is... uh... what was I doing again? Oh right this thing. This fucking thing THIS FUCKING PIECE OF SHIT. FUCKING DAMN PIECE OF GARBAGE</description>
+				<baseMoodEffect>-16</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

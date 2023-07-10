@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<SpecialThingFilterDef>
+		<defName>AllowWithHumanMilk</defName>
+		<label>allow food with human milk</label>
+		<description>Allow food that was made with human milk.</description>
+		<parentCategory>Foods</parentCategory>
+		<allowedByDefault>true</allowedByDefault>
+		<saveKey>allowWithHumanMilk</saveKey>
+		<workerClass>CRIALactation.SpecialThingFilterWorker_Milk</workerClass>
+	</SpecialThingFilterDef>
+
+	<SpecialThingFilterDef>
+		<defName>AllowWithoutHumanMilk</defName>
+		<label>allow food without human milk</label>
+		<description>Allow normal food.</description>
+		<parentCategory>Foods</parentCategory>
+		<allowedByDefault>true</allowedByDefault>
+		<saveKey>allowWithoutHumanMilk</saveKey>
+		<workerClass>CRIALactation.SpecialThingFilterWorker_NoMilk</workerClass>
+	</SpecialThingFilterDef>
+</Defs>

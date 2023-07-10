@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<JobDef>
+		<defName>JoinInSex</defName>
+		<driverClass>Privacy_Please.JobDriver_JoinInSex</driverClass>
+		<reportString>joining in on some fun.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	
+	<JobDef>
+		<defName>WatchSex</defName>
+		<driverClass>Privacy_Please.JobDriver_WatchSex</driverClass>
+		<reportString>sneaking a peep.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	
+</Defs>

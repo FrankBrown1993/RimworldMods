@@ -1,0 +1,65 @@
+v.101
+- removed RF Body Type Extend support
+- removed Kurin patches and textures
+- removed shield from carbon suit
+- removed Ruby Random storyteller
+- removed training mechanics
+- changed mod name
+- changed mod preview
+- changed round, black and golden cross nipple stickers from custom recipes to base
+- changed heat armor and insulation values for carbon armor
+- added thoughts for black cross nipple stickers
+- added hediff and thoughts for carbon armor
+- added CE patch for carbon armor
+v.102
+- removed sextoys hediffs
+- removed custom apparel producrion recipes for nipple stickers
+- removed sextoy and training thoughts
+- removed traits folder
+- reworked carbon armor stockpile texture
+- reworked carbon armor BB texture
+- changed nipple barbells texture size from 1024x1024 to 256x256
+- changed round nipple stickers texture size from 1024x1024 to 256x256
+- changed black nipple stickers texture size from 1024x1024 to 256x256
+- changed wooden pins texture size from 1024x1024 to 256x256
+- changed micro thong texture size from 1024x1024 to 256x256
+- changed thong texture size from 1024x1024 to 256x256
+- changed black tape texture size from 1024x1024 to 256x256
+- changed transparent skirt texture size from 1024x1024 to 256x256
+- changed disco top texture size from 1024x1024 to 256x256
+- changed anal vibrator texture size from 1024x1024 to 256x256
+- changed double vibrator texture size from 1024x1024 to 256x256
+- changed nipple vibrator texture size from 1024x1024 to 256x256
+- changed simple vibrator texture size from 1024x1024 to 256x256
+- added XevaFB body support (this version only)
+v.103
+- removed Pawn_Beauty stat buff from nipple piercing
+- removed Pain and Moving debuffs from intimate tape
+- changed Vulnerability offset for chain harness from 0,1 to 0,5
+- added countsAsClothingForNudity to be "false" for chain harness, all nipple piercing, all nipple stickers, transparent skirt, disco top and all vibrators 
+- added SlaveSupression stat buff offset for chain harness, servant girl dress, all nipple piercing, transparent skirt and all vibrators
+- added SexSatisfaction stat buff for all apparel
+- added nipple clamps (PS Masochist, Nymphomaniac, Bloodlust) (thoughts wip)
+- added nipple clamps with ring (PS Masochist, Nymphomaniac, Bloodlust) (thoughts wip)
+v.104
+- changed Z dress to occupy legs slot
+- added maid dress
+v.105
+- added thoughts for nipple clamps (PS Masochist, Nymphomaniac, Bloodlust)
+- added thoughts for maid dress
+v.106
+- added countsAsClothingForNudity to be "false" for micro thong and intimate tape
+- retextured Z dress
+- added high thong
+v.107
+- added nipple chained wrist cuffs (PS Beauty, Nudist)
+v.108
+- added vibrator (PS Nymphomaniac)
+- added double vibrator 
+v.109
+- fixed texture error for vibrator and reworked it's icons
+- added partial nudity fix by sim64k
+- vibrators now affect sex need (C# by Rain)
+- removed sex frequency stat offset modifier from vibrators
+- removed weapons sounds defs (old version flogger)
+- lactine and breast milk moved into a separate mod

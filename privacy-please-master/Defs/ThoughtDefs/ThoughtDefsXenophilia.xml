@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawHAR_AlienDating_Prohibited</defName>
+		<durationDays>30</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>disturbed by xenophilia</label>
+			<description>Urgh. Filthy degenerates...</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraitDegrees>
+		  <Xenophobia MayRequire="erdelf.HumanoidAlienRaces">-1</Xenophobia>
+		</nullifyingTraitDegrees>		
+		<replaceThoughts>
+			<li>SawHAR_AlienDating_Horrible</li>
+			<li>SawHAR_AlienDating_Acceptable</li>
+			<li>SawHAR_AlienDating_Preferred</li>
+			<li>SawHAR_AlienDating_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawHAR_AlienDating_Horrible</defName>
+		<durationDays>20</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>upset about xenophilia</label>
+			<description>It's just not right...</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraitDegrees>
+		  <Xenophobia MayRequire="erdelf.HumanoidAlienRaces">-1</Xenophobia>
+		</nullifyingTraitDegrees>
+		<replaceThoughts>
+			<li>SawHAR_AlienDating_Prohibited</li>
+			<li>SawHAR_AlienDating_Acceptable</li>
+			<li>SawHAR_AlienDating_Preferred</li>
+			<li>SawHAR_AlienDating_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawHAR_AlienDating_Acceptable</defName>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>witnessed xenophilia</label>
+			<description>I'd always wondered how'd that would work...</description>
+			<baseMoodEffect>0.01</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraitDegrees>
+		  <Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</Xenophobia>
+		</nullifyingTraitDegrees>
+		<replaceThoughts>
+			<li>SawHAR_AlienDating_Prohibited</li>
+			<li>SawHAR_AlienDating_Horrible</li>
+			<li>SawHAR_AlienDating_Preferred</li>
+			<li>SawHAR_AlienDating_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawHAR_AlienDating_Preferred</defName>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>amused by xenophilia</label>
+			<description>Huh. Wonder what their kids would look like?</description>
+			<baseMoodEffect>1</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraitDegrees>
+		  <Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</Xenophobia>
+		</nullifyingTraitDegrees>
+		<replaceThoughts>
+			<li>SawHAR_AlienDating_Prohibited</li>
+			<li>SawHAR_AlienDating_Horrible</li>
+			<li>SawHAR_AlienDating_Acceptable</li>
+			<li>SawHAR_AlienDating_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawHAR_AlienDating_Honorable</defName>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>approved of xenophilia</label>
+			<description>Blending their species will make us stronger.</description>
+			<baseMoodEffect>3</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraitDegrees>
+		  <Xenophobia MayRequire="erdelf.HumanoidAlienRaces">1</Xenophobia>
+		</nullifyingTraitDegrees>
+		<replaceThoughts>
+			<li>SawHAR_AlienDating_Prohibited</li>
+			<li>SawHAR_AlienDating_Horrible</li>
+			<li>SawHAR_AlienDating_Acceptable</li>
+			<li>SawHAR_AlienDating_Preferred</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+</Defs>

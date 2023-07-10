@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<whoringtab_enabled>Enable whoring tab</whoringtab_enabled>
+	<whoringtab_enabled_desc>Shows/hide whoring tab</whoringtab_enabled_desc>
+	<show_whore_price_factor_on_bed>Show whore price factor on beds</show_whore_price_factor_on_bed>
+	<show_whore_price_factor_on_bed_desc>Show whore price factor as a label on beds that are enabled for whoring.</show_whore_price_factor_on_bed_desc>
+	<show_whore_widgets_on_bed>Show bed widgets</show_whore_widgets_on_bed>
+	<show_whore_widgets_on_bed_desc>Show bed widgets to mark beds for public/private for whoring.</show_whore_widgets_on_bed_desc>
+	
+	<MoneyPrinting>Money Printing</MoneyPrinting>
+	<MoneyPrinting_desc>Clients will spawn silver instead of using their own/caravan</MoneyPrinting_desc>
+	<ClientAlwaysAccept>Client RNG disable</ClientAlwaysAccept>
+	<ClientAlwaysAccept_desc>Instead of doing rng roll, Clients always accept solicitation.</ClientAlwaysAccept_desc>
+
+	<DebugWhoring>Debug log whoring info</DebugWhoring>
+	<DebugWhoring_desc>Enables some very spamming debug logs to help find bugs in Whoring solicitation operations.</DebugWhoring_desc>
+	
+	<!--Whore Activities-->
+	<RJW_VisitorAcceptWhore>{0} accepted the deal {1} offered.</RJW_VisitorAcceptWhore>
+	<RJW_VisitorSolicitWhore>{0} wants to be serviced by {1}.</RJW_VisitorSolicitWhore>
+	<RJW_VisitorRejectWhore>{0} rejected the deal {1} offered.</RJW_VisitorRejectWhore>
+	<RJW_VisitorSickWhore>{0} rejected the offer because {1} does not look healthy</RJW_VisitorSickWhore>
+
+	<!--Whore designators-->
+	<ForService>Assign to whorin'</ForService> <!-- This field is not visible -->
+	<ForServiceDesc><![CDATA[Mark for whoring
+- Will try to hook up with visitors.
+- Entertains other colonists if not busy.
+- Tries to refrain from masturbation while on the job, may cause frustration.
+]]></ForServiceDesc>
+	<ForServiceRefuseDesc>Won't agree to be a whore</ForServiceRefuseDesc>
+
+	<!--Bed designators-->
+	<CommandBedSetAsWhoreBedLabel>Allow everyone to whore</CommandBedSetAsWhoreBedLabel>
+	<CommandBedSetAsWhoreBedDesc>Allow all whores to use this bed to entertain customers.</CommandBedSetAsWhoreBedDesc>
+	<CommandBedAllowWhoringLabel>Allow owner to whore</CommandBedAllowWhoringLabel>
+	<CommandBedAllowWhoringDesc>Whether owner(s) are allowed to use this bed for whoring.</CommandBedAllowWhoringDesc>
+	<WhorePriceCalcDesc>Whoring price factor (based on comfort, room impressiveness and number of beds in room: {0}</WhorePriceCalcDesc>
+	
+	<WhorePrice>Whoring price range: </WhorePrice>
+	<BrothelTabIsPrisoner>Prisoner</BrothelTabIsPrisoner>
+	<BrothelTabIsSlave>Slave</BrothelTabIsSlave>
+</LanguageData>

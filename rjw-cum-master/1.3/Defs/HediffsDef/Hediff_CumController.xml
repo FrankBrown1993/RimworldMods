@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--master hediff adding up the smaller Cum splatches-->
+	<HediffDef>
+		<defName>Hediff_CumController</defName>
+		<hediffClass>rjwcum.Hediff_CumController</hediffClass>
+		<label>Cum</label>
+		<description>Covered in cum.</description>
+		<makesSickThought>false</makesSickThought>
+		<initialSeverity>0.01</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<!--<injuryProps>-->
+				<!--<canMerge>true</canMerge>--><!-- this might not even be required-->
+		<!--</injuryProps>-->
+		<!--<scenarioCanAdd>true</scenarioCanAdd>-->
+		<isBad>false</isBad>
+		<tendable>false</tendable>
+		<stages>
+			<li>
+				<label>minor</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>little</label>
+				<statOffsets>
+					<Vulnerability>0.2</Vulnerability>
+					<SocialImpact>-0.1</SocialImpact>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>extensive</label>
+				<statOffsets>
+					<Vulnerability>0.3</Vulnerability>			
+					<SocialImpact>-0.3</SocialImpact>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>full</label>
+				<statOffsets>
+					<Vulnerability>-0.1</Vulnerability><!--pawns prefer victims not being completely drenched-->
+					<SocialImpact>-0.5</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

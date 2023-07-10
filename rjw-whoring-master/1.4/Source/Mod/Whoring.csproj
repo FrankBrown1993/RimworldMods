@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FC2D442-19B8-4CF9-9D35-CD13B6AC7B28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>rjwwhoring</RootNamespace>
+    <AssemblyName>RimJobWorldWhoring</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\818773962\v1.4\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RJW">
+      <HintPath>..\..\..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\BedData.cs" />
+    <Compile Include="Data\DataStore.cs" />
+    <Compile Include="Data\StringListDef.cs" />
+    <Compile Include="DefOf\RecordDefDefOf.cs" />
+    <Compile Include="harmony_Building_BedPatches.cs" />
+    <Compile Include="harmony_AftersexPatch.cs" />
+    <Compile Include="harmony_RJWTab_patch.cs" />
+    <Compile Include="JobDrivers\JobDriver_WhoreInvitingVisitors.cs" />
+    <Compile Include="JobDrivers\JobDriver_WhoreIsServingVisitors.cs" />
+    <Compile Include="JobGivers\JobGiver_WhoreInvitingVisitors.cs" />
+    <Compile Include="Location\Brothel_Room.cs" />
+    <Compile Include="WhoringTab\PawnColumnCheckbox_Whore.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_AverageMoneyByWhore.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_CountOfWhore.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_EarnedMoneyByWhore.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_IsWhore.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_Mood.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_PriceRangeOfWhore.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_TextCenter.cs" />
+    <Compile Include="WhoringTab\PawnColumnWorker_WhoreExperience.cs" />
+    <Compile Include="WhoringTab\PawnTable_Whores.cs" />
+    <Compile Include="WhoringTab\WhoreCheckbox.cs" />
+    <Compile Include="ThinkTreeNodes\ThinkNode_ChancePerHour_Whore.cs" />
+    <Compile Include="ThinkTreeNodes\ThinkNode_ConditionalWhore.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Whore.cs" />
+    <Compile Include="DefOf\ThoughtDefOf.cs" />
+    <Compile Include="WhoringBase.cs" />
+    <Compile Include="Whoring_Bed_Utilities.cs" />
+    <Compile Include="Whoring_Helper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

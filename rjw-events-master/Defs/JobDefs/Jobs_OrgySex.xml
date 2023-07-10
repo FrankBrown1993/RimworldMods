@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>OrgySex</defName>
+		<driverClass>RJW_Events.JobDriver_OrgySex</driverClass>
+		<reportString>lovin' in orgy.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	<JobDef>
+		<defName>GettinOrgySex</defName>
+		<driverClass>RJW_Events.JobDriver_OrgySexReceiver</driverClass>
+		<reportString>Gettin' loved in orgy.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

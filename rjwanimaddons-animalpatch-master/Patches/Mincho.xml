@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mincho, The Mint Choco Slime ~ HAR ver.</li>
+			<li>2477501851</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>Mincho_Animal_BodyDef</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>Mincho_Animal_BodyDef</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="HumanoidBeastDoggystyleF" or defName="HumanoidBeastDoggystyleM" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="HumanoidBeastDoggystyle2" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

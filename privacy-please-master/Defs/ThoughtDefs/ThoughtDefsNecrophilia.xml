@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawNecrophilia_Abhorrent</defName>
+		<durationDays>30</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>horrified by necrophilia</label>
+			<description>*Urp* I'm gunna hurl!</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Necrophiliac</li>
+		</nullifyingTraits>	
+		<replaceThoughts>
+			<li>SawNecrophilia_Horrible</li>
+			<li>SawNecrophilia_Disapproved</li>
+			<li>SawNecrophilia_Acceptable</li>
+			<li>SawNecrophilia_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Nausea</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawNecrophilia_Horrible</defName>
+		<durationDays>20</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>disturbed by necrophilia</label>
+			<description>Urgh, so gross! Just what were they thinking?</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Necrophiliac</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawNecrophilia_Abhorrent</li>
+			<li>SawNecrophilia_Disapproved</li>
+			<li>SawNecrophilia_Acceptable</li>
+			<li>SawNecrophilia_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawNecrophilia_Disapproved</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>upset about necrophilia</label>
+			<description>Even the dead get no rest here...</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Necrophiliac</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawNecrophilia_Abhorrent</li>
+			<li>SawNecrophilia_Horrible</li>
+			<li>SawNecrophilia_Acceptable</li>
+			<li>SawNecrophilia_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawNecrophilia_Acceptable</defName>
+		<durationDays>5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>witnessed necrophilia</label>
+			<description>They better bury what's left when they're done...</description>
+			<baseMoodEffect>0.01</baseMoodEffect>
+		  </li>		  
+		</stages>
+		<nullifyingTraits>
+		  <li>Necrophiliac</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawNecrophilia_Abhorrent</li>
+			<li>SawNecrophilia_Horrible</li>
+			<li>SawNecrophilia_Disapproved</li>
+			<li>SawNecrophilia_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawNecrophilia_Approved</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>approved of necrophilia</label>
+			<description>Passion transcends the grave.</description>
+			<baseMoodEffect>+3</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>SawNecrophilia_Abhorrent</li>
+			<li>SawNecrophilia_Horrible</li>
+			<li>SawNecrophilia_Disapproved</li>
+			<li>SawNecrophilia_Acceptable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+</Defs>

@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW ASE.v109\Sources\obj\Debug\s16-extension.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW ASE.v109\Sources\obj\Debug\s16-extension.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW ASE.v109\Assemblies\s16-extension.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW ASE.v109\Sources\obj\Debug\s16-extension.dll

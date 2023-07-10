@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bastyon</li>
+			<li>Steves Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>Bast_BahlrinBody</li>
+						<li>Bast_LimblessGelatinous</li>
+						<li>Bast_LimblessHovering</li>
+						<li>Bast_Spider</li>
+						<li>Bast_Ant</li>
+						<li>Bast_SnippingSnail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>Bast_BahlrinBody</li>
+						<li>Bast_LimblessGelatinous</li>
+						<li>Bast_LimblessHovering</li>
+						<li>Bast_Spider</li>
+						<li>Bast_Ant</li>
+						<li>Bast_SnippingSnail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyleF" or defName="HumanoidBeastDoggystyleM" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>Bast_Critter</li>
+						<li>Bast_SvarogBody</li>
+						<li>Bast_LightningElementalBody</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyle2" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>Bast_Critter</li>
+						<li>Bast_SvarogBody</li>
+						<li>Bast_LightningElementalBody</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

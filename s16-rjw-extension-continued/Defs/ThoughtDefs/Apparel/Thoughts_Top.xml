@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+    <defName>S16DressIITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_DressIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+	  <li>Nudist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>skimpy top</label>
+        <description>Hey, my eyes are up here!</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>This top is almost transparent, my nipples are easily seen through it. I don't feel comfortable trying to cover them with my hands!</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>Nah, at least it looks fun</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIThMasochist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_DressIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>skimpy top</label>
+        <description>Owww, I like these rough straps...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>Ohh, I tightened the straps... This rough cloth is biting into my skin and it makes my nipples so hard</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>Oh my, I'll need to wash my panties...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIThNymphomaniac</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_DressIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nymphomaniac</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>skimpy top</label>
+        <description>I know you just wanted to read the writing, ha-ha! *winks*</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>Heeeey sweetheart, go do some hugging with me!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>Wanna touch them, huh? Now then!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16_DressIIThNudist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_DressIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>skimpy top</label>
+        <description>Not as bad as other clothes</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>Hmmmm... I feel weird wearing this...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>skimpy top</label>
+        <description>This is... kinda fun?</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+</Defs>

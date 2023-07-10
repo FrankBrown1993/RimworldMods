@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="FuckMachineBase" Class="rjwex.Building_FuckMachine_Def">
+		<defName>FuckMachineWooden</defName>
+		<label>Fuck machine</label>
+		<description>Not quite a "machine", but definitely some "fuck" with the right mood. At least some entertainment when there is no electricity, but hip work can be tiring. Remember to polish dildo before using, unless you want a torture device.</description>
+		<thingClass>rjwex.Building_FuckMachine</thingClass>
+		<graphicData>
+			<texPath>Buildings/FuckMachines/Wooden/FMWooden</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconPath>Buildings/FuckMachines/Wooden/FMWooden_east</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>20</Mass>
+			<Beauty>10</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<comps>
+			<li Class="rjwex.CompProperties_PublicPrivateComp" />
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<techLevel>Medieval</techLevel>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<forced>False</forced>
+		<automatic>False</automatic>
+		<vertical>True</vertical>
+		<powered>False</powered>
+		<quality>0.5</quality>
+		<height>0.22</height>
+		<mode>Normal</mode>
+	</ThingDef>	
+</Defs>

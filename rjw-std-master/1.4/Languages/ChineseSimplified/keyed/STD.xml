@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <std_sex>性行为传播性病</std_sex>
+  <std_sex_desc>小人会因与受感染的小人发生性关系而感染性病。</std_sex_desc>
+  <std_floor>环境传播性病</std_floor>
+  <std_floor_desc>小人们会因为在肮脏环境中发生性行为而感染性病。</std_floor_desc>
+  <std_show_roll_to_catch>显示传播性病的catch roll</std_show_roll_to_catch>
+  <std_show_roll_to_catch_desc>记录做爱后出现性病的过程，用于调试目的（或为满足好奇的人）</std_show_roll_to_catch_desc>
+  <std_min_severity_to_pitch>传播性病的最小严重程度</std_min_severity_to_pitch>
+  <std_min_severity_to_pitch_desc>性病感染至少要达到这样严重才能在小人之间传播</std_min_severity_to_pitch_desc>
+  <std_env_pitch_cleanliness_exaggeration>干净的房间传播修改器</std_env_pitch_cleanliness_exaggeration>
+  <std_env_pitch_cleanliness_exaggeration_desc>1.0f - this * RoomStatDefOf.Cleanliness.\nRoomStatDefOf.Cleanliness >= 0</std_env_pitch_cleanliness_exaggeration_desc>
+  <std_env_pitch_dirtiness_exaggeration>肮脏的房间传播修改器</std_env_pitch_dirtiness_exaggeration>
+  <std_env_pitch_dirtiness_exaggeration_desc>1.0f - this * RoomStatDefOf.Cleanliness.\nRoomStatDefOf.Cleanliness &lt; 0</std_env_pitch_dirtiness_exaggeration_desc>
+  <std_outdoor_cleanliness>室外清洁度</std_outdoor_cleanliness>
+  <std_outdoor_cleanliness_desc>Cleanliness stat for sex outdoor\nRoomStatDefOf.Cleanliness = this</std_outdoor_cleanliness_desc>
+  <opp_inf_initial_immunity>免疫缺陷的传播</opp_inf_initial_immunity>
+  <opp_inf_initial_immunity_desc>由于免疫缺陷有可能受到额外的感染</opp_inf_initial_immunity_desc>
+  <pawn_spawn_with_std_mul>小人刷新性病倍率</pawn_spawn_with_std_mul>
+  <pawn_spawn_with_std_mul_desc>小人刷新性病的倍率（标准几率*这个）</pawn_spawn_with_std_mul_desc>
+  <nymph_spawn_with_std_mul>流莺刷新性病倍率</nymph_spawn_with_std_mul>
+  <nymph_spawn_with_std_mul_desc>流莺刷新性病的倍率（标准几率*这个）</nymph_spawn_with_std_mul_desc>
+  <RJW_Opportunistic_Infection_Message>{0}由于免疫系统的衰弱，已经出现了感染。</RJW_Opportunistic_Infection_Message>
+  <RJW_Syphilis_Damage_Message>{0}因{3}感染的进度而对{1}{2}造成永久性损伤。</RJW_Syphilis_Damage_Message>
+  <RJW_BreastsHaveGrownFromBoobitis>{0}有{1}{2}从{4}增长到{3}。</RJW_BreastsHaveGrownFromBoobitis>
+</LanguageData>

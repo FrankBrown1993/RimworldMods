@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackstoryDef Name="SexBase" Abstract="True">
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>Eroticist</defName>
+		<title>eroticist</title>
+		<titleShort>eroticist</titleShort>
+		<baseDesc>After a few spectacularly bad sexual experiences, [PAWN_nameDef] decided to learn everything they could about sex. From reading kamassutra books to experimenting with everyone they couldd, [PAWN_pronoun] became an expert in sex.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>3</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>Slut</defName>
+		<title>slut</title>
+		<titleShort>slut</titleShort>
+		<baseDesc>As soon as [PAWN_nameDef] knew what sex was, they chased after it with a firey drive. Having a naturally high sex drive, [PAWN_pronoun] fucks whoever is willing.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>3</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>Slut2</defName>
+		<title>slut</title>
+		<titleShort>slut</titleShort>
+		<baseDesc>[PAWN_nameDef] has a reputation for getting around.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>3</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>Slut3</defName>
+		<title>slut</title>
+		<titleShort>slut</titleShort>
+		<baseDesc>[PAWN_nameDef] spent a lot of time in their early teen years online, exposing themselves to porn and the various eccentricities that unmonitored access brings.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>Nymphomaniac</defName>
+		<title>nymphomaniac</title>
+		<titleShort>nymphomaniac</titleShort>
+		<baseDesc>[PAWN_nameDef] finds a way to make everything sexual, even if they aren't into it themselves. From plants to gun barrels, there's no limit to what [PAWN_pronoun] will sexualize.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>Nymphomaniac2</defName>
+		<title>nymphomaniac</title>
+		<titleShort>nymphomaniac</titleShort>
+		<baseDesc>[PAWN_nameDef] fucks anyhting with a heartbeat at every chance they get. [PAWN_possessive] spends every second they can thinking about sex or having it.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="SexBase">
+		<defName>CreepyFeet</defName>
+		<title>podophile</title>
+		<titleShort>podophile</titleShort>
+		<baseDesc>[PAWN_nameDef] has been fascinated with feet for as long as they can remember, and will do anything they can to get a look at feet. [PAWN_pronoun] continuously creeps out [PAWN_possessive] friends and acquaintances.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>-4</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>NiceGuy</defName>
+		<title>nice guy</title>
+		<titleShort>incel</titleShort>
+		<baseDesc>[PAWN_nameDef] hates the "typical" females and everything about them. [PAWN_pronoun] expects females to be below [PAWN_pronoun], as property and servants. [PAWN_pronoun] doesn't do well at parties.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<forcedTraits>
+			<DislikesWomen />
+		</forcedTraits>
+		<skillGains>
+			<li><key>Social</key><value>-6</value></li>
+		</skillGains>
+	</BackstoryDef>
+</Defs>

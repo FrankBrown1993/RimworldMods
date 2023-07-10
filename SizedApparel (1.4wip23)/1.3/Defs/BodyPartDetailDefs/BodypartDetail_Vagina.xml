@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- "null" and "default" varName will be no variation. -->
+<Defs>
+	<SizedApparel.SizedApparelBodyPartVariationDef>
+		<defName>VaginaDetail</defName>
+		<bodyPartName>Vagina</bodyPartName>
+		<variations>
+			<li>
+			<!--Default Vagina-->
+				<hediffName>Vagina</hediffName>
+				<varName>
+					<li>default</li>
+					<li>Puffy</li>
+				</varName>
+			</li>
+		</variations>
+	</SizedApparel.SizedApparelBodyPartVariationDef>
+</Defs>

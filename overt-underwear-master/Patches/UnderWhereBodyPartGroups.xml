@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>UnderWhere</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/apparel[layers/li="Underwear" and not(layers/li="UnderwearTop")]/bodyPartGroups</xpath>
+					<value>
+						<bodyPartGroups>
+							<li>GenitalsBPG</li>
+						</bodyPartGroups>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/apparel[layers/li="UnderwearTop" and not(layers/li="Underwear")]/bodyPartGroups</xpath>
+					<value>
+						<bodyPartGroups>
+							<li>ChestBPG</li>
+						</bodyPartGroups>
+					</value>
+				</li>
+
+			</operations>
+		</match>	
+	</Operation>
+</Patch>

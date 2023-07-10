@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--Base-->
+	<rjwex.anal_plug_def Name="AnalPlugBase" Abstract="True">
+		<thingClass>rjwex.anal_plug</thingClass>
+		<category>Item</category>
+		<soul_type>rjwex.anal_plug_soul</soul_type>
+		<thingCategories>
+			<li>Bondage</li>
+		</thingCategories>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>-4</Beauty>
+			<SellPriceFactor>0.80</SellPriceFactor>
+			<Flammability>0.1</Flammability>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<comps>	
+			<li Class="CompProperties_Usable">
+				<compClass>rjw.CompBondageGear</compClass>
+				<useJob>GiveBondageGear</useJob>
+				<useLabel>Equip</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>rjw.CompGetBondageGear</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>AnusBPG</li>
+			</bodyPartGroups>
+			<layers>
+				<li>AnalInsertableBondage</li> <!-- invisible layer-->
+			</layers>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		</apparel>		
+	</rjwex.anal_plug_def>
+	
+	<rjwex.anal_plug_def Name="AnalTailPlugBase" ParentName="AnalPlugBase" Abstract="True">
+		<apparel>
+			<layers>
+				<li>Belt</li> <!-- visible layer-->
+			</layers>
+		</apparel>		
+	</rjwex.anal_plug_def>
+</Defs>

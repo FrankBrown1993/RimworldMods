@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <debug>Debug</debug>
+  <debug_desc></debug_desc>
+  <cum_on_body>在身体上启用射精(健康状态)</cum_on_body>
+  <cum_on_body_desc>在健康选项卡中启用健康状态。</cum_on_body_desc>
+  <cum_on_body_amount>调整身体上的精液量</cum_on_body_amount>
+  <cum_on_body_amount_desc>所有加在小人身上的精液将乘以这个数值。</cum_on_body_amount_desc>
+  <cum_overlays>启用精液叠加(视觉效果)</cum_overlays>
+  <cum_overlays_desc>为小人启用精液叠加(可能与改变小人外观的mod发生冲突和其他问题)。\n需要在身体上启用精液选项。</cum_overlays_desc>
+  <manual_hero_CleanSelf>手动操作主角清理自身</manual_hero_CleanSelf>
+  <manual_hero_CleanSelf_desc>只有在手动操作的情况下，小人才会清除身体上的精液。</manual_hero_CleanSelf_desc>
+  <dubsDBH_block_CleanSelf>DubsBadHygiene阻止自清洁</dubsDBH_block_CleanSelf>
+  <dubsDBH_block_CleanSelf_desc>如果安装了DubsBadHygiene，小人们只能在水桶、淋浴、浴缸等地方清理身上的精液。</dubsDBH_block_CleanSelf_desc>
+</LanguageData>

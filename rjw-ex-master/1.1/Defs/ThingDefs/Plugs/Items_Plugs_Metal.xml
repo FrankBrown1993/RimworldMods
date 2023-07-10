@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--Base-->
+	<rjwex.anal_plug_def Name="MetalAnalPlugBase" ParentName="AnalPlugBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>2</costStuffCount>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<recipeUsers>
+				<li>TableMachining</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</rjwex.anal_plug_def>
+	
+	<!--S-size-->	
+	<rjwex.anal_plug_def ParentName="MetalAnalPlugBase">
+		<defName>MAnalPlugSmall</defName>
+		<label>Small anal plug</label>
+		<soul_type>rjwex.anal_plug_soul</soul_type>
+		<description>Plain polished shiny anal plug. S-size</description>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+		</statBases>
+		<costStuffCount>1</costStuffCount>
+		<plug_size>1</plug_size>	
+	</rjwex.anal_plug_def>
+	
+	<!--M-size-->	
+	<rjwex.anal_plug_def ParentName="MetalAnalPlugBase">
+		<defName>MAnalPlugMedium</defName>
+		<label>Medium anal plug</label>
+		<soul_type>rjwex.anal_plug_soul</soul_type>
+		<description>Plain polished shiny anal plug. M-size</description>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugAverage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+		</statBases>
+		<costStuffCount>2</costStuffCount>
+		<plug_size>2</plug_size>	
+	</rjwex.anal_plug_def>
+	
+	<!--L-size-->	
+	<rjwex.anal_plug_def ParentName="MetalAnalPlugBase">
+		<defName>MAnalPlugLarge</defName>
+		<label>Large anal plug</label>
+		<soul_type>rjwex.anal_plug_soul</soul_type>
+		<description>Plain polished shiny anal plug. L-size</description>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.8</Mass>
+		</statBases>
+		<costStuffCount>3</costStuffCount>
+		<plug_size>3</plug_size>	
+	</rjwex.anal_plug_def>
+</Defs>

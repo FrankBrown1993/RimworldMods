@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <SAnalPlugSmall.label>小型肛塞</SAnalPlugSmall.label>
+  <SAnalPlugSmall.description>重型圆滑肛塞。小号</SAnalPlugSmall.description>
+  <SAnalPlugSmall.comps.0.useLabel>装备</SAnalPlugSmall.comps.0.useLabel>
+  <SAnalPlugMedium.label>中型肛塞</SAnalPlugMedium.label>
+  <SAnalPlugMedium.description>重型圆滑肛塞。中号</SAnalPlugMedium.description>
+  <SAnalPlugMedium.comps.0.useLabel>装备</SAnalPlugMedium.comps.0.useLabel>
+  <SAnalPlugLarge.label>大型肛塞</SAnalPlugLarge.label>
+  <SAnalPlugLarge.description>重型圆滑肛塞。大号</SAnalPlugLarge.description>
+  <SAnalPlugLarge.comps.0.useLabel>装备</SAnalPlugLarge.comps.0.useLabel>
+</LanguageData>

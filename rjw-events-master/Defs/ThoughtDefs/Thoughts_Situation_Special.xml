@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>PsychicArouse</defName>
+		<workerClass>RJW_Events.ThoughtWorker_PsychicArouse</workerClass>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>low psychic arouse</label>
+				<description>It's like someone's gently caressing my body, whispering sweet love to me. Distracting, but strangely nice.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>moderate psychic arouse</label>
+				<description>Images of sex keep flashing in my mind, teasing me, moaning into my ear. It's making it hard to focus, is it getting hot in here?</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>extreme psychic arouse</label>
+				<description>My sex is throbbing like crazy and I'm sweating. I NEED to cum right now, oh f-fuck...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

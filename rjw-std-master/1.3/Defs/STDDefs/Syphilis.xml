@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjwstd.std_def>
+		<defName>Syphilis</defName>
+		<label>syphilis</label>
+		<description>Syphilis is a serious disease that affects the mind. If left untreated, it leads to corrupted thoughts, mood problems, potential permanent damage to the brain, liver, and kidneys, and, ultimately, death. The good news is that it is easily defeated by proper treatment.</description>
+		<hediff_def>Syphilis</hediff_def>
+		<catch_chance>0.08</catch_chance>
+		<environment_pitch_chance>0.03</environment_pitch_chance>
+		<autocure_below_severity>0.01</autocure_below_severity>
+	</rjwstd.std_def>
+</Defs>

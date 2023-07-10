@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mechanite Plague</li>
+			<li>2503246357</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>MP_Burster</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>MP_Burster</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyleF" or defName="HumanoidBeastDoggystyleM" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyle2" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

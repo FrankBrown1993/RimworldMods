@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjwstd.std_def>
+		<defName>HIV</defName>
+		<label>HIV</label>
+		<description>HIV consists of two parts: an acute and a chronic infection. Both parts follow the same course, reducing the infected pawn's blood filtration as their severity increases. The acute phase progresses rapidly but can be fought by the pawn's immune system, whereas the chronic phase progresses very slowly but can never be cured. Treatment can modestly slow the progress of the disease.</description>
+		<hediff_def>ChronicHIV</hediff_def>
+		<cohediff_def>AcuteHIV</cohediff_def>
+		<catch_chance>0.05</catch_chance>
+		<spawn_chance>0.005</spawn_chance>
+		<spawn_severity>0.80</spawn_severity>
+	</rjwstd.std_def>
+</Defs>

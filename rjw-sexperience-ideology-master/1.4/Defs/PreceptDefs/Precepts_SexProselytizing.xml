@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>SexProselytizing</defName>
+    <label>sex type</label>
+    <iconPath>UI/Issues/Submissive</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ProselyzingByOrgasm</defName>
+    <issue>SexProselytizing</issue>
+    <label>Sexual Proselyzing</label>
+    <description>Giving orgasm converts partner towards this ideology.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>400</displayOrderInImpact>
+  </PreceptDef>
+
+</Defs>

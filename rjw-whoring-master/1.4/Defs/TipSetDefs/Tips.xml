@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TipSetDef>
+		<defName>RjwWhoringTips</defName>
+		<tips>
+			<!-- UI -->
+			<li>Whoring price is visible in the "show sexuality" menu on the bio tab (the icon looks like a heart).</li>
+
+			<!-- Mechanics -->
+			<li>Condoms can be automatically used if placed in a stockpile next to a bed - it might be a good idea to have some around if you intend on whoring your colonists out.</li>
+		</tips>
+	</TipSetDef>
+</Defs>

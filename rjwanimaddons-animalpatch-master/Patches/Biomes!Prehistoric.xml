@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Prehistoric</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<value>
+						<li>BMT_QuadrupedWithArmorBeakAndTailWeapon</li>
+						<li>BMT_QuadrupedWithPlatesBeakAndTailWeapon</li>
+						<li>BMT_QuadrupedWithArmorBeakSpikesAndTailWeapon</li>
+						<li>BMT_QuadrupedWithBeakFeatherCrestNeckAndTailWeapon</li>
+						<li>BMT_QuadrupedWithPlatesSpikesBeakAndTailWeapon</li>
+						<li>BMT_QuadrupedWithBeakSpikesNeckAndTailWeapon</li>
+						<li>BMT_QuadrupedWithNeckAndTailWeapon</li>
+						<li>BMT_QuadrupedWithNeckFrillBeakAndTail</li>
+						<li>BMT_QuadrupedWithNeckFrillBeakAndTailHorn</li>
+						<li>BMT_QuadrupedWithNeckFrillBeakAndTailThreeHorns</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<value>
+						<li>BMT_QuadrupedWithArmorBeakAndTailWeapon</li>
+						<li>BMT_QuadrupedWithPlatesBeakAndTailWeapon</li>
+						<li>BMT_QuadrupedWithArmorBeakSpikesAndTailWeapon</li>
+						<li>BMT_QuadrupedWithBeakFeatherCrestNeckAndTailWeapon</li>
+						<li>BMT_QuadrupedWithPlatesSpikesBeakAndTailWeapon</li>
+						<li>BMT_QuadrupedWithBeakSpikesNeckAndTailWeapon</li>
+						<li>BMT_QuadrupedWithNeckAndTailWeapon</li>
+						<li>BMT_QuadrupedWithNeckFrillBeakAndTail</li>
+						<li>BMT_QuadrupedWithNeckFrillBeakAndTailHorn</li>
+						<li>BMT_QuadrupedWithNeckFrillBeakAndTailThreeHorns</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyleF" or defName="HumanoidBeastDoggystyleM" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<value>
+						<li>BMT_BipedWithBeakHornsAndTailThreeDH</li>
+						<li>BMT_BipedWithClawsSickleTeethAndTail</li>
+						<li>BMT_BipedWithClawsTeethAndTailFiveDH</li>
+						<li>BMT_BipedWithClawsTeethAndTailFourDH</li>
+						<li>BMT_BipedWithClawsTeethAndTailThreeDH</li>
+						<li>BMT_BipedWithClawsTeethAndTailTwoDH</li>
+						<li>BMT_BipedWithSpikeTeethAndTail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyle2" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<value>
+						<li>BMT_BipedWithBeakHornsAndTailThreeDH</li>
+						<li>BMT_BipedWithClawsSickleTeethAndTail</li>
+						<li>BMT_BipedWithClawsTeethAndTailFiveDH</li>
+						<li>BMT_BipedWithClawsTeethAndTailFourDH</li>
+						<li>BMT_BipedWithClawsTeethAndTailThreeDH</li>
+						<li>BMT_BipedWithClawsTeethAndTailTwoDH</li>
+						<li>BMT_BipedWithSpikeTeethAndTail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biomes! Islands</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd"><!--Fucking Animals-->
+								<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+								<value>
+									<li>BMT_AmmoniteBody</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd"><!--Fucked Animals-->
+								<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+								<value>
+									<li>BMT_AmmoniteBody</li>
+								</value>
+							</li>							
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GatheringDef>
+		<defName>Orgy</defName>
+		<label>orgy</label>
+		<randomSelectionWeight>1</randomSelectionWeight>
+		<letterTitle>Orgy</letterTitle>
+		<letterText>{ORGANIZER_labelShort} is hosting an orgy! Everyone who goes will gain social and sexual energy.</letterText>
+		<calledOffMessage>The orgy has been called off.</calledOffMessage>
+		<finishedMessage>The orgy has finished.</finishedMessage>
+		<duty>Orgy</duty>
+		<workerClass>RJW_Events.GatheringWorker_Orgy</workerClass>
+		<gatherSpotDefs>
+			<li>PartySpot</li>
+		</gatherSpotDefs>
+	</GatheringDef>
+</Defs>
+

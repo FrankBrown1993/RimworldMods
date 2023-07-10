@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThoughtDef>
+    <defName>S16AteLoveCookieTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+      <li>TooSmart</li>
+	  <li>FastLearner</li>
+	</nullifyingTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>These heart-shaped cookies seem to taste a little bit salty... What are they filled with?</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+    <ThoughtDef>
+    <defName>S16AteLoveCookieThKind</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Kind</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>They are are so yummy and cute!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16AteLoveCookieThTooSmart</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>TooSmart</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>I think I know what these cookies are filled with... And gonna enjoy them anyway...</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16AteLoveCookieThGreedy</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Greedy</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>Mmmm, I want more! More cookies!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16AteLoveCookieThFastLearner</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>FastLearner</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>...What am I doing?</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16AteLoveCookieThGourmand</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Gourmand</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>Finally some good food!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16AteLoveCookieThTorturedArtist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16AteLoveCookie</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>TorturedArtist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Ate love cookie</label>
+        <description>I would like to eat these cookies in front of the girl who made them...</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+</Defs>

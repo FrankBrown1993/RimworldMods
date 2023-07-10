@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RJWAnimAddons-VoicePatch</li>
+    </mods>
+	<nomatch Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Cunnilingus"]/interactionDefTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <interactionDefTypes>
+			    <li>Cunnilingus</li>
+			  </interactionDefTypes>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Blowjob"]/interactionDefTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <interactionDefTypes>
+			    <li>Fellatio</li>
+			  
+		    	<li>Beakjob</li>
+			    </interactionDefTypes>
+          </value>
+        </li>
+      </operations>
+    </nomatch>
+  </Operation>
+</Patch>

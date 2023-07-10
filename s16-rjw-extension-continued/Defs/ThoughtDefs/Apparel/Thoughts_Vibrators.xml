@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>S16VibratorITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+      <li>Wimp</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>gentle vibrations</label>
+        <description>It feels warm inside me</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>gentle vibrations</label>
+        <description>Uhhh. I'm blushing</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>mid vibrations</label>
+        <description>I hope no one hears it buzzing... Oh...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>mid vibrations</label>
+        <description>I'm... I'm... getting so... hot...</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+	  <li>
+        <label>strong vibrations</label>
+        <description>Haaagh... Fuck... It... feels so goood...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>having orgasm from sex toy</label>
+        <description>Aaaaah! I... can't... control... oooooh!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>It was... really nice...</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>I feel so relaxed...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>S16VibratorIThWimp</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Wimp</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>gentle vibrations</label>
+        <description>Oh, I am afraid a little bit... do we really need to put it inside me?</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>gentle vibrations</label>
+        <description>It feels good... I'll let it stay inside!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>mid vibrations</label>
+        <description>Uhhh, I... I need someone to hug... I want... to hug people... Don't look at me like this... Uhh...</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>mid vibrations</label>
+        <description>D-dont! Look! At me! N-nooo... Oh... Oh</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>strong vibrations</label>
+        <description>You! You pervert! Please keep watching! Yes! A-aahhhhh!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+	  <li>
+        <label>having orgasm from sex toy</label>
+        <description>Mnnnnghhh... Ow! Ow! OWWWWWWW! This is for you! H-aaaaa... Watch me, watch me, watch me! This is all for you! Ahhh!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>Uhhh... Ahh... Ou-ufff... Did... you like it?</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+	  <li>
+        <label>satisfaction</label>
+        <description>Huh... I can't believe it was me...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16VibratorIITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+    <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>gentle double vibrations</label>
+        <description>I never thought that I would use such a thing to please myself</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>gentle double vibrations</label>
+        <description>It's... oh... really good</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>mid double vibrations</label>
+        <description>Ahhh... I want it keep going...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>mid double vibrations</label>
+        <description>It... makes such dirty noises...</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+	  <li>
+        <label>strong double vibrations</label>
+        <description>I... can't... stand... oooh...</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+	  <li>
+        <label>having orgasm from sex toy</label>
+        <description>Eeeerrraaaagh.... Ooohhh...</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>M.. My legs keep shaking...</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>I feel so relaxed... Oh my God...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>S16VibratorIIThNympho</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Nymphomaniac</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>double pleasure</label>
+        <description>Oh yes, yes, yes! Let it begin!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>Fuck yes, I needed this!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>Ohhh! One of them swirls inside me and the other controls my clitoris! So g-good!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>P-please! Keep! It! Going! Aaaaaaah!</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>I gonna c-cum so sweee-e-et!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>Yaaaaayyyyyy! Mnnnnngghhh! Mnnngghh... Mmmmmmnnnn! Ayay! Goood y-ysss!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>O-ohhhhhh... U-uhhh..</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>double pleasure</label>
+        <description>Uhhh... Finally I feel relaxed...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16VibratorIIITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+    <li>Tough</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>gentle vibrations</label>
+        <description>What a strange feeling</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>gentle vibrations</label>
+        <description>Huh...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>mid vibrations</label>
+        <description>It's so good to have it inside...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>mid vibrations</label>
+        <description>It becomes hard to stand straight. Ughhh...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>strong vibrations</label>
+        <description>Haaa... Haaa... Ohhhh... Mmm..</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+	  <li>
+        <label>having anal orgasm from sex toy</label>
+        <description>Faaaaghhhh...!!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>I still have this good feeeling in my ass...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>I feel so relaxed...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>S16VibratorIIITough</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Tough</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>sweet torture</label>
+        <description>Yayyy...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Huah.. I never confess that I like it so much...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>I want... to squeeze my buttocks... Oh...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Oh... My... God... it keeps vibrating</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture peak</label>
+        <description>Oh... My! Fucking! God!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Oh, my entire body is numb...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>I need something like this... from time to time...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+	    <label>sweet torture</label>
+        <description>I need something like this... from time to time...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>S16VibratorIIIITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+    <li>Tough</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>gentle vibrations</label>
+        <description>It feels like tickling, awwwhhhh</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>gentle vibrations</label>
+        <description>My nipples are so tensed and my chest is high, and it pains a little bit</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>mid vibrations</label>
+        <description>Uhhhh... I need... to touch... myself</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>mid vibrations</label>
+        <description>Mmmmm... Mmmm... Oh... haaa</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+	  <li>
+        <label>strong vibrations</label>
+        <description>Please let it end... I can't... I can't... please... I need to cum...</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+	  <li>
+        <label>having nipple orgasm from sex toy</label>
+        <description>Ohhh... Shit! Aaaaahh... No way... Please-please-please... can't keeeep it... Oaaahhh...</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>Teheee... My toes are still frozen</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>Finally my nipples can rest, he</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>S16VibratorIIIIThTough</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorIIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Tough</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>sweet torture</label>
+        <description>Heeeee...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Ammmmmmnhhh...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>I'll try... to endure this!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Arrrgh!.. I... must control... my body...</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>I... won't... cum... from... my... nipples...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Aaaaaaaa! I am cumming! I am cumming from my nipples! Oaaahhhhh... Fffuuuuuuuck!!!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet torture</label>
+        <description>Oh... no...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+	    <label>sweet torture</label>
+        <description>Is it kinda strange?</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+ <ThoughtDef>
+    <defName>S16VibratorTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+    <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>pussy vibrated</label>
+        <description>T-this thing is so powerful... U-hg...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>pussy vibrated</label>
+        <description>It twirls inside me, pushing inside, like a living thing... I'm driiping wet...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>pussy vibrated</label>
+        <description>I.. can't stop moaning... F-fuck, it's so good...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>pussy vibrated</label>
+        <description>Argh, oooh-myyyy-goood-nessss... I can't stand!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>pussy vibrated</label>
+        <description>Mnnnnnrrrghh! Oaaaa-h! I... Oo-ah... Yes! *gasps*</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+	  <li>
+        <label>cumming from vibrator</label>
+        <description>O!-o!-o! Ouuuu shi-i-t! I'm cumming so hard! Y-yessss!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>Oh. My. God.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>I love this feeling of being relaxed so much...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>S16VibratorThNympho</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Nymphomaniac</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>pussy vibrated</label>
+        <description>You wannna watch me, he-he?</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>I am so wet and sweaty... It's really fucking intense...</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>I can't help thinking about vibrator ruthlessly drilling inside my wet pussy...</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>You wanna h-hold mmm-y hh-and? *her body shakes in pleasure*</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>Oh, come h-here I w-want a huuuuuuuug!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>Iyay! Watch me in the eyes! Please watch me cumming sweetie... Oh! oh! F-fuck I gonna eat you after this!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>It was a nice ride...</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>pussy vibrated</label>
+        <description>It was a nice ride...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+ <ThoughtDef>
+    <defName>S16VibratorDoubleTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16VibratorDoubleHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>pussy and ass vibrated</label>
+        <description>O-ouh, my whole body shakes</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>pussy and ass vibrated</label>
+        <description>Agh! Ugh! I'm... melting... O-u-uch...</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+	  <li>
+        <label>pussy and ass vibrated</label>
+        <description>It feels so good... fullness...</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>pussy and ass vibrated</label>
+        <description>I.. ooooh... *she moans gently*</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+	  <li>
+        <label>pussy and ass vibrated</label>
+        <description>C-can't... sta-a-nd.... this pleasure... Ou-oh!</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+	  <li>
+        <label>cumming from vibrators in pussy and ass</label>
+        <description>Mnnnnnnaa-a-agh! O-ouh! A-ah! *squirts* O-oah! O-ah...</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>It was so intense... I'm a mess...</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>I love this feeling of being relaxed so much...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

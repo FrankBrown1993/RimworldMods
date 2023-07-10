@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Privacy, Please!</name>
+	<author>AbstractConcept</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>abscon.privacy.please</packageId>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>rim.job.world</packageId>
+			<displayName>RimJobWorld</displayName>
+			<downloadUrl>https://www.loverslab.com/topic/110270-mod-rimjobworld/</downloadUrl>
+		</li>	
+	</modDependencies>
+	<loadAfter>
+		<li>UnlimitedHugs.HugsLib</li>
+		<li>brrainz.harmony</li>
+		<li>rim.job.world</li>	
+	</loadAfter>
+	<description>
+This mod adds a greater awareness of sex to people. When people witness (or are witnessed taking part in) various sexual activities, those involved will exhibit different reactions depending on their traits and ideologies. Sexperience - Ideology is highly recommended in order to help customise your colonists' opinions on different sexual activities.
+
+Sex acts that can provoke reactions include:
+
+	- Exhibitionism: Lovin' couples and masturbators prefer to have some privacy - any interruptions by others during these activities will likely result in severe embarrassment all round. Reactions to these activities can be modified through the Exhibitionism precept (included in this mod).
+	- Cheating: Discovering a partner cheating will great upsets most people. Reactions to cheating can be modified through the Infidelity precept (included in this mod).
+	- Bestiality: Witnessing bestiality will deeply disturb most people. Reactions to bestiality can be modified through the Bestiality precept (included in Sexperience - Ideology).
+	- Rape: Witnessing rape will generally cause people to panic. Reactions to rape can be modified through the Rape precept (included in Sexperience - Ideology).
+	- Necrophilia: Witnessing necrophilia will generally cause people to freak out and possibly vomit. Reactions to necrophilia can be modified through the Necrophilia precept (included in Sexperience - Ideology).
+	- Xenophilia: Sexual reactions between humanoids of different alien species can provoke anything from curiosity to digest. Reactions to xenophilia can be modified through the Alien Dating precept (included in Humanoid Alien Races).
+
+Options have been included to toggle whether people experience these reactions and whether they will trigger during rituals and parties. Additional options have been included to alter how colonists, prisoners, slaves, and members of other factions react to each other’s sexual activities. Three new RJW quirks are also included to further customise individuals - Cuckold, Cuckolder, and Voyeur. Cuckolds like to watch their partners cheated on them, while Cuckolders get a kick out of having their partner watch it happen. Voyeurs just like to watch others in general, providing that what they see doesn't upset them.
+
+This mod also provides additional group sex support. Group sex can now be triggered via two new ways: 
+	
+	- When a pawn sets off to bed their partner, a passer-by might be invited to join them.
+	- If a passer-by encounters someone having sex, they might be invited to join in on the fun, or perhaps to stay and watch.
+
+The chance of these events occurring can be configured in the mod options. However, those having sex must have a good opinion of the passer-by, and the passer-by mustn't be doing a player ordered / more important job at the time.
+
+As an additional quality-of-life feature, any lewd fluids that pawns produce during sex will not be marked for cleaning until the activity is over.
+	</description>
+</ModMetaData>
+

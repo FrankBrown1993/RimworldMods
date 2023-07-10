@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>AKT_LewdClothes</name>
+	<author>AKawaiiTent</author>
+	<url></url>
+  <supportedVersions>
+	<li>1.4</li>
+  </supportedVersions>
+	<packageId>AKT.LewdClothes</packageId>
+	<description>
+	Version: Alpha 0.1
+	Tested with OTYOTY's sized apparel 0.9.1, RJW 4.9.2, and Rimenude v 2.2.8 unnoficial by tory.
+	Should work without any of these as base sized, but working sized apparel is recommended.
+
+
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+    </modDependencies>
+	
+	<loadAfter>
+			<li>OTYOTY.SizedApparel</li>
+	</loadAfter>
+</ModMetaData>

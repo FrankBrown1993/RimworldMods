@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>GetNaked</defName>
+		<driverClass>RJW_Events.JobDriver_GetNaked</driverClass>
+		<reportString>Gettin' nekkid.</reportString>
+	</JobDef>
+</Defs>

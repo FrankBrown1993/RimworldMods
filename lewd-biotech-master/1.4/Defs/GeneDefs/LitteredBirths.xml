@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <GeneDef>
+    <defName>LitteredBirths</defName>
+    <label>littered births</label>
+    <description>Female carriers of this gene birth litters instead of just one baby, with a chance of having two to four babies per pregnancy.</description>
+    <iconPath>Icons/Genes/Gene_LitteredBirths</iconPath>
+    <!-- <geneClass>Gene_Clotting</geneClass> -->
+    <displayOrderInCategory>110</displayOrderInCategory>
+    <marketValueFactor>1.25</marketValueFactor>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+</Defs>

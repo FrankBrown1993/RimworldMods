@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="Hediff_Cum_Base" Abstract="True">
+		<hediffClass>rjwcum.Hediff_Cum</hediffClass>	
+		<defName>Hediff_Cum</defName>
+		<label>Cum</label>
+		<labelNoun>cum</labelNoun>
+		<description>cum.</description>
+		<labelNounPretty>cum on {1}</labelNounPretty>
+		<defaultLabelColor>(0.95,0.95,0.95)</defaultLabelColor>	
+		<isBad>false</isBad>
+		<tendable>false</tendable>
+		<makesSickThought>false</makesSickThought>
+		<makesAlert>false</makesAlert>	
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<injuryProps>
+			<canMerge>true</canMerge>
+		</injuryProps>	
+		<stages>
+			<li>
+				<label>little</label>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>some</label>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>dripping</label>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>drenched</label>
+			</li>
+		</stages>	
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<!--0.01*100*1800/60.0000-->
+				<healIntervalTicksStanding>1800</healIntervalTicksStanding><!-- 1 day = 60.000 ticks -->
+				<healAmount>0.01</healAmount><!--dries by itself, completely drying from 1.0 to 0.0 takes ~72h-->
+			</li>
+		</comps>	
+	</HediffDef>
+	
+	<HediffDef ParentName="Hediff_Cum_Base">
+		<defName>Hediff_Cum</defName>
+		<label>Cum</label>
+		<labelNoun>cum</labelNoun>
+		<description>cum</description>
+		<labelNounPretty>cum on {1}</labelNounPretty>
+		<defaultLabelColor>(0.95,0.95,0.95)</defaultLabelColor>	
+	</HediffDef>
+	
+	<HediffDef ParentName="Hediff_Cum_Base">	
+		<defName>Hediff_InsectSpunk</defName>
+		<description>Insect spunk.</description>
+		<label>insect spunk</label>
+		<labelNoun>insect spunk</labelNoun>
+		<labelNounPretty>insect spunk on {1}</labelNounPretty>
+		<defaultLabelColor>(0.6,0.83,0.35)</defaultLabelColor>	
+	</HediffDef>
+	
+	<HediffDef ParentName="Hediff_Cum_Base">	
+		<defName>Hediff_MechaFluids</defName>
+		<description>Mechanoid fluids.</description>
+		<label>mechanoid fluids</label>
+		<labelNoun>mechanoid fluids</labelNoun>
+		<labelNounPretty>mecha fluids on {1}</labelNounPretty>
+		<defaultLabelColor>(0.37,0.71,0.82)</defaultLabelColor>	
+	</HediffDef>	
+</Defs>

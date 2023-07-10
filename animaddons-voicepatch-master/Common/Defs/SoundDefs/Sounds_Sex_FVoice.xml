@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<SoundDef>
+		<defName>Voiceline_FGrunt</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Grunt1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Grunt2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Grunt3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Grunt4</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Grunt5</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Grunt6</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>35</min>
+			  <max>40</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.1</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Voiceline_FScream</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Scream1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Scream2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Scream3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Scream4</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>35</min>
+			  <max>40</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.1</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Voiceline_FMoan</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Moan1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Moan2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Moan3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/Moan4</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>35</min>
+			  <max>40</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.1</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Voiceline_FMoanShort</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/MoanShort1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/MoanShort2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/FVoice/MoanShort3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>35</min>
+			  <max>40</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.1</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

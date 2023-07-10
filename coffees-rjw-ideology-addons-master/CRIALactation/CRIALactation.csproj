@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01BE0D84-9292-4F89-90FC-647B66771C61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRIALactation</RootNamespace>
+    <AssemblyName>CRIALactation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>1.4\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>1.4\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\workshop\content\294100\839005762\1.4\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\..\workshop\content\294100\818773962\v1.4\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Milk">
+      <HintPath>..\..\rjw-mc\1.4\Assemblies\Milk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RJW">
+      <HintPath>..\..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\LactationSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\CompProperties\CompAbilityEffects\CompProperties_AbilityBeginInducingLactation.cs" />
+    <Compile Include="Source\CompProperties\CompAbilityEffects\CompProperties_AbilityConvertHucow.cs" />
+    <Compile Include="Source\CompProperties\CompProperties_Lactation.cs" />
+    <Compile Include="Source\Comps\CompAbilityEffects\CompAbilityEffect_BeginInducingLactation.cs" />
+    <Compile Include="Source\Comps\CompAbilityEffects\CompAbilityEffect_ConvertHucow.cs" />
+    <Compile Include="Source\Comps\CompLactation.cs" />
+    <Compile Include="Source\HarmonyPatches\HarmonyPatch_FoodUtility.cs" />
+    <Compile Include="Source\HarmonyPatches\HarmonyPatch_Ideo.cs" />
+    <Compile Include="Source\HarmonyPatches\HarmonyPatch_Thing.cs" />
+    <Compile Include="Source\HarmonyPatches\Harmony_PatchAll.cs" />
+    <Compile Include="Source\HarmonyPatches\RJW\HarmonyPatch_Milk_HumanCompHasGatherableBodyResource.cs" />
+    <Compile Include="Source\HediffDefOf\HediffDefOf_Milk.cs" />
+    <Compile Include="Source\Hediffs\HediffCompProperties_LactationInduction.cs" />
+    <Compile Include="Source\Hediffs\HediffCompProperties_StopOnceNotLactating.cs" />
+    <Compile Include="Source\Hediffs\HediffComp_LactationInduction.cs" />
+    <Compile Include="Source\Hediffs\HediffComp_StopOnceNotLactating.cs" />
+    <Compile Include="Source\HistoryEventDefOf\HistoryEventDefOf_Milk.cs" />
+    <Compile Include="Source\JobDefOf\JobDefOf_CRIALactation.cs" />
+    <Compile Include="Source\JobDrivers\JobDriver_MassageBreasts.cs" />
+    <Compile Include="Source\LactationUtility.cs" />
+    <Compile Include="Source\PreceptDefOf\PreceptDefOf_Lactation.cs" />
+    <Compile Include="Source\Precepts\PreceptComp_Lactation.cs" />
+    <Compile Include="Source\RoleEffects\RoleEffect_Hucow.cs" />
+    <Compile Include="Source\RoleRequirements\RoleRequirement_Lactating.cs" />
+    <Compile Include="Source\StatDefOf\StatDefOf_Lactation.cs" />
+    <Compile Include="Source\ThingDefOf\ThingDefOf_Milk.cs" />
+    <Compile Include="Source\ThingFilters\SpecialThingFilterWorker_Milk.cs" />
+    <Compile Include="Source\ThingFilters\SpecialThingFilterWorker_MilkBase.cs" />
+    <Compile Include="Source\ThingFilters\SpecialThingFilterWorker_NoMilk.cs" />
+    <Compile Include="Source\Thoughts\ThoughtWorker_Precept_Lactating_Essential.cs" />
+    <Compile Include="Source\Thoughts\ThoughtWorker_Precept_Lactating_Essential_Social.cs" />
+    <Compile Include="Source\Thoughts\ThoughtWorker_Precept_NoRecentHumanMilk.cs" />
+    <Compile Include="Source\WorkGivers\WorkGiver_MassageBreasts.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Defs\Thingdef\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Defs\AbilityDefs\Abilities_Hucow.xml" />
+    <Content Include="Defs\HediffDefs\Hediffs_Hucow.xml" />
+    <Content Include="Defs\HistoryEventDefs\HistoryEventDefs.xml" />
+    <Content Include="Defs\JobDefs\Jobs_CRIALactation.xml" />
+    <Content Include="Defs\MemeDefs\Memes_Hucow.xml" />
+    <Content Include="Defs\PreceptDefs\Precepts_Lactating.xml" />
+    <Content Include="Defs\PreceptDefs\Precepts_Lactating_Role.xml" />
+    <Content Include="Defs\StatDefs\Stats_Milk_Production.xml" />
+    <Content Include="Defs\WorkGiverDefs\WorkGiver_MassageBreasts.xml" />
+    <Content Include="Patches\Patch_LactationInduction.xml" />
+    <Content Include="UI\Issues\Lactating.png" />
+    <Content Include="UI\Memes\Hucow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

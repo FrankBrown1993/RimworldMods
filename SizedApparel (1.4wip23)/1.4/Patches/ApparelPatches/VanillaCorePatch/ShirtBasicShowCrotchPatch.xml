@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationConditional"> 
+				<xpath>Defs/ThingDef[defName = "Apparel_BasicShirt"]/apparel/tags</xpath>
+				<nomatch Class="PatchOperationAdd"> 
+					<xpath>Defs/ThingDef[defName = "Apparel_BasicShirt"]/apparel</xpath>
+					<value>
+						<tags>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+						</tags>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Apparel_BasicShirt"]/apparel/tags</xpath>
+					<value>
+						<li>SizedApparel_ShowPrivateCrotch</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

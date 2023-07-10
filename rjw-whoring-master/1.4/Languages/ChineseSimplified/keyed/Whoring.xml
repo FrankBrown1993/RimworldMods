@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <whoringtab_enabled>启用嫖娼选项卡</whoringtab_enabled>
+  <whoringtab_enabled_desc>显示/隐藏嫖娼选项卡</whoringtab_enabled_desc>
+  <show_whore_price_factor_on_bed>显示床铺的妓女价格因素</show_whore_price_factor_on_bed>
+  <show_whore_price_factor_on_bed_desc>将妓女的价格因素作为标签显示在启用嫖娼的床上。</show_whore_price_factor_on_bed_desc>
+  <show_whore_widgets_on_bed>显示床铺小部件</show_whore_widgets_on_bed>
+  <show_whore_widgets_on_bed_desc>显示床铺小部件，以标记公共/私人的床铺，供嫖客使用。</show_whore_widgets_on_bed_desc>
+  <MoneyPrinting>货币印刷</MoneyPrinting>
+  <MoneyPrinting_desc>客人将刷出白银，而不是使用他们自己/队伍的</MoneyPrinting_desc>
+  <ClientAlwaysAccept>禁用客人RNG</ClientAlwaysAccept>
+  <ClientAlwaysAccept_desc>客人总是接受邀请，而不是进行RNG检定。</ClientAlwaysAccept_desc>
+  <DebugWhoring>收集Debug日志信息</DebugWhoring>
+  <DebugWhoring_desc>启用调试日志，以帮助发现嫖客招嫖操作中的错误。</DebugWhoring_desc>
+  <RJW_VisitorAcceptWhore>{0}接受了{1}提供的交易。</RJW_VisitorAcceptWhore>
+  <RJW_VisitorSolicitWhore>{0}希望得到{1}的服务。</RJW_VisitorSolicitWhore>
+  <RJW_VisitorRejectWhore>{0}拒绝了{1}提供的交易。</RJW_VisitorRejectWhore>
+  <RJW_VisitorSickWhore>{0}拒绝了这个提议，因为{1}看起来并不健康</RJW_VisitorSickWhore>
+  <ForService>设为妓女</ForService>
+  <ForServiceDesc>启用勾搭：\n-会尝试与访客联系。\n-如果不忙，招待其他殖民者。\n-在工作中尽量避免自慰，可能会导致沮丧。\n</ForServiceDesc>
+  <ForServiceRefuseDesc>拒绝做妓女。</ForServiceRefuseDesc>
+  <CommandBedSetAsWhoreBedLabel>允许每个人卖淫</CommandBedSetAsWhoreBedLabel>
+  <CommandBedSetAsWhoreBedDesc>允许所有妓女使用这张床来招待顾客。</CommandBedSetAsWhoreBedDesc>
+  <CommandBedAllowWhoringLabel>允许拥有者嫖娼</CommandBedAllowWhoringLabel>
+  <CommandBedAllowWhoringDesc>是否允许拥有者用这张床进行嫖娼。</CommandBedAllowWhoringDesc>
+  <WhorePriceCalcDesc>嫖客价格因素（基于舒适度、房间印象和房间内的床位数：{0}</WhorePriceCalcDesc>
+  <WhorePrice>嫖客的价格范围。</WhorePrice>
+  <BrothelTabIsPrisoner>囚犯</BrothelTabIsPrisoner>
+  <BrothelTabIsSlave>奴隶</BrothelTabIsSlave>
+</LanguageData>

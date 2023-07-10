@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="S16_RoundStickers" ParentName="S16_Base">
+    <defName>S16_RoundStickers</defName>
+    <label>nipple stickers</label>
+    <description>These bright red stickers with naughty tassels shamelessly demonstrate almost naked breasts of their owner.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Nipple/StickersA/S16Dress3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>All</tradeability>
+	<costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>50</MarketValue>
+      <Mass>0.1</Mass>
+      <EquipDelay>2</EquipDelay>
+	  <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SexSatisfaction>0.1</SexSatisfaction>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>S16_Stickers</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Nipple/StickersA/S16Dress3</wornGraphicPath>
+      <layers>
+        <li>S16_OnSkin</li>
+      </layers>
+      <tags>
+        <li>S16_Stickers</li>
+        <li>S16_Tier1</li>
+      </tags>
+      <gender>Female</gender>
+    </apparel>
+    <comps>
+      <li Class="s16_extension.CompProperties_HediffApparel">
+        <hediffDef>S16DressIIIHed</hediffDef>
+        <partsToAffect>
+          <li>Chest</li>
+        </partsToAffect>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="S16_BlackStickers" ParentName="S16_Base">
+    <defName>S16_BlackStickers</defName>
+    <label>black nipple stickers</label>
+    <description>Small black stripes to cover the important parts</description>
+    <graphicData>
+      <texPath>Things/Apparel/Nipple/StickersB/S16Dress4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>All</tradeability>
+	<costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>10</MarketValue>
+      <Mass>0.1</Mass>
+      <EquipDelay>2</EquipDelay>
+	  <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SexSatisfaction>0.1</SexSatisfaction>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>S16_Stickers</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Nipple/StickersB/S16Dress4</wornGraphicPath>
+      <layers>
+        <li>S16_OnSkin</li>
+      </layers>
+      <tags>
+        <li>S16_Stickers</li>
+        <li>S16_Tier2</li>
+      </tags>
+      <gender>Female</gender>
+    </apparel>
+    <comps>
+      <li Class="s16_extension.CompProperties_HediffApparel">
+        <hediffDef>S16DressIVHed</hediffDef>
+        <partsToAffect>
+          <li>Chest</li>
+        </partsToAffect>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="S16_StickersC" ParentName="S16_Base">
+    <defName>S16_StickersC</defName>
+    <label>golden cross nipple stickers</label>
+    <description>These are made with some advanced technology.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Nipple/StickersC/S16_StickersC</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>All</tradeability>
+	<costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.1</Mass>
+      <EquipDelay>2</EquipDelay>
+	  <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <SexSatisfaction>0.1</SexSatisfaction>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>S16_Stickers</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Nipple/StickersC/S16_StickersC</wornGraphicPath>
+      <layers>
+        <li>S16_OnSkin</li>
+      </layers>
+      <tags>
+        <li>S16_Stickers</li>
+        <li>S16_Tier2</li>
+      </tags>
+      <gender>Female</gender>
+    </apparel>
+    <comps>
+      <li Class="s16_extension.CompProperties_HediffApparel">
+        <hediffDef>S16DressVHed</hediffDef>
+        <partsToAffect>
+          <li>Chest</li>
+        </partsToAffect>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

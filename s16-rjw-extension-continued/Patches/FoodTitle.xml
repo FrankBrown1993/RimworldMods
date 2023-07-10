@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+    <xpath>/Defs/RoyalTitleDef[defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+    <value>
+      <li>S16LoveCookie</li>
+      <li>S16LoveNectar</li>
+      <li>S16GirlCum</li>
+    </value>      
+    </match>
+  </Operation>
+</Patch>

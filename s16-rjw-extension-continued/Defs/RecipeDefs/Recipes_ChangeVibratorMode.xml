@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef>
+    <defName>S16ChangeVibratorModeI</defName>
+    <label>change vibrator mode normal to anal</label>
+    <description>Change vibrator mode</description>
+    <jobString>Changing vibrator mode</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>S16_WiredVibrator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>S16_WiredVibrator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <S16_WiredAnalVibrator>1</S16_WiredAnalVibrator>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+        <li>S16_CraftingSpot</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>S16ChangeVibratorModeII</defName>
+    <label>change vibrator mode anal to normal</label>
+    <description>Change vibrator mode</description>
+    <jobString>Changing vibrator mode</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>S16_WiredAnalVibrator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>S16_WiredAnalVibrator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <S16_WiredVibrator>1</S16_WiredVibrator>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+        <li>S16_CraftingSpot</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>S16ChangeVibratorModeIII</defName>
+    <label>Сombine two vibrators into double</label>
+    <description>Change vibrator mode</description>
+    <jobString>Changing vibrator mode</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>S16_WiredVibrator</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>S16_WiredVibrator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <S16_DoubleWiredVibrator>1</S16_DoubleWiredVibrator>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+        <li>S16_CraftingSpot</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>S16ChangeVibratorModeIV</defName>
+    <label>Make two vibrators from double</label>
+    <description>Change vibrator mode</description>
+    <jobString>Changing vibrator mode</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>S16_DoubleWiredVibrator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>S16_WiredVibrator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <S16_WiredVibrator>2</S16_WiredVibrator>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+        <li>S16_CraftingSpot</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>S16ChangeVibratorModeV</defName>
+    <label>Сombine two vibrators into nipple vibrators</label>
+    <description>Change vibrator mode</description>
+    <jobString>Changing vibrator mode</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>S16_WiredVibrator</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>S16_WiredVibrator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <S16_WiredNippleVibrators>1</S16_WiredNippleVibrators>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+        <li>S16_CraftingSpot</li>
+     </recipeUsers>
+  </RecipeDef>
+</Defs>

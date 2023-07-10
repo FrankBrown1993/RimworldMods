@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <MAnalPlugSmall.label>小型肛塞</MAnalPlugSmall.label>
+  <MAnalPlugSmall.description>无装饰圆滑闪亮的肛门塞。小号</MAnalPlugSmall.description>
+  <MAnalPlugSmall.comps.0.useLabel>装备</MAnalPlugSmall.comps.0.useLabel>
+  <MAnalPlugMedium.label>中型肛塞</MAnalPlugMedium.label>
+  <MAnalPlugMedium.description>无装饰圆滑闪亮的肛门塞。中号</MAnalPlugMedium.description>
+  <MAnalPlugMedium.comps.0.useLabel>装备</MAnalPlugMedium.comps.0.useLabel>
+  <MAnalPlugLarge.label>大型肛塞</MAnalPlugLarge.label>
+  <MAnalPlugLarge.description>无装饰圆滑闪亮的肛门塞。大号</MAnalPlugLarge.description>
+  <MAnalPlugLarge.comps.0.useLabel>装备</MAnalPlugLarge.comps.0.useLabel>
+</LanguageData>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>IdeoRole_Hucow</defName>
+		<label>hucow</label>
+		<description>A special ideoligious status focusing on the production of breast milk. This specialized role can only be given to lactating pawns and gives greatly increased breast milk production yield, at the cost of decreased work speed and movement speed.</description>
+		<iconPath>UI/Roles/SpecialistMelee</iconPath>
+		<nameMaker>NamerRoleMoralist</nameMaker>
+		<roleRequirements>
+			<li Class="CRIALactation.RoleRequirement_Lactating" />
+		</roleRequirements>
+		<requiredMemes>
+			<li>Hucow</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="CRIALactation.RoleEffect_Hucow" />
+			<li Class="RoleEffect_PawnStatFactor">
+				<statDef>WorkSpeedGlobal</statDef>
+				<modifier>0.25</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatFactor">
+				<statDef>MoveSpeed</statDef>
+				<modifier>0.6</modifier>
+			</li>
+		</roleEffects>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<roleTags>
+			<li>Hucow</li>
+		</roleTags>
+	</PreceptDef>
+	-->
+
+	<IssueDef>
+		<defName>HucowHandling</defName>
+		<label>hucow handling</label>
+		<iconPath>UI/Issues/Lactating</iconPath>
+	</IssueDef>
+	
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>IdeoRole_HucowHandler</defName>
+		<issue>HucowHandling</issue>
+		<!--this is needed to override old issue in issuedef to have hucow handler role-->
+		<label>hucow handler</label>
+		<description>A special ideoligious status which can convert lactating pawns to hucows, increasing their lactation yield at the cost of their work and movement speed. \n\nThey also receive an increase in the speed at which they harvest milk, and the speed at which they induce lactation in other pawns.</description>
+		<iconPath>UI/Roles/SpecialistMelee</iconPath>
+		<nameMaker>NamerRoleMoralist</nameMaker>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<roleTags>
+			<li>HucowHandler</li>
+		</roleTags>
+		
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Animals>6</Animals>
+				</skills>
+			</li>
+
+		</roleRequirements>
+		<roleRequiredWorkTags>
+			<li>Animals</li>
+		</roleRequiredWorkTags>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>AnimalGatherSpeed</statDef>
+				<modifier>0.7</modifier>
+			</li>
+		</roleEffects>
+		
+		<roleApparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Headwrap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Broadwrap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+						<li>Neck</li>
+						<li>Shoulders</li>
+						<li>Arms</li>
+						<li>Legs</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Robe</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_HatHood</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_BowlerHat</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>Torso</li>
+					</bodyPartGroupsMatchAny>
+					<requiredTags>
+						<li>Cape</li>
+					</requiredTags>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
+		<roleApparelRequirementCountCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(1, 1)</li>
+			</points>
+		</roleApparelRequirementCountCurve>
+		<requiredMemes>
+			<li>Hucow</li>
+		</requiredMemes>
+		<grantedAbilities>
+			<li>ConvertToHucow</li>
+			<li>BeginInducingLactation</li>
+		</grantedAbilities>
+	</PreceptDef>
+
+</Defs>

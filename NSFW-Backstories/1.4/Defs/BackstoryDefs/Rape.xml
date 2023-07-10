@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackstoryDef Name="RapistBase" Abstract="true">
+		<titleShort>rapist</titleShort>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Kind />
+		</disallowedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="RapistBase">
+		<defName>Rapist</defName>
+		<title>rapist</title>
+		<baseDesc>[PAWN_nameDef] decided to force themselves on people multiple times. [PAWN_pronoun] decided that their needs and wants are more important than anyone elses.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Melee</key><value>2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="RapistBase">
+		<defName>CityRapist</defName>
+		<title>city rapist</title>
+		<baseDesc>[PAWN_nameDef] used the anonymity big cities provide to leverage their strength and willpower to rape others.</baseDesc>
+		<skillGains>
+			<li><key>Melee</key><value>2</value></li>
+		</skillGains>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="RapistBase">
+		<defName>DateRapist</defName>
+		<title>date rapist</title>
+		<baseDesc>[PAWN_nameDef] got tired of repeatedly being turned down and decided to take away others abilities to turn [PAWN_objective] down. After researching various drugs, [PAWN_pronoun] used them to take advantage of whomever they wanted.</baseDesc>
+		<skillGains>
+			<li><key>Medicine</key><value>2</value></li>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="RapistBase">
+		<defName>RelationshipRapist</defName>
+		<title>rapist</title>
+		<baseDesc>[PAWN_nameDef] considers their partner to be property and uses them for whatever they want. From menial tasks to sexual gratification, [PAWN_pronoun] does not care how their partner feels about it.</baseDesc>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Cooking</li>
+		</workDisables>
+		<skillGains>
+			<li><key>Melee</key><value>2</value></li>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+			<li>Tribal</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Survivor</defName>
+		<title>survivor</title>
+		<titleShort>survivor</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>Having survived at least one brutal sexual assault, [PAWN_nameDef] learned how to handle [PAWN_possessive] own against all types of adversities.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Melee</key><value>2</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Victim</defName>
+		<title>victim</title>
+		<titleShort>victim</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>After multiple assaults, [PAWN_nameDef] accepted their place below their partner and anyone else they deem better than them, adapting a submissive lifestyle and personality.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<forcedTraits>
+			<Masochist />
+		</forcedTraits>
+		<skillGains>
+			<li><key>Cooking</key><value>2</value></li>
+			<li><key>Medicine</key><value>2</value></li>
+			<li><key>Social</key><value>1</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>KillerRapist</defName>
+		<title>killer rapist</title>
+		<titleShort>killer</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] grew up to be a serial rapist, killing [PAWN_possessive] victims when they are done.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Kind />
+		</disallowedTraits>
+		<forcedTraits>
+			<Psychopath />
+		</forcedTraits>
+		<skillGains>
+			<li><key>Melee</key><value>4</value></li>
+			<li><key>Shooting</key><value>4</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<SoundDef>
+		<defName>FMThrust</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>FM/FMThrust</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15	</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>51.86047</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

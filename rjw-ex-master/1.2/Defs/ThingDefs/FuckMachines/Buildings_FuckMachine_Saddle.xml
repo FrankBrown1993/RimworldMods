@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="FuckMachineBase" Class="rjwex.Building_FuckMachine_Def">
+		<defName>FuckMachineSaddle</defName>
+		<label>Saddle fuck machine</label>
+		<description>Convinient model which will provide many fascinating rides.</description>
+		<thingClass>rjwex.Building_FuckMachine</thingClass>
+		<graphicData>
+			<texPath>Buildings/FuckMachines/Saddle/FMSaddle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<staticSunShadowHeight>0.05</staticSunShadowHeight>
+		<castEdgeShadows>False</castEdgeShadows>
+		<size>(1,1)</size>
+		<uiIconPath>Buildings/FuckMachines/Saddle/FMSaddle_east</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>20</Mass>
+			<Beauty>10</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="rjwex.CompProperties_PublicPrivateComp" />
+		</comps>
+		<techLevel>Industrial</techLevel>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<forced>False</forced>
+		<automatic>False</automatic>
+		<vertical>True</vertical>
+		<powered>True</powered>
+		<quality>1</quality>
+		<height>0.20</height>
+		<mode>Normal</mode>
+	</ThingDef>
+</Defs>

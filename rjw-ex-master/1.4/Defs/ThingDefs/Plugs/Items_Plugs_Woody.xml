@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--Base-->
+	<rjwex.anal_plug_def Name="WoodyAnalPlugBase" ParentName="AnalPlugBase" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>2</costStuffCount>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+	</rjwex.anal_plug_def>
+	
+	<!--S-size-->	
+	<rjwex.anal_plug_def ParentName="WoodyAnalPlugBase">
+		<defName>WAnalPlugSmall</defName>
+		<label>Small anal plug</label>
+		<description>Primitive polished anal plug, probably not very healthy for a long term wearing. S-size</description>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+		<costStuffCount>1</costStuffCount>
+		<plug_size>1</plug_size>	
+	</rjwex.anal_plug_def>
+	
+	<!--M-size-->	
+	<rjwex.anal_plug_def ParentName="WoodyAnalPlugBase">
+		<defName>WAnalPlugMedium</defName>
+		<label>Medium anal plug</label>
+		<description>Primitive polished anal plug, probably not very healthy for a long term wearing. M-size</description>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugAverage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+		</statBases>
+		<costStuffCount>2</costStuffCount>
+		<plug_size>2</plug_size>	
+	</rjwex.anal_plug_def>
+	
+	<!--L-size-->	
+	<rjwex.anal_plug_def ParentName="WoodyAnalPlugBase">
+		<defName>WAnalPlugLarge</defName>
+		<label>Large anal plug</label>
+		<description>Primitive polished anal plug, probably not very healthy for a long term wearing. L-size</description>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.4</Mass>
+		</statBases>
+		<costStuffCount>3</costStuffCount>
+		<plug_size>3</plug_size>	
+	</rjwex.anal_plug_def>
+</Defs>

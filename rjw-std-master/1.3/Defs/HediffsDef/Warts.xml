@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="STDBase">
+		<defName>Warts</defName>
+		<label>Warts</label>
+		<description>Genital warts that spread through sexual contact.</description>
+		<makesSickThought>false</makesSickThought>
+		<minSeverity>0.000</minSeverity>
+		<maxSeverity>0.650</maxSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>false</sendLetterWhenDiscovered>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<!-- Everyday -->
+				<severityPerDayTended>-0.138</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<immunityPerDayNotSick>-0.090</immunityPerDayNotSick>
+				<immunityPerDaySick>0.165</immunityPerDaySick>
+				<severityPerDayNotImmune>0.225</severityPerDayNotImmune>
+				<severityPerDayImmune>-0.400</severityPerDayImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.000</minSeverity>
+				<label>minor</label>
+			</li>
+			<li>
+				<minSeverity>0.400</minSeverity>
+				<label>major</label>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

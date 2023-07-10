@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "Apparel_Sash"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Apparel_Sash"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Apparel_Sash"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "Apparel_Bandolier"]/apparel/tags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Apparel_Bandolier"]/apparel</xpath>
+						<value>
+							<tags>
+								<li>SizedApparel_IgnorBreastSize</li>
+								<li>SizedApparel_ShowPrivateCrotch</li>
+							</tags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Apparel_HeavyBandolier"]/apparel/tags</xpath>
+						<value>
+							<li>SizedApparel_IgnorBreastSize</li>
+							<li>SizedApparel_ShowPrivateCrotch</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- Things saved for future upates
+	
+	
+	
+	hat/helms
+	<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+    <hatRenderedAboveBody>true</hatRenderedAboveBody>
+    <hatRenderedBehindHead>false</hatRenderedBehindHead>
+	
+	ideology meme required for certain outfits
+	<memePrerequisitesAny><li>Guilty</li><li>PainIsVirtue</li></memePrerequisitesAny>
+	
+	percept roles need edited to make a role wear a certain outfit found in percepts_role def.
+	this currently seems to need something in source/c# edited to make the tooltip during ideology creation. 
+	doesn't break gameplay from testing but it does flood error logger.
+	
+	
+	These go in the <apparel> section, and control npc outfit spawning, factions spawn with it based on tag, may create a tag called lewd so someone can make lewd factions.
+	<tags> 
+        <li>IndustrialAdvanced</li>
+    </tags>  
+
+	<li MayRequire="Ludeon.RimWorld.Royalty">
+	</li>
+	
+	<li MayRequire="Ludeon.RimWorld.Ideology">
+	</li>
+	
+	-->>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- apparel parent (things that every outfit will share by default) -->
+	
+	<ThingDef Name="AKTApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>AKTBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+	
+
+	<!--Bikini Top  -->
+	
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTBikini</defName>
+		<label>Bikini Top</label>
+		<description>A simple yet revealing bikini. Keeps you cool during summer.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTBikini/AKTBikini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+		  <SexSatisfaction>0.1</SexSatisfaction>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Beauty>0.5</Beauty>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTBikini/AKTBikini</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+	
+	<!--Fur Bikini Top  -->
+	
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTBikiniFur</defName>
+		<label>Fur Bikini Top</label>
+		<description>A simple yet revealing bikini. It's made with furs for extra warmth.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTBikiniF/AKTBikini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+		  <SexSatisfaction>0.1</SexSatisfaction>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.2</Mass>
+			<Beauty>0.5</Beauty>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTBikiniF/AKTBikini</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!--Armour Bikini Top  -->
+  
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTBikiniArmour</defName>
+		<label>Bikini Armour</label>
+		<description>A revealing set of plate armour.It's a mysery why its so good at protection.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTBikiniP/AKTBikini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>LewdArmourResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.5</Mass>
+			<Beauty>0.5</Beauty>
+			<StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTBikiniP/AKTBikini</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- bikini Bottom -->
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTBikiniB</defName>
+		<label>Bikini Bottom</label>
+		<description>A simple yet revealing bikini thong. Keeps you cool during summer.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTBikiniB/AKTBikiniB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+		  <SexSatisfaction>0.1</SexSatisfaction>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTBikiniB/AKTBikiniB</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- fur bikini Bottom -->
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTBikiniFurB</defName>
+		<label>Fur Bikini Bottom</label>
+		<description>A simple yet revealing bikini thong made with fur. Helps keep you warm.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTBikiniFB/AKTBikiniB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+		  <SexSatisfaction>0.1</SexSatisfaction>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTBikiniFB/AKTBikiniB</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- Armour Bikini Bottom -->
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTBikiniArmourB</defName>
+		<label>Bikini Armour Bottom</label>
+		<description>A revealing set of plate armour.It's a mysery why its so good at protection.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTBikiniPB/AKTBikiniPB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>LewdArmourResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTBikiniPB/AKTBikiniPB</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  
+  <!-- Paladin Plate shoulders -->
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTPlateShoulders</defName>
+		<label>Paladin Shoulders</label>
+		<description>Fancy shoulders based on a certain tier 20 set of armour.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTPlate/PlateArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<researchPrerequisite>LewdArmourResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>1.0</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTPlate/PlateArmor</wornGraphicPath>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  
+  <!-- Leggings -->
+  
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTLeggings</defName>
+		<label>Leggings</label>
+		<description>Skintight leggings that are lowcut. A modern marvel that somehow makes any ass look better.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTLeggings/AKTLeggings</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTLeggings/AKTLeggings</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- Jeans -->
+  
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTJEans</defName>
+		<label>Lowcut Jeans</label>
+		<description>A pair of lowcut jeans that show off your underwear.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTJeans/AKTJeans</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.05</NegotiationAbility>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTJeans/AKTJeans</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- Leggings Mid-->
+  
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTLeggingsM</defName>
+		<label>Leggings (mid)</label>
+		<description>Skintight leggings that are lowcut. A modern marvel that somehow makes any ass look better.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTLeggingsM/AKTLeggings</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+		<bodyPartGroups>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTLeggingsM/AKTLeggings</wornGraphicPath>
+		<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  <!-- Jeans Mid -->
+  
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTJEansM</defName>
+		<label>Lowcut Jeans (Middle)</label>
+		<description>A pair of lowcut jeans that show off your underwear.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTJeansM/AKTJeans</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.05</NegotiationAbility>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTJeansM/AKTJeans</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+  
+  <!-- CropTop -->
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTCropTop</defName>
+		<label>Crop Top</label>
+		<description>A shirt that is cropped up to only cover the upper torso. Covers very little</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTCropTop/CropTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<SexSatisfaction>0.1</SexSatisfaction>
+			<NegotiationAbility>0.1</NegotiationAbility>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Beauty>0.5</Beauty>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTCropTop/CropTop</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+  
+  <!-- tube top -->
+	<ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTTubetop</defName>
+		<label>Tube Top</label>
+		<description>A cropped tanktop with no straps. Covers very little</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTTubetop/AKTTubetop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<SexSatisfaction>0.1</SexSatisfaction>
+			<NegotiationAbility>0.1</NegotiationAbility>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Beauty>0.5</Beauty>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTTubetop/AKTTubetop</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+  
+  <!-- Sling bikini -->
+  
+  <ThingDef ParentName="AKTApparelMakeableBase">
+		<defName>AKTStringkini</defName>
+		<label>Sling Bikini</label>
+		<description>A one piece sling bikini, doesn't cover much.</description>
+		<recipeMaker>
+			<researchPrerequisite>LewdClothingResearch</researchPrerequisite>
+			<useIngredientsForColor>true</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AKTStringkini/AKTStringkini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<SexSatisfaction>0.15</SexSatisfaction>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Beauty>1.0</Beauty>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.60</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AKTStringkini/AKTStringkini</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+  
+  
+</Defs>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef ParentName="OrganicProductBase">
+    <defName>S16GirlCum</defName>
+    <label>love juice</label>
+    <description>Colorless liquid secreted by a sexually aroused girl. Warm and sticky.</description>
+    <graphicData>
+      <texPath>Things/Food/GirlCum</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <shaderType>Transparent</shaderType>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<stackLimit>25</stackLimit>
+	<statBases>
+      <MarketValue>0.0</MarketValue>
+      <Mass>0.045</Mass>
+      <MaxHitPoints>5</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <Nutrition>0.025</Nutrition>
+	  <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<tradeability>None</tradeability>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>0.3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Fluid</foodType>
+	  <ingestSound>S16IngestGirlCum</ingestSound>
+	  <chairSearchRadius>0</chairSearchRadius>
+	  <baseIngestTicks>80</baseIngestTicks>
+	 <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>S16AteGirlCumRaw</hediffDef>
+          <severity>0.50</severity>
+        </li>
+     </outcomeDoers>
+    </ingestible>
+    <thingCategories>
+      <li>S16Food</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

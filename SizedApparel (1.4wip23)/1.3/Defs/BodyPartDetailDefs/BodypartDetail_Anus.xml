@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- "null" and "default" varName will be no variation. -->
+<Defs>
+	<SizedApparel.SizedApparelBodyPartVariationDef>
+		<defName>AnusDetail</defName>
+		<bodyPartName>Anus</bodyPartName>
+		<variations>
+			<li>
+			<!--Default Anus-->
+				<hediffName>Anus</hediffName>
+				<varName>
+					<li>default</li>
+					<li>Donut</li>
+				</varName>
+			</li>
+			<li>
+				<!-- <hediffName>SlimeAnus</hediffName> -->
+				<!-- <varName> -->
+					<!-- <li>null</li> -->
+					<!-- <li>InvertedNipple</li> -->
+				<!-- </varName> -->
+			</li>
+		</variations>
+	</SizedApparel.SizedApparelBodyPartVariationDef>
+</Defs>

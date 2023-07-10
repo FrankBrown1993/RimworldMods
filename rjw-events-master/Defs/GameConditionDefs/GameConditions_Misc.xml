@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GameConditionDef>
+		<defName>PsychicArouse</defName>
+		<conditionClass>RJW_Events.GameCondition_PsychicArouse</conditionClass>
+		<label>psychic arouse</label>
+
+		<description>A distant archotech is emitting psychic signals through an orbital amplifier, sexually arousing people.</description>
+		<descriptionFuture>a [psychicDroneLevel] psychic drone will buzz the area around [map_definite] for [gameConditionDuration_duration], pushing all people of the [psychicDroneGender] gender towards arousal</descriptionFuture>
+		<endMessage>The psychic drone is ending.</endMessage>
+		<letterText>Every {0} colonist blushes with arousal.\n\nSome distant engine of lust is stirring. It is projecting a psychic drone onto this site through an orbital amplifier, tuned to only affect {0}s. For a few days, every {0} will experience increased arousal and sex need.</letterText>
+		<defaultDroneLevel>BadMedium</defaultDroneLevel>
+		<letterDef>NegativeEvent</letterDef>
+		<natural>false</natural>
+	</GameConditionDef>
+</Defs>

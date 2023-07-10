@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71B05D71-67B2-4014-82CD-18C20AC0882F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rimworld_Animations</RootNamespace>
+    <AssemblyName>Rimworld-Animations</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>1.4\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\workshop\content\294100\839005762\1.4\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\workshop\content\294100\839005762\1.4\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RJW">
+      <HintPath>..\rjw\1.4\Assemblies\RJW.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RJW-ToysAndMasturbation">
+      <HintPath>..\rjw-toys-and-masturbation\Assemblies\RJW-ToysAndMasturbation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.4\Source\Actors\Actor.cs" />
+    <Compile Include="1.4\Source\Actors\AlienRaceOffset.cs" />
+    <Compile Include="1.4\Source\Actors\BodyTypeOffset.cs" />
+    <Compile Include="1.4\Source\Animations\AnimationStage.cs" />
+    <Compile Include="1.4\Source\Animations\Clips\BaseAnimationClip.cs" />
+    <Compile Include="1.4\Source\Animations\Clips\PawnAnimationClip.cs" />
+    <Compile Include="1.4\Source\Animations\Clips\ThingAnimationClip.cs" />
+    <Compile Include="1.4\Source\Animations\Keyframes\Keyframe.cs" />
+    <Compile Include="1.4\Source\Animations\Keyframes\PawnKeyframe.cs" />
+    <Compile Include="1.4\Source\Animations\Keyframes\ThingKeyframe.cs" />
+    <Compile Include="1.4\Source\Comps\CompBodyAnimator.cs" />
+    <Compile Include="1.4\Source\Comps\CompProperties_BodyAnimator.cs" />
+    <Compile Include="1.4\Source\Comps\CompProperties_ThingAnimator.cs" />
+    <Compile Include="1.4\Source\Comps\CompThingAnimator.cs" />
+    <Compile Include="1.4\Source\Defs\AnimationDef.cs" />
+    <Compile Include="1.4\Source\Extensions\PawnWoundDrawerExtension.cs" />
+    <Compile Include="1.4\Source\MainTabWindows\MainTabWindow_OffsetConfigure.cs" />
+    <Compile Include="1.4\Source\MainTabWindows\OffsetMainButtonDefOf.cs" />
+    <Compile Include="1.4\Source\MainTabWindows\WorldComponent_UpdateMainTab.cs" />
+    <Compile Include="1.4\Source\Patches\Harmony_PatchAll.cs" />
+    <Compile Include="1.4\Source\Patches\OtherModPatches\HarmonyPatch_CSL.cs" />
+    <Compile Include="1.4\Source\Patches\OtherModPatches\HarmonyPatch_DontShaveYourHead.cs" />
+    <Compile Include="1.4\Source\Patches\OtherModPatches\HarmonyPatch_FacialAnimation.cs" />
+    <Compile Include="1.4\Source\Patches\OtherModPatches\HarmonyPatch_HatsDisplaySelection.cs" />
+    <Compile Include="1.4\Source\Patches\OtherModPatches\HarmonyPatch_ShowHairWithHats.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_HeadHair.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_PawnRenderer.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_PawnRotation.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_Pawn_DrawTracker.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_ResolveApparelGraphics.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_SetPawnAnimatable.cs" />
+    <Compile Include="1.4\Source\Patches\RimworldPatches\HarmonyPatch_Thing.cs" />
+    <Compile Include="1.4\Source\Patches\RJWPatches\HarmonyPatch_PlaySexSounds.cs" />
+    <Compile Include="1.4\Source\Patches\RJWPatches\HarmonyPatch_SexTick.cs" />
+    <Compile Include="1.4\Source\Patches\RJWPatches\HarmonyPatch_WorkGiverSex.cs" />
+    <Compile Include="1.4\Source\Patches\RJWPatches\JobDrivers\HarmonyPatch_JobDriver_JoinInBed.cs" />
+    <Compile Include="1.4\Source\Patches\RJWPatches\JobDrivers\HarmonyPatch_JobDriver_SexBaseInitiator.cs" />
+    <Compile Include="1.4\Source\Patches\RJWPatches\JobDrivers\HarmonyPatch_JobDriver_SexBaseReceiverLoved.cs" />
+    <Compile Include="1.4\Source\Settings\AnimationSettings.cs" />
+    <Compile Include="1.4\Source\Utilities\AnimationUtility.cs" />
+    <Compile Include="1.4\Source\Utilities\PatchOperationAddOrReplace.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.1\Assemblies\Rimworld-Animations.dll" />
+    <Content Include="1.4\Assemblies\Rimworld-Animations.dll" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_Beast.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_Lesbian.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_Masturbate.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_Multi.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_SexToys.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_vanilla.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\Animations_Vanilla2.xml" />
+    <Content Include="1.4\Defs\AnimationDefs\TemplateAnimation.xml" />
+    <Content Include="1.4\Defs\MainTabDefs\MainButtonDef.xml" />
+    <Content Include="1.4\Defs\SoundDefs\Sounds_Sex.xml" />
+    <Content Include="1.4\Patches\AnimationPatchHSK.xml" />
+    <Content Include="1.4\Patches\AnimationPatch_CompBodyAnimator.xml" />
+    <Content Include="1.4\Patches\CompatibilityPatch_FacialAnimation.xml" />
+    <Content Include="1.4\Patches\CompatibilityPatch_HCSK.xml" />
+    <Content Include="1.4\Patches\CompPatches\AutoCleaner.xml" />
+    <Content Include="1.4\Patches\CompPatches\CombatExtended.xml" />
+    <Content Include="1.4\Patches\CompPatches\ZombieLand.xml" />
+    <Content Include="1.4\Patches\RacePatches\Epona race Renaissance.xml" />
+    <Content Include="1.4\Patches\RacePatches\Nyaron.xml" />
+    <Content Include="1.4\Sounds\Sex\Clap_1.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_2.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_3.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_4.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_5.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_6.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_7.wav" />
+    <Content Include="1.4\Sounds\Sex\Clap_8.wav" />
+    <Content Include="1.4\Sounds\Sex\cum.wav" />
+    <Content Include="1.4\Sounds\Sex\kucyu04.wav" />
+    <Content Include="1.4\Sounds\Sex\Slime\Slimy1.wav" />
+    <Content Include="1.4\Sounds\Sex\Slime\Slimy2.wav" />
+    <Content Include="1.4\Sounds\Sex\Slime\Slimy3.wav" />
+    <Content Include="1.4\Sounds\Sex\Slime\Slimy4.wav" />
+    <Content Include="1.4\Sounds\Sex\Slime\Slimy5.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_1.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_10.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\suck_2.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_3.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_4.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_5.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_6.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_7.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_8.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Suck_9.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Swallow_1.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Swallow_2.wav" />
+    <Content Include="1.4\Sounds\Sex\Suck\Swallow_3.wav" />
+    <Content Include="1.4\Textures\UI\MainTab.png" />
+    <Content Include="About\About.xml" />
+    <Content Include="About\Manifest.xml" />
+    <Content Include="Languages\PortugueseBrazilian\DefInjected\MainButtonDef\MainButtonDef.xml" />
+    <Content Include="Languages\PortugueseBrazilian\DefInjected\Rimworld_Animations.AnimationDef\Animations_Beast.xml" />
+    <Content Include="Languages\PortugueseBrazilian\DefInjected\Rimworld_Animations.AnimationDef\Animations_Lesbian.xml" />
+    <Content Include="Languages\PortugueseBrazilian\DefInjected\Rimworld_Animations.AnimationDef\Animations_Multi.xml" />
+    <Content Include="Languages\PortugueseBrazilian\DefInjected\Rimworld_Animations.AnimationDef\Animations_vanilla.xml" />
+    <Content Include="LoadFolders.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1.4\Defs\AnimationDefs\AnimationDefs.rar" />
+    <None Include="1.4\Patch_HatsDisplaySelection\Patch_HatsDisplaySelection.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

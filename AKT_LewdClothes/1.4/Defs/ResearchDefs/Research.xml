@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>AKTLewdClothes</defName>
+    <label>AKawaiiTent</label>
+  </ResearchTabDef>
+  
+  <ResearchProjectDef>
+    <defName>LewdClothingResearch</defName>
+    <label>Lewd Clothing</label>
+    <description>Learn how to craft revealing outfits</description>
+    <tab>AKTLewdClothes</tab>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>LewdArmourResearch</defName>
+    <label>Lewd Armour</label>
+    <description>Learn how to craft revealing defensive outfits</description>
+    <tab>AKTLewdClothes</tab>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>LewdClothingResearch</li>
+	  <li>PlateArmor</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>LewdJewelryResearch</defName>
+    <label>Lewd Accessories</label>
+    <description>Learn how to craft accessories for your AKT outfits</description>
+    <tab>AKTLewdClothes</tab>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>LewdClothingResearch</li>
+	  <li>Smithing</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

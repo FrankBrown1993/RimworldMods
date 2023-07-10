@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Genetics Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<value>
+						<li>GR_JellyfishBody</li>
+						<li>GR_QuadrupedAnimalWithBeak</li>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTail</li>
+						<li>GR_QuadrupedAnimalWithBeakandHump</li>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</li>
+						<li>GR_QuadrupedAnimalWithPawsAndFangs</li>
+						<li MayRequire="rimofmadness.CallofCthulhuCosmicHorrors">GR_Amorphous</li>
+						<li MayRequire="rimofmadness.CallofCthulhuCosmicHorrors">GR_Hydra</li>
+						<li MayRequire="Spino.Megafauna">GR_QuadrupedAnimalWithPawsAndHorn</li>
+						<li MayRequire="Spino.Megafauna">GR_QuadrupedAnimalWithPawsAndTusks</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<value>
+						<li>GR_JellyfishBody</li>
+						<li>GR_QuadrupedAnimalWithBeak</li>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTail</li>
+						<li>GR_QuadrupedAnimalWithBeakandHump</li>
+						<li>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</li>
+						<li>GR_QuadrupedAnimalWithPawsAndFangs</li>
+						<li MayRequire="rimofmadness.CallofCthulhuCosmicHorrors">GR_Amorphous</li>
+						<li MayRequire="rimofmadness.CallofCthulhuCosmicHorrors">GR_Hydra</li>
+						<li MayRequire="Spino.Megafauna">GR_QuadrupedAnimalWithPawsAndHorn</li>
+						<li MayRequire="Spino.Megafauna">GR_QuadrupedAnimalWithPawsAndTusks</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyleF" or defName="HumanoidBeastDoggystyleM" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<value>
+						<li>GR_BirdWithTeeth</li>
+						<li>GR_HornedBird</li>
+						<li>GR_GreatApe</li>
+						<li MayRequire="Spino.Megafauna">GR_MantisBird</li>
+						<li MayRequire="sarg.rimbees">RB_BeeBody</li>
+						<li MayRequire="sarg.rimbees">RB_HornedBeeBody</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="HumanoidBeastDoggystyle2" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<value>
+						<li>GR_BirdWithTeeth</li>
+						<li>GR_HornedBird</li>
+						<li>GR_GreatApe</li>
+						<li MayRequire="Spino.Megafauna">GR_MantisBird</li>
+						<li MayRequire="sarg.rimbees">RB_BeeBody</li>
+						<li MayRequire="sarg.rimbees">RB_HornedBeeBody</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

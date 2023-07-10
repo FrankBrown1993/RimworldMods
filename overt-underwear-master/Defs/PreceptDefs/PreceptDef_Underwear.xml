@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+	<IssueDef>
+		<defName>Underwear</defName>
+		<label>underwear</label>
+		<iconPath>UI/Issues/Underwear</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->	
+	<PreceptDef>
+		<defName>Underwear_Disapproved</defName>
+		<issue>Underwear</issue>
+		<label>disapproved</label>
+		<description>Underwear is horribly constricting and should not be worn if it can be avoided.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>5</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>Underwear_MustBeConcealed</defName>
+		<issue>Underwear</issue>
+		<label>must be concealed</label>
+		<description>Worn underwear should be hidden under other clothes.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>100</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>Underwear_CanBeVisible</defName>
+		<issue>Underwear</issue>
+		<label>can be visible</label>
+		<description>Having underwear visible to others is not a concern.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>20</defaultSelectionWeight>
+	</PreceptDef>
+
+</Defs>

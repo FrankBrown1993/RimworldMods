@@ -1,0 +1,6 @@
+v 1.0.1
+- Fixed a bug that was preventing threesomes from occurring
+- Stopped the red text errors from occurring when running this mod without Humanoid Alien Races
+
+v 1.0.0
+- Initial release

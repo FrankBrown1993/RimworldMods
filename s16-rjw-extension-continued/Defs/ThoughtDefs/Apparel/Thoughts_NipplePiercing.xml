@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>S16NippleRingsTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16NippleRingsHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>nipple rings</label>
+        <description>It hurts a little...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple rings</label>
+        <description>My nipples are hard all the time... Oh...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple rings</label>
+        <description>I like playing with them when nobody sees, hehe</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16WPinsTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16WPinsHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>clothespins</label>
+        <description>Awww! My nipples hurt so much!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>clothespins</label>
+        <description>These crude things keep my nipples so tensed... I feel dirty</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>clothespins</label>
+        <description>I want someone to touch these things...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>S16WPinsThMaso</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16WPinsHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipples abused</label>
+        <description>My little tender nipples are punished, owwwaaaaa</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipples abused</label>
+        <description>I deserve this...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipples abused</label>
+        <description>I feel like a dirty public girl to be used</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16SimpleATh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16SimpleAHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>barbells</label>
+        <description>Ouch! I hope I'll get used to these things</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>barbells</label>
+        <description>Heee, I like touching them...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>barbells</label>
+        <description>Cold metal feels so good...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16SimpleAThBL</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16SimpleAHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Bloodlust</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>savage piercing</label>
+        <description>My boobs look brutal, haha</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>savage piercing</label>
+        <description>Mmmm, I want someone to lick them!..</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>savage piercing</label>
+        <description>I like the way others stare at my nipples, haha!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16HeavyATh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16HeavyAHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>heavy nipple rings</label>
+        <description>These are so heavy that they are pulling my nipples down...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>heavy nipple rings</label>
+        <description>Ohhh, they're bouncing on my nipples when I move</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>heavy nipple rings</label>
+        <description>It's strange that I'm comfortable with these things on my nipples</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16HeavyAThPr</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16HeavyAHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Beauty</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>slutty piercing</label>
+        <description>These things are designed to arouse and I like to wear them</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>slutty piercing</label>
+        <description>It's so easy to abuse my nipples now</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>slutty piercing</label>
+        <description>My chest looks so provocatively now. I see others can't look away when I bend over</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16_NC_Thought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_NC_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>nipple clamps</label>
+        <description>I feel like I'm such a pervert</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>Oh God, it keeps my nipples tensed</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>I... kinda like to have my nipples teased</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16_NC_Thought_Bloodlust</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_NC_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Bloodlust</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple clamps</label>
+        <description>Oh yes, I like this feeling!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>Having my nipples clamped feels so good</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>Weight of the chain pulls my nipples every time I move around. I can't stop think about sex...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>S16_NC_Thought_Masochist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_NC_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple clamps</label>
+        <description>Oh, it makes me wet...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>I want someone to play with it, please, I wanna be fucked rough, ohhhh...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>Oh G-god, I am s-soaking....</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16_NC_Thought_Nymphomaniac</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_NC_Hediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Nymphomaniac</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple clamps</label>
+        <description>Hey ya! Do you like my new jewelry?</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>Don't be shy, play with it... Please... I'm so fucking horny!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple clamps</label>
+        <description>Would you like to take from behind and feel the chain bounce with my boobs? Or maybe I'll sit on you so you can enjoy the view? He-he</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

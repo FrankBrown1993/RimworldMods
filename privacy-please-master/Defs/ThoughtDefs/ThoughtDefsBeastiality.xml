@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawBestiality_Abhorrent</defName>
+		<durationDays>30</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>horrified by bestiality</label>
+			<description>How could they just... violate... that poor animal like that?</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Zoophile</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawBestiality_Horrible</li>
+			<li>SawBestiality_Disapproved</li>
+			<li>SawBestiality_Acceptable</li>
+			<li>SawBestiality_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Panic</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawBestiality_OrdinaryAnimal</defName>
+		<durationDays>20</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>displeased by common bestiality</label>
+			<description>They mated with some common beast! Disgraceful.</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>		
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawBestiality_Horrible</defName>
+		<durationDays>20</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>disturbed by bestiality</label>
+			<description>Leave that poor thing alone!</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Zoophile</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawBestiality_Abhorrent</li>
+			<li>SawBestiality_Disapproved</li>
+			<li>SawBestiality_Acceptable</li>
+			<li>SawBestiality_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawBestiality_Disapproved</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>upset about bestiality</label>
+			<description>That was animal abuse, plain and simple.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Zoophile</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawBestiality_Abhorrent</li>
+			<li>SawBestiality_Horrible</li>
+			<li>SawBestiality_Acceptable</li>
+			<li>SawBestiality_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawBestiality_Acceptable</defName>
+		<durationDays>5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>witnessed bestiality</label>
+			<description>Hope they don't make too much mess.</description>
+			<baseMoodEffect>0.01</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Zoophile</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawBestiality_Abhorrent</li>
+			<li>SawBestiality_Horrible</li>
+			<li>SawBestiality_Disapproved</li>
+			<li>SawBestiality_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawBestiality_Honorable</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>approved of bestiality</label>
+			<description>The bond between us and our animals makes us strong.</description>
+			<baseMoodEffect>+3</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>SawBestiality_Abhorrent</li>
+			<li>SawBestiality_Horrible</li>
+			<li>SawBestiality_Disapproved</li>
+			<li>SawBestiality_Acceptable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+</Defs>

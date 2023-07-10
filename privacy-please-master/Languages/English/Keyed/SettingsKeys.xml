@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Basic settings-->
+	<privacy_please_basicsettings>Privacy, Please!</privacy_please_basicsettings>
+
+	<privacy_please_general>General Options</privacy_please_general>
+		
+		<worry_about_exhibitionism>	People will react to exhibitionism</worry_about_exhibitionism>
+		<worry_about_exhibitionism_desc>Their reaction will depend on their Exhibitionism precept and whether they have the Voyeur RJW quirk.\n\nThose who are caught will stop their activities if the find the attention embarassing, or if the intruder is hostile.</worry_about_exhibitionism_desc>	
+		<worry_about_masturbation>	People will react to masturbation</worry_about_masturbation>
+		<worry_about_masturbation_desc>Their reaction will depend on their Masturbation precept (requires Sexperience - Ideology).\n\nWill be treated as exhibitionism if this option is disabled.</worry_about_masturbation_desc>
+		<worry_about_infidelity>	People will react to a cheating partner</worry_about_infidelity>
+		<worry_about_infidelity_desc>Their reaction will depend on their Infidelity precept and whether they have the Cuckold RJW quirk.\n\nWill be treated as exhibitionism if this option is disabled.</worry_about_infidelity_desc>
+		<worry_about_beastiality>	People will react to beastiality</worry_about_beastiality>
+		<worry_about_beastiality_desc>Their reaction will depend on their Bestiality precept (requires Sexperience - Ideology) and whether they have the Zoophile trait.\n\nWill be treated as exhibitionism if this option is disabled.</worry_about_beastiality_desc>
+		<worry_about_rape>	People will react to rape</worry_about_rape>
+		<worry_about_rape_desc>Their reaction will depend on their Rape precept (requires Sexperience - Ideology) and whether they have the Rapist trait.\n\nWill be treated as exhibitionism if this option is disabled.</worry_about_rape_desc>
+		<ignore_slave_rape>		People will ignore a rape if the victim is a prisoner or slave</ignore_slave_rape>
+		<worry_about_necro>	People will react to necrophilia</worry_about_necro>
+		<worry_about_necro_desc>Their reaction will depend on their Necrophilia precept (requires Sexperience - Ideology) and whether they have the Necrophile trait.\n\nWill be treated as exhibitionism if this option is disabled.</worry_about_necro_desc>
+		<worry_about_xeno>	People will react to couplings between humanoids of different species</worry_about_xeno>
+		<worry_about_xeno_desc>Their reaction will depend on their Alien Dating precept (requires Humanoid Alien Races) and whether they have the Xenophile or Xenophobe traits.\n\nNote that genetically modified individuals still count as 'human', Will be treated as exhibitionism if this option is disabled.</worry_about_xeno_desc>		
+	
+		<major_taboo_can_start_fights>	Witnessing abhorrent acts can result in panic</major_taboo_can_start_fights>
+		<major_taboo_can_start_fights_desc>Individuals who witness a sexual act that they feel is abhorrent may cause them to panic and flee from the area.</major_taboo_can_start_fights_desc>
+		
+		<ignore_ritual_and_party_sex>	People will ignore sexual acts that are a part of a ritual or gathering</ignore_ritual_and_party_sex>
+		<ignore_ritual_and_party_sex_desc>Any distasteful occurrances during rituals and gatherings will not provoke any reactions from participants or onlookers.</ignore_ritual_and_party_sex_desc>
+		
+		<slaves_ignore_sex>	Prisoners and slaves will ignore the actions of colonists</slaves_ignore_sex>
+		<slaves_ignore_sex_desc>Prisoners and slaves have discovered that it is better to simply ignore what is occurring around them. They won't react to any sexual activities that take place near them.</slaves_ignore_sex_desc>
+		<colonists_ignore_slaves>	Colonists will ignore the presence of prisoners and slaves</colonists_ignore_slaves>
+		<colonists_ignore_slaves_desc>Prisoners and slaves are beneath the notice of your colonists. Your colonists won't react to their presence during any sexual activities.</colonists_ignore_slaves_desc>
+		
+		<other_factions_ignore_sex>	Members of other factions will ignore the actions of colonists</other_factions_ignore_sex>
+		<other_factions_ignore_sex_desc>Members of friendly factions will politely ignore any sexual activities that occur nearby.\n\nFactions hostile to you will always ignore such frivolities, regardless of this setting.</other_factions_ignore_sex_desc>		
+		<colonists_ignore_other_factions>	Colonists will ignore the presence of other faction members</colonists_ignore_other_factions>
+		<colonists_ignore_other_factions_desc>Colonists are unfazed by the presence of friendly member during their sexual activities.\n\nHostile intruders will always interrupt sexual activities, regardless of this setting.</colonists_ignore_other_factions_desc>		
+	
+		<rape_is_uninteruptable>	Rape is not interrupted by witnesses</rape_is_uninteruptable>
+		<rape_is_uninteruptable_desc>Rapists are shameless and will not let nearby witnesses interrupt them.</rape_is_uninteruptable_desc>	
+		<whoring_is_uninteruptable>	Whoring is not interrupted by witnesses</whoring_is_uninteruptable>
+		<whoring_is_uninteruptable_desc>Sex workers might be embarrassed by an ill-timed intrusion, but will carry on regardless.</whoring_is_uninteruptable_desc>
+		
+		<chance_for_other_to_join_in_sex>	People who are lovin' have a chance to invite passers-by to join them for some fun (default is 0.25)</chance_for_other_to_join_in_sex>
+		<chance_for_other_to_join_in_sex_desc>Passers-by who aren't currently doing an important job can be invited to join in a sexual activity. There must be some attraction between those involved, and the activity must not violate their traits or ideology.\n\nNote that setting this value to its maximum will not guarantee that this event will occur, it will just maximize the chance of an invitation being made.\n\nSet this value to zero to prevent these invitations being made, however.</chance_for_other_to_join_in_sex_desc>		
+		
+	<privacy_please_debugging>Debugging options</privacy_please_debugging>
+		<debug_mode>	Turn on debugging console messages</debug_mode>
+		<debug_mode_desc>Only required for debugging purposes.</debug_mode_desc>
+</LanguageData>

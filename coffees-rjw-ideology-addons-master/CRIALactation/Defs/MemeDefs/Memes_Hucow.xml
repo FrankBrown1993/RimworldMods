@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeGroupDef>
+		<defName>Sexuality</defName>
+		<drawOffset>(0.09, 0.33)</drawOffset>
+		<maxRows>1</maxRows>
+	</MemeGroupDef>
+
+	<MemeDef>
+		<defName>Hucow</defName>
+		<label>hucow</label>
+		<description>Breast milk should be produced for and consumed by all.</description>
+		<iconPath>UI/Memes/Hucow</iconPath>
+		<groupDef>Sexuality</groupDef>
+		<exclusionTags>
+			<li>Sexuality</li>
+		</exclusionTags>
+		<impact>3</impact>
+		<renderOrder>50</renderOrder>
+		<requireOne>
+			<li>
+				<li>Lactating_Essential</li>
+				<li>Lactating_MandatoryHucow</li>
+			</li>
+		</requireOne>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->ranch</li>
+				<li>memeAdjective->bovine</li>
+				<li>memeHyphenPrefix->lacto</li>
+				<li>memeConcept->milk expression</li>
+				<li>memeLeaderNoun->rancher</li>
+				<li>memeLeaderNoun->hand</li>
+				<li>memeLeaderNoun->herder</li>
+				<li>memeLeaderNoun->sheepdog</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Hucow)        ->[deity0_name] gave humankind the gift of bosoms, and the ability to produce breast milk.</li>
+					<li>episode(uses=1,tag=meme_Hucow)  ->[deity0_name] created all the noble animals and beasts of the land, and said, "Take these noble beasts, and through them make yourselves fruitful in my honor."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Hucow)           ->The early [ranchingAnimal] ranchers of the [place_summary] [place_name] built a great [altarName] to [deity0_name].</li>
+					<li>conflict(tag=meme_Hucow)        ->A powerful [foeLeader] despised the [memberNamePlural] and their ways, and bought up all the grasslands to grow [Vegetable]s.</li>
+					<li>founderJoin(tag=meme_Hucow)     ->[memberName]'s savior [founderName] was born on a spring morning in a humble barn, amidst [ranchingAnimal]s, and [founder_possessive] parents were a [rancherParent1] and a [rancherParent2].</li>
+					<li>victory(tag=meme_Hucow)         ->[founderName] rode to the [place_community] on a fine horse, and challenged the [foeLeader] to a duel with [place_personalWeapon]s at noon. The [foeLeader] could not refuse or else lose the trust of the [foeSoldiers]. [founderName] killed the [foeLeader] dead.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Hucow)           ->The farmers were persecuted, so they escaped to the countryside where they could build a good pastoral society.</li>
+					<li>story(uses=1,tag=meme_Hucow)    ->The believers spread out onto the land, and grew in number as they lived on their idyllic ranches and farms.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Hucow)         ->Partner, out on the ranges, we had a saying among the old hands:</li>
+					<li>lesson(tag=meme_Hucow)              ->good and happiness right livin' is found in the pasture</li>
+					<li>lessonReinforcement(tag=meme_Hucow) ->It's something you come to accept, partner, on the lonely trails of the range, listenin' to the animals sleepin' while you sit around the fire.</li>
+					<!-- archist -->
+					<li>archistFact(tag=meme_Hucow)     ->The archotechs care for humanity like shepherds, for we are their most precious flock.</li>
+					<li>archistProphecy(tag=meme_Hucow) ->[inTheEnd], the archotechs will depart, and drive before them those who tended their own herds well. The rest will be left behind in the wilderness.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Hucow)     ->Nature's animals are the spirits of slaves, and demand to be taken into service.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Bovinism</ideoName>
+				<theme>bovines</theme>
+				<adjective>Bovine</adjective>
+				<member>Bovinist</member>
+			</li>
+			<li>
+				<ideoName>Hucowism</ideoName>
+				<theme>hucows</theme>
+				<adjective>hucow</adjective>
+				<member>Hucowist</member>
+			</li>
+		</symbolPacks>
+	</MemeDef>
+</Defs>

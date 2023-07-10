@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+	<identifier>RJWSexperienceIdeology</identifier>
+	<version>1.0.1.2</version>
+	<dependencies>
+		<li>RimJobWorld >= 5.3.0</li>
+	</dependencies>
+	<incompatibleWith />
+	<loadAfter>
+	</loadAfter>
+	<suggests>
+	</suggests>
+  <manifestUri>https://gitgud.io/amevarashi/rjw-sexperience-ideology/-/raw/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://gitgud.io/amevarashi/rjw-sexperience-ideology</downloadUri>
+</Manifest>

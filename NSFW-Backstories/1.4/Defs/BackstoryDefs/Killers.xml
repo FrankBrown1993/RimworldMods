@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackstoryDef Name="KillerBase" Abstract="true">
+		<titleShort>killer</titleShort>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<Kind />
+		</disallowedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="KillerBase">
+		<defName>CannibalisticKiller</defName>
+		<title>cannibal killer</title>
+		<baseDesc>[PAWN_nameDef] ended up stranded with [PAWN_possessive] sibling. Left with only one option, they fought them to the death and ate what was left in order to survive, forever giving them a taste for human meat.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Cannibal />
+		</forcedTraits>
+		<skillGains>
+			<li><key>Melee</key><value>2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="KillerBase">
+		<defName>CannibalisticKiller2</defName>
+		<title>cannibal killer</title>
+		<baseDesc>[PAWN_nameDef] faced hardships and near starvation while emerging into young adulthood. During one particularly bad month they turned on their roommate, a small town nobody, and ate them.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Cannibal />
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="KillerBase">
+		<defName>CannibalisticKiller3</defName>
+		<title>cannibal killer</title>
+		<baseDesc>From a young age, [PAWN_nameDef] always had a curiosity for the taste of flesh. Years of hiding and attempting to conform to society caused [PAWN_pronoun] to snap, killing several of [PAWN_possessive] friends and family and eating them in a big stew.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Cannibal />
+			<Psychopath />
+		</forcedTraits>
+		<skillGains>
+			<li><key>Melee</key><value>4</value></li>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="KillerBase">
+		<defName>CannibalisticKiller4</defName>
+		<title>cannibal killer</title>
+		<baseDesc>[PAWN_nameDef] sees no problem in cannibalism, and spent large portion of their time advocating for the right to eat as [PAWN_pronoun] pleases.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Cannibal />
+		</forcedTraits>
+		<skillGains>
+			<li><key>Social</key><value>2</value></li>
+		</skillGains>
+	</BackstoryDef>
+
+	
+</Defs>

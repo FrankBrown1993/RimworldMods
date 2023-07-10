@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawRape_Abhorrent</defName>
+		<durationDays>30</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>horrified by rape</label>
+			<description>Oh God... This can't really be happening...</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Rapist</li>
+		</nullifyingTraits>	
+		<replaceThoughts>
+			<li>SawRape_Horrible</li>
+			<li>SawRape_Disapproved</li>
+			<li>SawRape_Acceptable</li>
+			<li>SawRape_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Panic</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawRape_Horrible</defName>
+		<durationDays>20</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>disturbed by rape</label>
+			<description>How... how could they just violate someone like that?</description>
+			<baseMoodEffect>-15</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Rapist</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawRape_Abhorrent</li>
+			<li>SawRape_Disapproved</li>
+			<li>SawRape_Acceptable</li>
+			<li>SawRape_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawRape_Disapproved</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>upset by rape</label>
+			<description>Is this really what life is going to be like here?</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Rapist</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawRape_Abhorrent</li>
+			<li>SawRape_Horrible</li>
+			<li>SawRape_Acceptable</li>
+			<li>SawRape_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Discomfort</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawRape_Acceptable</defName>
+		<durationDays>5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>witnessed rape</label>
+			<description>Oh. Um. Carry on...?</description>
+			<baseMoodEffect>0.01</baseMoodEffect>
+		  </li>
+		</stages>
+		<nullifyingTraits>
+		  <li>Rapist</li>
+		</nullifyingTraits>
+		<replaceThoughts>
+			<li>SawRape_Abhorrent</li>
+			<li>SawRape_Horrible</li>
+			<li>SawRape_Disapproved</li>
+			<li>SawRape_Honorable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawRape_Honorable</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>approved of rape</label>
+			<description>The strong will claim the weak.</description>
+			<baseMoodEffect>+3</baseMoodEffect>
+		  </li>
+		</stages>
+		<replaceThoughts>
+			<li>SawRape_Abhorrent</li>
+			<li>SawRape_Horrible</li>
+			<li>SawRape_Disapproved</li>
+			<li>SawRape_Acceptable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+</Defs>

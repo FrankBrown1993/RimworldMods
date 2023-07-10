@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Pawn thoughts -->
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInExhibitionism_Disapproved</defName>
+		<durationDays>5.0</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>involuntary exhibitionist</label>
+				<description>Urgh. That was awkward...</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>		
+		<replaceThoughts>
+			<li>PartookInExhibitionism_Acceptable</li>
+			<li>PartookInExhibitionism_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInExhibitionism_Acceptable</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>uncaring exhibitionist</label>
+				<description>Uhh, you need something?</description>
+				<baseMoodEffect>0.01</baseMoodEffect>
+			</li>
+		</stages>
+		<replaceThoughts>
+			<li>PartookInExhibitionism_Disapproved</li>
+			<li>PartookInExhibitionism_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Uncaring</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>PartookInExhibitionism_Approved</defName>
+		<durationDays>2.0</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>exhilerated by exhibitionism</label>
+				<description>This feeling... It's so freeing.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+		<replaceThoughts>
+			<li>PartookInExhibitionism_Disapproved</li>
+			<li>PartookInExhibitionism_Acceptable</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<!-- Witness thoughts -->
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawExhibitionism_Disapproved</defName>
+		<durationDays>5.0</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>accidental voyeur</label>
+				<description>Jeez! Get a room!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>	
+		<replaceThoughts>
+			<li>SawExhibitionism_Acceptable</li>
+			<li>SawExhibitionism_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Acceptance</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawExhibitionism_Acceptable</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>unfazed voyeur</label>
+				<description>Don't mind me, just passing through.</description>
+				<baseMoodEffect>0.01</baseMoodEffect>
+			</li>
+		</stages>
+		<replaceThoughts>
+			<li>SawExhibitionism_Disapproved</li>
+			<li>SawExhibitionism_Approved</li>
+		</replaceThoughts>
+		<reactionToSexDiscovery>Uncaring</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+	
+	<Privacy_Please.SexActThoughtDef>
+		<defName>SawExhibitionism_Approved</defName>
+		<durationDays>2.0</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>aroused by voyeurism</label>
+				<description>Damn, that was hot!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+		<replaceThoughts>
+			<li>SawExhibitionism_Disapproved</li>
+			<li>SawExhibitionism_Acceptable</li>
+		</replaceThoughts>		
+		<reactionToSexDiscovery>Approval</reactionToSexDiscovery>
+	</Privacy_Please.SexActThoughtDef>
+
+</Defs>

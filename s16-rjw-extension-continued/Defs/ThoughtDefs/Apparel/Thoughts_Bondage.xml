@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>S16_ChainHarnessATh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_ChainHarnessAHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>chain harness</label>
+        <description>These heavy chains bruise my skin and it's hard to move wearing them</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>chain harness</label>
+        <description>Oh shit, they are really heavy... I got some bruises from them</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>chain harness</label>
+        <description>I like the feeling of cold metal on my skin a little... Sometimes I have goosebumps and it turns me on... The fact that these chains are on me</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16_NippleWristCuffs_MainTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_NippleWristCuffs_MainHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+    <li>Beauty</li>
+    <li>Nudist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>gentle tease</label>
+        <description>I feel so vulnerable and exposed...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>gentle tease</label>
+        <description>Uhhh, I can't move my arms without teasing myself...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>tease</label>
+        <description>These chains pull my nipples every time I try to toush my pussy... It's s-so arousing...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>tease</label>
+        <description>O-oah.. I want to masturbate so hard.. U!-uhh...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>tease</label>
+        <description>E-aaahhhh... I.. am... close! U-uhh...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>having nipple orgasm from sex toy</label>
+        <description>Mna-a-ahhhh! Yes-yes-yes! Yes!</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+	  <li>
+        <label>post orgasm</label>
+        <description>O-ohhh... F-fuck...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  	  <li>
+        <label>satisfaction</label>
+        <description>I... O-ohh...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>S16_NippleWristCuffs_MainTh_Special</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16_NippleWristCuffs_MainHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Beauty</li>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>sweet nipple torture</label>
+        <description>It's both embarrassing and sexy for the others to see my wrists bonded to my nipples like this...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet nipple torture</label>
+        <description>Do they want to fuck me because I am comletely defensless now? Thinking about it makes me wet...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet nipple torture</label>
+        <description>Uh-hh.. I am ready to.. I want it</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet nipple torture</label>
+        <description>Do you want to take me bound like this? Go ahead...</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweet nipple torture</label>
+        <description>Please... I wnat it so bad...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>cumming from sweet nipple torture</label>
+        <description>O-ahhh... Yeas-s...</description>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+      <li>
+        <label>post orgasm</label>
+        <description>It was so g-good...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+	    <label>satisfaction</label>
+        <description>I am such a pervert...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

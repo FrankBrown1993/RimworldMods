@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffArmbinder</defName>
+		<label>force off armbinder</label>
+		<description>Forcibly removes an armbinder without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing armbinder.</jobString>
+		<removes_apparel>Armbinder</removes_apparel>
+		<failure_affects>Torso</failure_affects>
+		<destroys_one_of>
+			<li>Hand</li>
+		</destroys_one_of>
+		<major_burns_on>
+			<li>Hand</li>
+			<li>Arm</li>
+		</major_burns_on>
+		<minor_burns_on>
+			<li>Torso</li>
+		</minor_burns_on>
+	</rjw.force_off_gear_def>
+
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffGagBall</defName>
+		<label>force off gag</label>
+		<description>Forcibly removes a gag without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing gag.</jobString>
+		<removes_apparel>GagBall</removes_apparel>
+		<failure_affects>Head</failure_affects>
+		<destroys_one_of>
+			<li>Jaw</li>
+		</destroys_one_of>
+		<major_burns_on>
+			<li>Head</li>
+			<li>Neck</li>
+		</major_burns_on>
+	</rjw.force_off_gear_def>
+	
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffGagRing</defName>
+		<label>force off gag</label>
+		<description>Forcibly removes a gag without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing gag.</jobString>
+		<removes_apparel>GagRing</removes_apparel>
+		<failure_affects>Head</failure_affects>
+		<destroys_one_of>
+			<li>Jaw</li>
+		</destroys_one_of>
+		<major_burns_on>
+			<li>Head</li>
+			<li>Neck</li>
+		</major_burns_on>
+	</rjw.force_off_gear_def>
+
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffChastityBelt</defName>
+		<label>force off chastity belt</label>
+		<description>Forcibly removes a chastity belt without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing chastity belt.</jobString>
+		<removes_apparel>ChastityBelt</removes_apparel>
+		<failure_affects>Torso</failure_affects>
+		<destroys_one_of>
+			<li>Genitals</li>
+		</destroys_one_of>
+		<major_burns_on>
+			<li>Torso</li>
+		</major_burns_on>
+		<minor_burns_on>
+			<li>Leg</li>
+		</minor_burns_on>
+	</rjw.force_off_gear_def>
+	
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffChastityBeltOpen</defName>
+		<label>force off chastity belt</label>
+		<description>Forcibly removes a chastity belt without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing chastity belt.</jobString>
+		<removes_apparel>ChastityBeltO</removes_apparel>
+		<failure_affects>Torso</failure_affects>
+		<destroys_one_of>
+			<li>Genitals</li>
+		</destroys_one_of>
+		<major_burns_on>
+			<li>Torso</li>
+		</major_burns_on>
+		<minor_burns_on>
+			<li>Leg</li>
+		</minor_burns_on>
+	</rjw.force_off_gear_def>
+	
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffChastityCage</defName>
+		<label>force off chastity belt</label>
+		<description>Forcibly removes a chastity cage without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing chastity cage.</jobString>
+		<removes_apparel>ChastityCage</removes_apparel>
+		<failure_affects>Torso</failure_affects>
+		<destroys_one_of>
+			<li>Genitals</li>
+		</destroys_one_of>
+		<major_burns_on>
+			<li>Torso</li>
+		</major_burns_on>
+		<minor_burns_on>
+			<li>Leg</li>
+		</minor_burns_on>
+	</rjw.force_off_gear_def>
+	
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffLegbinder</defName>
+		<label>force off legbinder</label>
+		<description>Forcibly removes a legbinder without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing legbinder.</jobString>
+		<removes_apparel>Legbinder</removes_apparel>
+		<failure_affects>Torso</failure_affects>
+		<major_burns_on>
+			<li>Leg</li>
+		</major_burns_on>
+		<minor_burns_on>
+			<li>Genitals</li>
+		</minor_burns_on>
+	</rjw.force_off_gear_def>
+	
+	<rjw.force_off_gear_def ParentName="ForceOffGenericGear">
+		<defName>ForceOffBlindfold</defName>
+		<label>force off blindfold</label>
+		<description>Forcibly removes a blindfold without the key at the cost of significant damage to the wearer.</description>
+		<jobString>Forcibly removing blindfold.</jobString>
+		<removes_apparel>Blindfold</removes_apparel>
+		<failure_affects>Head</failure_affects>
+		<major_burns_on>
+			<li>Head</li>
+		</major_burns_on>
+		<minor_burns_on>
+			<li>Neck</li>
+		</minor_burns_on>
+	</rjw.force_off_gear_def>
+</Defs>

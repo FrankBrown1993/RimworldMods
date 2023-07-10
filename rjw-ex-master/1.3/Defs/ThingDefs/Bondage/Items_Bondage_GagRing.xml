@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjw.bondage_gear_def ParentName="BondageGearBase">
+		<defName>GagRing</defName>
+		<label>ring gag</label>
+		<description>Ring gag prevents talking, allows oral interaction.</description>
+		<thingClass>rjw.bondage_gear</thingClass>
+		<graphicData>
+			<texPath>Items/GagRing/gag_ring</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<MarketValue>550</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Teeth</li>
+				<!-- <li>FullHead</li> -->
+				<!-- <li>Mouth</li> Causes bugs with ApparelUtility.HasPartsToWear -->
+			</bodyPartGroups>
+			<wornGraphicPath>Items/GagRing/GagRing</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+				<!-- <li>OnSkin</li> -->
+			</layers>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+		</apparel>
+		<soul_type>rjw.bondage_gear_soul</soul_type>
+		<equipped_hediff>OpenGag</equipped_hediff>
+		<gives_gagged_moodlet>true</gives_gagged_moodlet>
+		<HediffTargetBodyPartDefs>
+			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>Beak</li>
+			<li>InsectMouth</li>
+			<li>SnakeMouth</li>
+		</HediffTargetBodyPartDefs>
+		<BoundBodyPartGroupDefs>
+			<li>HeadAttackTool</li>
+			<li>Teeth</li>
+			<li>Beak</li>
+			<li>Mouth</li>
+		</BoundBodyPartGroupDefs>
+	</rjw.bondage_gear_def>
+</Defs>

@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--Issue-->
+	
+	<IssueDef>
+		<defName>Lactating</defName>
+		<label>lactating</label>
+		<iconPath>UI/Issues/Lactating</iconPath>
+	</IssueDef>
+	
+	<!--Essential-->
+	
+	<PreceptDef>
+		<defName>Lactating_Essential</defName>
+		<issue>Lactating</issue>
+		<label>essential</label>
+		<impact>High</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<description>Milk from breasts is creamy and delicious. It should be produced and consumed on a regular basis. Lactating colonists can be converted to hucow, which will produce double the normal amount of milk.</description>
+		<comps>
+			<li Class="CRIALactation.PreceptComp_Lactation"></li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Lactating_Essential</thought>
+				<description>Sizeable breasts must produce milk</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Lactating_Essential_Social</thought>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DrankNonMilkMeal</eventDef>
+				<thought>DrankNonMilkMeal_Essential</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DrankMilkRaw</eventDef>
+				<thought>DrankMilkRaw_Essential</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DrankMilkMeal</eventDef>
+				<thought>DrankMilkMeal_Essential</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Lactating_Essential</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>CRIALactation.ThoughtWorker_Precept_Lactating_Essential</workerClass>
+		<stages>
+			<li>
+				<label>producing milk (hucow)</label>
+				<description>I'm a good cow to be producing milk.  Moo!</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>producing milk</label>
+				<description>I'm glad I can support my colony by producing some milk.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>not producing milk</label>
+				<description>We live in such difficult times. It's wishful thinking, but I'd like to be producing milk right now.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>not producing milk</label>
+				<description>I'm as useless as a dry well. A healthy supply of my milk can benefit the colony, but I'm failing to deliver.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			
+			<li>
+				<label>not producing milk</label>
+				<description>Producing milk is a basic responsibility. I'm embarrassed and ashamed to be dry.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Lactating_Essential_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>CRIALactation.ThoughtWorker_Precept_Lactating_Essential_Social</workerClass>
+		<stages>
+			<li>
+				<label>hucow</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>producing milk</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not producing milk (low expectations)</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not producing milk (moderate expectations)</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not producing milk (high expectations)</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>DrankMilkRaw_Essential</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank human milk</label>
+				<description>The taste of fresh breast milk is sweet, fulfilling, and intimate.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>DrankMilkMeal_Essential</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Ate meal with human milk</label>
+				<description>The breast milk accentuated my meal beautifully.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>DrankNonMilkMeal_Essential</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Ate non-human milk food</label>
+				<description>I had to eat food that wasn't produced from a hucow's breasts. This food should be for hucows only.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NoRecentHumanMilk_Essential</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>CRIALactation.ThoughtWorker_Precept_NoRecentHumanMilk</workerClass>
+		<doNotApplyToQuestLodgers>True</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>want human milk</label>
+				<description>It's been so long since I've tasted the milk of a woman's breasts. I should have had some by now.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!--mandatory hucow-->
+
+	<PreceptDef>
+		<defName>Lactating_MandatoryHucow</defName>
+		<issue>Lactating</issue>
+		<label>required (mandatory hucow)</label>
+		<impact>High</impact>
+		<requiredMemes>
+			<li>Hucow</li>
+		</requiredMemes>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<description>Breast milk is the most natural sustenance. For all sizeable bosoms, maximum expression and hucow conversion is a duty. To not produce or eat a meal without breast milk is unthinkable.</description>
+		<comps>
+			<li Class="CRIALactation.PreceptComp_Lactation"></li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Lactating_MandatoryHucow</thought>
+				<description>Colonists with sizeable breasts must become hucows</description>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Lactating_MandatoryHucow_Social</thought>
+				<tooltipShowMoodRange>true</tooltipShowMoodRange>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DrankNonMilkMeal</eventDef>
+				<thought>DrankNonMilkMeal_MandatoryHucow</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DrankMilkRaw</eventDef>
+				<thought>DrankMilkRaw_MandatoryHucow</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DrankMilkMeal</eventDef>
+				<thought>DrankMilkMeal_MandatoryHucow</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Lactating_MandatoryHucow</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>CRIALactation.ThoughtWorker_Precept_Lactating_Essential</workerClass>
+		<stages>
+			<li>
+				<label>producing milk (hucow)</label>
+				<description>Watching people's satisfied faces drink what I expressed gives me a motherly sense of pride. I'm the colony's cow. Moo!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>producing milk</label>
+				<description>I'm producing milk, but I'm not a cow yet.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>not producing milk</label>
+				<description>It pains me to think my breasts aren't producing milk when we need it most.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>not producing milk</label>
+				<description>My milk has run dry. I'm so embarrassed I don't think I can show my face in public.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+
+			<li>
+				<label>not producing milk</label>
+				<description>What's my purpose if I have breasts but can't express milk? I'm useless!</description>
+				<baseMoodEffect>-9</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Lactating_MandatoryHucow_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>CRIALactation.ThoughtWorker_Precept_Lactating_Essential_Social</workerClass>
+		<stages>
+			<li>
+				<label>hucow</label>
+				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>
+			<li>
+				<label>producing milk</label>
+				<baseOpinionOffset>-2</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not producing milk (low expectations)</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not producing milk (moderate expectations)</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>not producing milk (high expectations)</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>DrankMilkRaw_MandatoryHucow</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank human milk</label>
+				<description>So divine, so succulent. Our cows produce delicious milk.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>DrankMilkMeal_MandatoryHucow</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Ate meal with human milk</label>
+				<description>The breast milk accentuated my meal beautifully.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>DrankNonMilkMeal_MandatoryHucow</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Ate non-human milk food</label>
+				<description>Gross! I had to eat food that didn't contain breast milk. This kind of food should be for hucows only!</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>NoRecentHumanMilk_MandatoryHucow</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>CRIALactation.ThoughtWorker_Precept_NoRecentHumanMilk</workerClass>
+		<doNotApplyToQuestLodgers>True</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>want human milk</label>
+				<description>I haven't had breast milk in days. My body feels weak.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

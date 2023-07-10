@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <MakeArmbinder.label>制作拘束手套</MakeArmbinder.label>
+  <MakeArmbinder.description>制作拘束手套.</MakeArmbinder.description>
+  <MakeArmbinder.jobString>做出了拘束手套.</MakeArmbinder.jobString>
+  <MakeGagBall.label>制作充气式口塞</MakeGagBall.label>
+  <MakeGagBall.description>制作一个充气式口塞，影响说话。</MakeGagBall.description>
+  <MakeGagBall.jobString>做出了口球</MakeGagBall.jobString>
+  <MakeGagRing.label>制作环形口球</MakeGagRing.label>
+  <MakeGagRing.description>制作一个环形口球，影响说话。</MakeGagRing.description>
+  <MakeGagRing.jobString>做出了口球</MakeGagRing.jobString>
+  <MakeChastityBelt.label>制作贞操带</MakeChastityBelt.label>
+  <MakeChastityBelt.description>制作一个贞操带，阻止触碰生殖器和肛门。</MakeChastityBelt.description>
+  <MakeChastityBelt.jobString>做出了贞操带。</MakeChastityBelt.jobString>
+  <MakeChastityBeltO.label>制作贞操带（开放式）</MakeChastityBeltO.label>
+  <MakeChastityBeltO.description>制作一个贞操带，阻止触碰生殖器，有一个用于肛交的开口。</MakeChastityBeltO.description>
+  <MakeChastityBeltO.jobString>做出了贞操带。</MakeChastityBeltO.jobString>
+  <MakeChastityCage.label>制作贞操笼</MakeChastityCage.label>
+  <MakeChastityCage.description>制作一个能阻止勃起的贞操笼。</MakeChastityCage.description>
+  <MakeChastityCage.jobString>做出了一个贞操笼</MakeChastityCage.jobString>
+  <MakeLegbinder.label>制作拘束靴</MakeLegbinder.label>
+  <MakeLegbinder.description>制作拘束靴.</MakeLegbinder.description>
+  <MakeLegbinder.jobString>做出了拘束靴.</MakeLegbinder.jobString>
+  <MakeBlindfold.label>制作眼罩</MakeBlindfold.label>
+  <MakeBlindfold.description>制作眼罩.</MakeBlindfold.description>
+  <MakeBlindfold.jobString>做出了眼罩.</MakeBlindfold.jobString>
+</LanguageData>

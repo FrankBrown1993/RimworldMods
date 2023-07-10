@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <MakeArmbinder.label>сделать моноперчатку</MakeArmbinder.label>
+  <MakeArmbinder.description>Сделать моноперчатку.</MakeArmbinder.description>
+  <MakeArmbinder.jobString>Делает моноперчатку.</MakeArmbinder.jobString>
+  
+  <MakeGagBall.label>сделать шариковый кляп</MakeGagBall.label>
+  <MakeGagBall.description>Сделать кляп с шариком, мешает говорить.</MakeGagBall.description>
+  <MakeGagBall.jobString>Делает кляп.</MakeGagBall.jobString>
+  
+  <MakeGagRing.label>сделать кольцевой кляп</MakeGagRing.label>
+  <MakeGagRing.description>Сделать кляп с кольцом, мешает говорить.</MakeGagRing.description>
+  <MakeGagRing.jobString>Делает кляп.</MakeGagRing.jobString>
+  
+  <MakeChastityBelt.label>сделать пояс целомудрия</MakeChastityBelt.label>
+  <MakeChastityBelt.description>Сделать пояс целомудрия, предотвращающий доступ к гениталиям и анусу.</MakeChastityBelt.description>
+  <MakeChastityBelt.jobString>Делает пояс целомудрия.</MakeChastityBelt.jobString>
+  
+  <MakeChastityBeltO.label>сделать пояс целомудрия(открытый)</MakeChastityBeltO.label>
+  <MakeChastityBeltO.description>Сделать пояс целомудрия, предотвращает доступ к гениталиям, имеет отверстие для анального секса.</MakeChastityBeltO.description>
+  <MakeChastityBeltO.jobString>Делает пояс целомудрия.</MakeChastityBeltO.jobString>
+  
+  <MakeChastityCage.label>сделать клетку целомудрия</MakeChastityCage.label>
+  <MakeChastityCage.description>Сделать клетку целомудрия, предотвращающую эрекцию.</MakeChastityCage.description>
+  <MakeChastityCage.jobString>Делает клетку целомудрия.</MakeChastityCage.jobString>
+  
+  <MakeLegbinder.label>сделать моносапог</MakeLegbinder.label>
+  <MakeLegbinder.description>Сделать моносапог.</MakeLegbinder.description>
+  <MakeLegbinder.jobString>Делает моносапог.</MakeLegbinder.jobString>
+  
+  <MakeBlindfold.label>сделать повязку для глаз</MakeBlindfold.label>
+  <MakeBlindfold.description>Сделать повязку для глаз.</MakeBlindfold.description>
+  <MakeBlindfold.jobString>Делает повязку для глаз.</MakeBlindfold.jobString>
+
+</LanguageData>

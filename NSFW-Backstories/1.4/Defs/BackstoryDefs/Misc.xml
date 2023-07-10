@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>pimp</defName>
+		<title>pimp</title>
+		<titleShort>pimp</titleShort>
+		<slot>Adulthood</slot>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<baseDesc>[PAWN_nameDef] used [PAWN_possessive] strength and cunning to work the prostitutes under them with an iron fist.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Melee</key><value>2</value></li>
+			<li><key>Shooting</key><value>2</value></li>
+			<li><key>Social</key><value>2</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Prostitute</defName>
+		<title>prostitute</title>
+		<titleShort>prostitute</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] made [PAWN_pronoun] money by selling herself to the highest, or lowest, bidder.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>2</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>SchoolProstitute</defName>
+		<title>prostitute</title>
+		<titleShort>prostitute</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>College and higher education comes at a great cost, and [PAWN_nameDef] paid off [PAWN_possessive] debt by selling their body.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Intellectual</key><value>2</value></li>
+			<li><key>Social</key><value>2</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>SexSlave</defName>
+		<title>sex slave</title>
+		<titleShort>slave</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was kidnapped and sold, living a portion of their life as a sex slave.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Tribal</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<skillGains>
+			<li><key>Social</key><value>2</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Cheater</defName>
+		<title>cheater</title>
+		<titleShort>cheater</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef]'s partner caught them cheating, and ever since then [PAWN_pronoun] has not let it go. They always find a way to bring up how their partner ruined their social life.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>-2</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>RuinedProfessional</defName>
+		<title>ruined professional</title>
+		<titleShort>ruined proffessional</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>From business deals to workplace etiquette, [PAWN_nameDef] mastered everything one could in business, except for hiding relationships. Once [PAWN_possessive] relationship with another coworker was exposed, [PAWN_pronoun] lost their job and professional reputation.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>ImperialCommon</li>
+		</spawnCategories>
+		<skillGains>
+			<li><key>Social</key><value>4</value></li>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+    	<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+</Defs>

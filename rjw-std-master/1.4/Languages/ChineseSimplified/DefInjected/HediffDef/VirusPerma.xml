@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <VirusPerma.label>病毒伤害</VirusPerma.label>
+  <VirusPerma.description>病毒伤害。</VirusPerma.description>
+  <VirusPerma.injuryProps.destroyedLabel>被疾病摧毁</VirusPerma.injuryProps.destroyedLabel>
+  <VirusPerma.injuryProps.destroyedOutLabel>被疾病摧毁</VirusPerma.injuryProps.destroyedOutLabel>
+</LanguageData>

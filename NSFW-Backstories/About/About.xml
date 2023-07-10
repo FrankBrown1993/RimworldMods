@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>NSFW Backstories</name>
+    <author>Rain</author>
+    <url>https://www.loverslab.com/files/file/24234-nsfw-backstories/</url>
+    <packageId>Rain.NSFWBackstories</packageId>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+
+    <description>A collection of NSFW backstories. Not all of these are sex related, some include violence/gore/anything that regular Rimworld might not have.
+
+        Please send ideas to Rain or on loverslab!
+    </description>
+</ModMetaData>

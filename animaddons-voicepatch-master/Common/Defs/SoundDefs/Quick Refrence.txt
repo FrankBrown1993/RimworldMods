@@ -1,0 +1,15 @@
+<soundEffect>Voiceline_FGrunt</soundEffect>
+
+<soundEffect>Voiceline_FScream</soundEffect>
+
+<soundEffect>Voiceline_FMoan</soundEffect>
+
+<soundEffect>Voiceline_FMoanShort</soundEffect>
+
+<soundEffect>Voiceline_MGrunt</soundEffect>
+
+<soundEffect>Voiceline_MScream</soundEffect>
+
+<soundEffect>Voiceline_MMoan</soundEffect>
+
+<soundEffect>Voiceline_MMoanShort</soundEffect>

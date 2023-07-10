@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+    <defName>S16DressIIITh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+	<nullifyingTraits>
+    <li>Nudist</li>
+	<li>Brawler</li>
+	<li>Kind</li>
+	<li>Masochist</li>
+	<li>TorturedArtist</li>
+	<li>DislikesMen</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>It's too much for me, isn't it?</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>Oh, I look like a strip dancer</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>Maybe I should make some erotic dance? Hah, just kidding, I won't</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIIThNudist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>These things lock my nipples!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>I don't like that something covers my body from sunlight and that fresh icy air</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>Why don't people use things like these instead of their bulky clothes all the time?..</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIIThBrawler</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Brawler</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>Wow, these cute stickers fit my muscled body!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>The tassels jump as I move my chest muscles</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>You wanna see my strong body posing erotically, darling? I don't even mind if you take a picture of me...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+    
+	<ThoughtDef>
+    <defName>S16DressIIIThKind</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Kind</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>I feel kinda shy...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>It's not bad to be beautiful and lift people's mood, isn't it?..</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>I am glad that people become happy looknig at me...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+    <ThoughtDef>
+    <defName>S16DressIIIThMasochist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>People look at my chest as hungry wolfs look at fresh meat...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>What would you like to do with my titties, mmm?</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>I wanna feel strong rough hands on my chest so much..</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIIThTorturedArtist</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>TorturedArtist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>These are nice...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>A body is a blade...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>Sha!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIIThDislikesMen</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>DislikesMen</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>I don't want to wear it, please!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>These dirty looks...</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>I don't know... no...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressIIIThNymphomaniac</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIIIHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nymphomaniac</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>nipple stickers</label>
+        <description>Hey, look here!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>Touch, slap, squeeze, do anyting you want! Uhhhh, I am on fire...</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>nipple stickers</label>
+        <description>Milk me, ohhhh!..</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+    <ThoughtDef>
+    <defName>S16DressIVTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressIVHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>black nipple stickers</label>
+        <description>I don't think it's better than just a normal bra...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>black nipple stickers</label>
+        <description>At least my nipples are covered... but wearing these stickers without outwear is too skimpy...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>black nipple stickers</label>
+        <description>Hmmm, do I look like a goth girl? Oh, nevermind...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>S16DressVTh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>S16DressVHed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>golden cross nipple stickers</label>
+        <description>It looks... very provocative... hm</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+	  <li>
+        <label>golden cross nipple stickers</label>
+        <description>Uhh well, when I think about the reasons that made me wear this... I feel... a little bit... horny...</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>golden cross nipple stickers</label>
+        <description>Do you like my chest being exposed and decorated? Do you like... it's form?</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+	</ThoughtDef>
+</Defs>

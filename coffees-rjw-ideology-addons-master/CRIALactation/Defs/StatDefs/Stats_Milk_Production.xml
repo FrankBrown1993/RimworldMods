@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>MilkProductionSpeed</defName>
+		<label>milk production speed multiplier</label>
+		<minValue>0.001</minValue>
+		<category>BasicsPawn</category>
+		<toStringStyle>PercentZero</toStringStyle>
+		<hideAtValue>1</hideAtValue>
+		<defaultBaseValue>1</defaultBaseValue>
+		<showOnAnimals>false</showOnAnimals>
+		<showOnMechanoids>false</showOnMechanoids>
+		<displayPriorityInCategory>10000</displayPriorityInCategory>
+	</StatDef>
+
+	<StatDef>
+		<defName>MilkProductionYield</defName>
+		<label>milk production yield multiplier</label>
+		<toStringStyle>PercentZero</toStringStyle>
+		<minValue>1</minValue>
+		<category>BasicsPawn</category>
+		<hideAtValue>1</hideAtValue>
+		<defaultBaseValue>1</defaultBaseValue>
+		<showOnAnimals>false</showOnAnimals>
+		<showOnMechanoids>false</showOnMechanoids>
+		<displayPriorityInCategory>10001</displayPriorityInCategory>
+	</StatDef>
+</Defs>

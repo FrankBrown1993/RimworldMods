@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!--Variable-size lockable-->	
+	<rjwex.anal_plug_def ParentName="AnalPlugBase">
+		<defName>AnalPlugExpandable</defName>
+		<label>(Lockable)Expandable anal plug</label>
+		<description>Expandable anal plug. Hololock equipped.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugExpandable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.8</Mass>
+		</statBases>
+		<plug_size>0</plug_size>
+		<comps>	
+			<li Class="rjw.CompProperties_HoloCryptoStamped" />
+		</comps>
+		
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Hololock>1</Hololock>
+		</costList>
+		
+		<blocks_anus>true</blocks_anus>
+	</rjwex.anal_plug_def>
+	
+	<!--Variable-size unlocked-->	
+	<rjwex.anal_plug_def ParentName="AnalPlugBase">
+		<defName>AnalPlugExpandableUL</defName>
+		<label>Expandable anal plug</label>
+		<description>Expandable anal plug.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Items/Plugs/AnalPlugExpandable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.4</Mass>
+		</statBases>
+		<plug_size>0</plug_size>
+		
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</rjwex.anal_plug_def>
+</Defs>

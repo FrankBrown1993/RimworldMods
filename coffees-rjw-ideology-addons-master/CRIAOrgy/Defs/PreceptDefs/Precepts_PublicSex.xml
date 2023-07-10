@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="FestivalBase">
+		<defName>OrgyCeremony</defName>
+		<label>fertility ritual</label>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<iconPath>UI/Icons/Rituals/TreeCelebration</iconPath>
+		<ritualPatternBase>FertilityRitual</ritualPatternBase>
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+	</PreceptDef>
+
+	<RitualPatternDef ParentName="CelebrationPartyChat">
+		<defName>FertilityRitual</defName>
+		<shortDescOverride>fertility ritual</shortDescOverride>
+		<descOverride>An orgy ritual.</descOverride>
+		<ritualBehavior>FertilityRitual</ritualBehavior>
+		<ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+		<ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
+		<ritualOutcomeEffect>FertilityRitualOutcome</ritualOutcomeEffect>
+		<ritualExplanation>ritual orgy.</ritualExplanation>
+		<canStartAnytime>true</canStartAnytime>
+	</RitualPatternDef>
+
+	<RitualBehaviorDef>
+		<defName>FertilityRitual</defName>
+		<durationTicks>10000</durationTicks>
+		<roles />
+		<spectatorsLabel>Participants</spectatorsLabel>
+		<spectatorGerund>participate</spectatorGerund>
+		<stages>
+			<li>
+				<defaultDuty>Orgy</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1</percentage>
+					</li>
+				</endTriggers>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+
+
+	<RitualOutcomeEffectDef>
+		<defName>FertilityRitualOutcome</defName>
+		<description>orgy ritual outcome</description>
+		<workerClass>CRIAOrgy.RitualOutcomeEffectWorker_Orgy</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.0)</li>
+						<li>(5,  0.6)</li>
+						<li>(10, 0.8)</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>50,  0.1</li>
+						<li>120, 0.2</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<chance>0.05</chance>
+				<label>Terrible</label>
+				<memory>TerribleOrgy</memory>
+				<description>The {0} was terrible! Participants endured hours of jaw-clenching small talk while waiting for it to end.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<chance>0.15</chance>
+				<label>Boring</label>
+				<memory>BoringOrgy</memory>
+				<description>The {0} was boring. Everyone felt too awkward to open up and laugh.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<chance>0.6</chance>
+				<label>Fun</label>
+				<memory>FunOrgy</memory>
+				<description>The {0} was good. Everyone appreciated the chance to relax and have fun together.</description>
+				<potentialExtraOutcomeDesc>There's a 5% chance that a random participant gains an inspiration.</potentialExtraOutcomeDesc>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<chance>0.2</chance>
+				<label>Unforgettable</label>
+				<memory>UnforgettableOrgy</memory>
+				<description>The {0} was unforgettable! Everyone learned about each other and felt like a family.</description>
+				<potentialExtraOutcomeDesc>There's a 10% chance a random participant gains an inspiration.</potentialExtraOutcomeDesc>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

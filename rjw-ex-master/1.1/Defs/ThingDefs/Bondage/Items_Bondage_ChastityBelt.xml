@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjw.bondage_gear_def ParentName="BondageGearBase">
+		<defName>ChastityBelt</defName>
+		<label>chastity belt</label>
+		<description>Chastity belt prevents sex and masturbation.</description>
+		<thingClass>rjw.bondage_gear</thingClass>
+		<graphicData>
+			<texPath>Items/ChastityBelt/chastity_belt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<MarketValue>550</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+		<apparel>
+			<!-- Use the legs group so it doesn't conflict with shirts -->
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Items/ChastityBelt/Chastity_Belt</wornGraphicPath>
+			<!-- Use the shell layer so it doesn't conflict with pants -->
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+		<soul_type>rjw.bondage_gear_soul</soul_type>
+		<gives_bound_moodlet>true</gives_bound_moodlet>
+		<blocks_penis>true</blocks_penis>
+		<blocks_vagina>true</blocks_vagina>
+		<blocks_anus>true</blocks_anus>
+		<equipped_hediff>ChastityBelt</equipped_hediff>
+		<HediffTargetBodyPartDefs>
+			<li>Genitals</li>
+			<li>Anus</li>
+		</HediffTargetBodyPartDefs>
+	</rjw.bondage_gear_def>
+</Defs>

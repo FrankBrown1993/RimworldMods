@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>PokéWorld</li>
+			<li>2652029657</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Mech_DoggystyleF" or defName="Mech_DoggystyleM" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlM" or defName="Beast_CowgirlF" or defName="BeastxBeast_Doggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>PW_HeadPokemon</li>
+						<li>PW_HeadPokemonWithBody</li>
+						<li>PW_HeadPokemonWithArms</li>
+						<li>PW_HeadPokemonWithLegs</li>
+						<li>PW_FishPokemonWithPectoralCaudalDorsalFins</li>
+						<li>PW_InsectPokemonWith6Legs</li>
+						<li>PW_InsectPokemonWith4Legs</li>
+						<li>PW_InsectPokemonWith4LegsAndClaws</li>
+						<li>PW_MultipleBodiedPokemon2Head</li>
+						<li>PW_MultipleBodiedPokemon3Head</li>
+						<li>PW_MultipleBodiedPokemon3HeadAndLegs</li>
+						<li>PW_MultipleBodiedPokemon5Head</li>
+						<li>PW_QuadrupedPokemonWithPaws</li>
+						<li>PW_QuadrupedPokemonWithPawsAndTail</li>
+						<li>PW_QuadrupedPokemonWithHooves</li>
+						<li>PW_QuadrupedPokemonWithHoovesAndTail</li>
+						<li>PW_SnakePokemon</li>
+						<li>PW_TentaclePokemon</li>
+						<li>PW_TentaclePokemonWithShell</li>
+						<li>PW_WingedPokemonWithBeak</li>
+						<li>PW_WingedPokemonWithJaw</li>
+						<li>PW_InsectPokemonWithWingsAndLegs</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(4legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Beast_Doggystyle2" or defName="BeastxBeast_Doggystyle" or defName="Beast_Oral" or defName="Beast_Muzzlefuck"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>PW_HeadPokemon</li>
+						<li>PW_HeadPokemonWithBody</li>
+						<li>PW_HeadPokemonWithArms</li>
+						<li>PW_HeadPokemonWithLegs</li>
+						<li>PW_FishPokemonWithPectoralCaudalDorsalFins</li>
+						<li>PW_InsectPokemonWith6Legs</li>
+						<li>PW_InsectPokemonWith4Legs</li>
+						<li>PW_InsectPokemonWith4LegsAndClaws</li>
+						<li>PW_MultipleBodiedPokemon2Head</li>
+						<li>PW_MultipleBodiedPokemon3Head</li>
+						<li>PW_MultipleBodiedPokemon3HeadAndLegs</li>
+						<li>PW_MultipleBodiedPokemon5Head</li>
+						<li>PW_QuadrupedPokemonWithPaws</li>
+						<li>PW_QuadrupedPokemonWithPawsAndTail</li>
+						<li>PW_QuadrupedPokemonWithHooves</li>
+						<li>PW_QuadrupedPokemonWithHoovesAndTail</li>
+						<li>PW_SnakePokemon</li>
+						<li>PW_TentaclePokemon</li>
+						<li>PW_TentaclePokemonWithShell</li>
+						<li>PW_WingedPokemonWithBeak</li>
+						<li>PW_WingedPokemonWithJaw</li>
+						<li>PW_InsectPokemonWithWingsAndLegs</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucking Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="HumanoidBeastDoggystyleF" or defName="HumanoidBeastDoggystyleM" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[2]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>PW_BipedPokemon</li>
+						<li>PW_BipedPokemonWithTail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"><!--Fucked Animals(2legs)-->
+					<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="HumanoidBeastDoggystyle2" or defName="HumanoidBeastxHumanoidBeastDoggystyle"]/actors/li[1]/bodyDefTypes</xpath>
+					<success>Always</success>
+					<value>
+						<li>PW_BipedPokemon</li>
+						<li>PW_BipedPokemonWithTail</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

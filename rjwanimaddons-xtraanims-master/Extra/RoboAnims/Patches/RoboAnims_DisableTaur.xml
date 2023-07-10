@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Dog_Doggystyle" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlF" or defName="Beast_CowgirlM" or defName="Doggystyle" or defName="DoggystyleF" or defName="DoggystyleM" or defName="Blowjob" or defName="BlowjobF" or defName="BlowjobM" or defName="ReverseStandAndCarry" or defName="ReverseStandAndCarryF" or defName="ReverseStandAndCarryM" or defName="Tribadism" or defName="TribadismF" or defName="TribadismM" or defName="Spitroast" or defName="SpitroastF" or defName="SpitroastM" or defName="Cunnilingus" or defName="CunnilingusF" or defName="CunnilingusM" or defName="ACSixtyNineM" or defName="ACSixtyNineF" or defName="ACButterflyM" or defName="ACButterflyF" or defName="ACBoobjobM" or defName="ACBoobjobF" or defName="ACHandjobM" or defName="ACHandjobF" or defName="ACFistingM" or defName="ACFistingF" or defName="ACFingeringM" or defName="ACFingeringF" or defName="ACFootjobF" or defName="ACFootjobM" or defName="ACMutualMasturbationF" or defName="ACMutualMasturbationM"]/actors/li[1]</xpath>
+		<value>
+		<blacklistedRaces>
+          <li>Lliscean</li>
+          <li>Arachne</li>
+                    <li>Alien_Epona</li>
+		  <li>Alien_Destrier</li>
+		  <li>Alien_Eponalike</li>		  
+		</blacklistedRaces>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Dog_Doggystyle" or defName="Beast_DoggystyleF" or defName="Beast_DoggystyleM" or defName="Beast_CowgirlF" or defName="Beast_CowgirlM" or defName="Doggystyle" or defName="DoggystyleF" or defName="DoggystyleM" or defName="Blowjob" or defName="BlowjobF" or defName="BlowjobM" or defName="ReverseStandAndCarry" or defName="ReverseStandAndCarryF" or defName="ReverseStandAndCarryM" or defName="Tribadism" or defName="TribadismF" or defName="TribadismM" or defName="Spitroast" or defName="SpitroastF" or defName="SpitroastM" or defName="Cunnilingus" or defName="CunnilingusF" or defName="CunnilingusM" or defName="ACSixtyNineM" or defName="ACSixtyNineF" or defName="ACButterflyM" or defName="ACButterflyF" or defName="ACBoobjobM" or defName="ACBoobjobF" or defName="ACHandjobM" or defName="ACHandjobF" or defName="ACFistingM" or defName="ACFistingF" or defName="ACFingeringM" or defName="ACFingeringF" or defName="ACCunnilingus" or defName="ACRimmingF" or defName="ACRimmingM" or defName="ACFootjobF" or defName="ACFootjobM" or defName="ACMutualMasturbationF" or defName="ACMutualMasturbationM"]/actors/li[2]</xpath>
+		<value>
+		<blacklistedRaces>
+          <li>Lliscean</li>
+          <li>Arachne</li>
+                    <li>Alien_Epona</li>
+		  <li>Alien_Destrier</li>
+		  <li>Alien_Eponalike</li>
+		</blacklistedRaces>
+		</value>
+	</Operation>
+	<!--Fucked Animals<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[defName=""]/actors/li[1]/bodyDefTypes</xpath>
+		<value>
+		<blacklistedRaces>
+          <li>Lliscean</li>
+          <li>Arachne</li>
+                    <li>Alien_Epona</li>
+		  <li>Alien_Destrier</li>
+		  <li>Alien_Eponalike</li>		  
+		</blacklistedRaces>
+		</value>
+	</Operation>-->
+</Patch>

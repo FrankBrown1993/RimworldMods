@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.1>
+		<li>Common/1.1</li><!--Load 1.1 defs and patches-->
+		<li>Common</li><!--Sounds and sound defs-->
+	</v1.1>
+	<v1.2>
+		<li>Common/1.2 and up</li><!--Load 1.2 defs and patches-->
+		<li>Common</li><!--Sounds and sound defs-->
+	</v1.2>
+	<v1.3>
+		<li>Common/1.2 and up</li><!--Load 1.3 defs and patches-->
+		<!--<li IfModActive="abscon.rimworld.animations.patch">Extra/Abstract Concept</li>--><!--AC patch with voice DISABLED, WIP-->
+		<li>Common</li><!--Sounds and sound defs-->
+	</v1.3>
+	<v1.4>
+		<li>Common/1.2 and up</li><!--Load 1.4 defs and patches-->
+		<!--<li IfModActive="abscon.rimworld.animations.patch">Extra/Abstract Concept</li>--><!--AC patch with voice DISABLED, WIP-->
+		<li>Common</li><!--Sounds and sound defs-->
+	</v1.4>
+</loadFolders>

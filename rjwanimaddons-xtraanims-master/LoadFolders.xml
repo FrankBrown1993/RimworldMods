@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.1>
+		<li>Common/1.1</li><!--Load 1.1 defs and patches-->
+	</v1.1>
+	<v1.2>
+		<li>Common/1.2 thru 1.4</li><!--Load 1.2 thru 1.4 defs and patches-->
+		<li>Extra/Abstract Concept</li><!--Load AC's animations-->
+	</v1.2>
+	<v1.3>
+		<li>Common/1.2 thru 1.4</li><!--Load 1.2 thru 1.4 defs and patches-->
+		<li IfModNotActive="abscon.rimworld.animations.patch">Extra/Abstract Concept</li><!--Load AC's animations-->
+	</v1.3>
+	<v1.4>
+		<li>Common/1.2 thru 1.4</li><!--Load 1.2 thru 1.4 defs and patches-->
+		<li IfModNotActive="abscon.rimworld.animations.patch">Extra/Abstract Concept</li><!--Load AC's animations-->
+		<li IfModNotActive="Roboslob.RoboAnims">Extra/RoboAnims</li><!--Load Roboslob's animations-->
+	</v1.4>
+</loadFolders>

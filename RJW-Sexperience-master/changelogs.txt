@@ -1,0 +1,241 @@
+Version 1.1.4.0
+ - Optimized SexStatusWindow
+ - Optimized Ate Cum thought
+ - Optimized? cum food filter
+ - Simplified virginity checks code
+ - Simplified bucket selection code
+ 
+Version 1.1.3.0
+ - Removed "Hide Sex History button with RJW designators" setting
+ - Fixed error with pawn masturbated on the map border
+ - Fixed counting self as a sex partner
+ - Fixed patch on FindSexLocation returning location in walls
+
+Version 1.1.2.1
+ - Fixed 1.3 assembly
+
+Version 1.1.2.0
+ - Rimworld 1.4
+
+Version 1.1.1.1
+ - Fix sex history window crashing for a pawns with a modded passion
+
+Version 1.1.1.0
+ - Fix def error when loading game without RJW Cum mod
+
+ by Rain
+ - Add Vanilla Skills Expanded integration
+
+Version 1.1.0.1
+ - Fix incompatibility with Performance Optimizer
+
+Version 1.1.0.0
+ - Requires RJW 5.0 or later
+ - Removed Ideology content
+
+Version Beta 1.0.5.0
+ - Updated mod description
+ - Added stealth change of "virgin" trait to "virgin?" when game generates a child for a virgin mother
+ - Added basic Abhorrent and Disapproved Masturbation precepts. Abhorrent stops pawns from masturbating, Disapproved cuts masturbation chance by 2. No mood, no social impact
+ - Removed SecondaryRomanceChanceFactor multiplication for blood relatives if IncestOnly precept is active
+ - Changed Rape Abhorrent precept to forbid rape
+ - Changed Necrophilia Abhorrent precept to forbid necrophilia
+ - Changed Bestiality Abhorrent precept to forbid bestiality
+ - Changed rape to apply sextype thoughts to rapist
+ 
+ by Hawkeye32
+  - Bond Only bestiality precept
+
+Version Beta 1.0.4.4
+ - Fixed an error in vaginal necro with a virgin
+ - Added option to hide Sex History button for the drafted pawns
+ - Added option to hide Sex History button together with the RJW designators group
+
+Version Beta 1.0.4.3
+ - Updated for RimWorld version 1.3.3387
+ - Added rimming to "Anal only" precept
+ - Added option to completely disable sex history
+
+Version Beta 1.0.4.2
+ - Pawns ignore full buckets when searching one to masturbate
+ - Fixed generation error for races with no reproductive lifestages
+
+ by AerosAtar:
+  - Added [SYR] Trait Value compatibility
+
+ internal:
+  - Added StoredStackCount property to Building_CumBucket
+  - Refactored Building_CumBucket
+  - Refactored SexPartnerHistoryRecord
+  - Refactored StatParts
+  - Removed factor from StatPart_Lust
+  - Removed HistoryUtility.GetPartnerHistory method
+  - Removed RJWUtility.UpdateSatisfactionHIstory method
+  - Renamed SexPartnerHistory to SexHistoryComp
+  - Do not load VSIE_Teaching_Sex RulePackDef if Vanilla Social Interactions Expanded is not used
+
+Version Beta 1.0.4.1
+ - Fixed pawn generation exception
+ - Fixed history gizmo for non-colonists
+ - Fixed repeated scroll sounds in mod settings. Again
+
+Version Beta 1.0.4.0
+ - Hiden log spam behind Debug option
+ - Allowed prisoners to use buckets for masturbation
+ - Added filters for food with and without cum
+ - Added WorkGiver for collecting cum from body into bucket. Currently it is in Basic category
+ - Added tabs tor the mod settings window
+ - Moved record randomiser settings to a separate tab
+ - Fixed second stage of AteCum thought not triggering
+ - Filled drugCategory for cum to enable drug properties display
+ - Made cum addicts gravitate to blowjobs based on cum need state
+ - Made meals with cum non-mergable with other kinds
+ - Optimized sex history saving for reduced file size. Now it does not write default values
+ - Removed decimals from "Cum swallowed" in sex status window
+ 
+ by Vegapnk:
+  - Changed calculation for cum amount from masturbation near a bucket. Now cum amount is collected from all penetrators
+  - Split cum amount equally between all buckets in range
+  - Made boobjobs, footjobs and handjobs that happens near cum bucket fill it like masturbation does. Can be enabled in settings. Disabled by default
+
+ internal:
+ - Changed mod settings format
+ - Refactored ThoughtDefs to use mod extensions
+ - Refactored cum ingestion to use RW's ingestion system
+ - Refactored history gizmo injection
+ - Removed unused DefOfs
+ - Migrated projects to Krafs.Rimworld.Ref nuget
+ - Updated Harmony version in project refs to 2.2.1
+ 
+Version Beta 1.0.3.2
+ - Fix repeated scroll sounds in mod settings
+
+Version Beta 1.0.3.1
+ - Added ability to draw more quirks in Sex Status window
+ - Added option to disable Bastard relation
+ - Moved "Reset to default" button label from C# to XML for translations
+
+Version Beta 1.0.3.0
+ - requires RJW 4.9.5.3 or later
+ - Added option to get minimum sexable age for record randomizer from life stages
+ - Fixed rape history recording
+ - Fixed cum eating for futas
+ - Fixed compatibility with VSIE Teaching
+ - Changed Scissoring SextypeColor from white to dark green
+ - Changed sextype bars scaling to max value
+ - Hide history Gizmo when several pawns selected
+ - Optimized history gizmo injection
+ - Changed lust update calculation. Now increment factor only applied if absolute value is increased
+ - Added option for how much lust can change from a single sex act
+ - Fixed cum bucket masturbation error
+
+Version Beta 1.0.2.3
+ - fixed scroll was not worked well
+ - memory optimizations
+ - removed sex histories from mechanoids
+ - added sorting partner list
+
+Version Beta 1.0.2.2
+ - non-player faction pawns no longer use cum buckets
+ - fixed sex history error with dead pawns
+ - added recent sex time
+
+Version Beta 1.0.2.1
+ - messages about virginity loss will not be shown if the record randomizer is off
+ - fixed rituals not worked properly
+ - resolved mod confliction
+
+Version Beta 1.0.2.0
+This update will mess your pawn's record. Use debug tools.
+ - requires RimWorld 1.3.3117 or later
+ - requires RJW 4.8.1 or later
+ - submissive gender can be designated as comfort
+ - added virgin
+ - added virgin precept
+ - added hymenoplasty(hymen restoration surgery)
+ - added sex history(not applied retroactively)
+   - you can change hotkey in keyboard configuration(default: none)
+ - can collect cum on body
+ - cum can spill out from cum buckets if over the stack count
+ - fixed disabling sex record generation was not worked
+ - removed lust adjustment from precepts that causing massive lust increment
+ - changed gangbang condition
+ - now pawns will go to the nearest cum bucket when cleaning self or masturbating
+ - added consensual ganbang rituals(requires lewd meme)
+ - non-consensual animal gangbang requires both rapist and zoophile memes
+ - adjusted gangbang outcome values
+
+Version Beta 1.0.1.11b
+ - fixed erros on masturbations
+Version Beta 1.0.1.11a
+ - fixed errors on gangbang rituals
+Version Beta 1.0.1.11
+ - requires RimWorld 1.3.3117 or later
+ - requires RJW 4.8.1 or later
+ - added records
+
+Version Beta 1.0.1.10
+ - requires RJW 4.8.0
+
+Version Beta 1.0.1.9
+ - not compatible with RJW 4.8.0 or later
+ - removed consciousness and manipulation factors from sex ability stat
+ - fixed rituals get canceled after the victim being incapacitated
+   - does not apply on your save. (you should remove and add rituals again using debug mod)
+ - fixed victim's requirement
+ - fixed wrong rulepack
+ - fixed VTE confliction
+
+Version Beta 1.0.1.8
+ - fixed animal gangbang doesn't work properly
+ - fixed bastard relation was not removed after marriage
+ - fixed moral guide present
+ - separated ideology defs
+ - added cum bucket
+   - masturbating around this will collect cum
+ - added cum addiction
+ - added necrophile meme
+ - added lewd meme
+ - added drug orgy ritual
+ - added burnbong and autobong using humpshroom(require lewd meme)
+ - added some stages for humpshroom effect
+
+Version Beta 1.0.1.7
+ - added baby faction and social affection precepts 
+ - changed stat calculation of lust
+   - added lust limit
+ - added debug actions for reset lust
+ - fixed mod setting was not saved
+ - fixed bestiality chance
+ - fixed errors when fuck corpse
+ - added bastard relation(nothing special yet)
+
+Version Beta 1.0.1.6
+  - changed stat calculation of lust
+    - on negative lust, use exponential function instead of linear
+  - added gangbang rituals 
+  - chance of bestiality with non-venerated animal on only venerated precept reduced greatly
+  - added submissive precepts
+  - added mod settings
+
+Version Beta 1.0.1.5
+ - changed icon for precepts and memes
+ - added stat factors to precepts
+ - added record randomizing on pawn generation
+   - pawns will have different sex drive
+
+Version Beta 1.0.1.4
+ - gender supremacy affects to pawn's vulnerability
+ - nymps will get passion for sex skill always
+ - raping prisoner reduces will
+ - added incestous precepts
+ - more detailed implementations
+
+Version Beta 1.0.1.3
+ - added sextype precepts
+
+Version Beta 1.0.1.2
+ - added precept interactions
+
+Version Beta 1.0.1.1
+ - added ideologies

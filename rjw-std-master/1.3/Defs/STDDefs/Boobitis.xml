@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjwstd.std_def>
+		<defName>Boobitis</defName>
+		<label>boobitis</label>
+		<description>Boobitis is a highly contagious mechanite plague that causes permanent breast growth if left untreated. It was initialy created as a harmless glittertech "party drug" but has since mutated and spread to virtually every human colony.</description>
+		<hediff_def>Boobitis</hediff_def>
+		<catch_chance>0.75</catch_chance>
+		<environment_pitch_chance>0.00</environment_pitch_chance>
+		<autocure_below_severity>0.00</autocure_below_severity>
+		<spawn_chance>0.04</spawn_chance>
+		<appliedOnFixedBodyParts>
+			<li>Chest</li>
+		</appliedOnFixedBodyParts>
+	</rjwstd.std_def>
+</Defs>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <MAnalPlugSmall.label>小号肛塞</MAnalPlugSmall.label>
+  <MAnalPlugSmall.description>一个简单的肛塞。尺寸S</MAnalPlugSmall.description>
+  <MAnalPlugMedium.label>中号肛塞</MAnalPlugMedium.label>
+  <MAnalPlugMedium.description>一个简单的肛塞。尺寸M</MAnalPlugMedium.description>
+  <MAnalPlugLarge.label>大号肛塞</MAnalPlugLarge.label>
+  <MAnalPlugLarge.description>一个简单的肛塞。尺寸L</MAnalPlugLarge.description>
+</LanguageData>

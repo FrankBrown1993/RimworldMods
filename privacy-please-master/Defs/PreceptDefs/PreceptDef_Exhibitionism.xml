@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>Exhibitionism</defName>
+		<label>exhibitionism</label>
+		<iconPath>UI/Issues/Exhibitionism</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->	
+	<PreceptDef>
+		<defName>Exhibitionism_Disapproved</defName>
+		<issue>Exhibitionism</issue>
+		<label>disapproved</label>
+		<description>Being seen having sex or masturbating is somewhat shameful, and embarrassing to witness.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>100</defaultSelectionWeight>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>Exhibitionism_Acceptable</defName>
+		<issue>Exhibitionism</issue>
+		<label>acceptable</label>
+		<description>Who has the time or energy to worry about whether people are getting it on or not?</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>20</defaultSelectionWeight>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>Exhibitionism_Approved</defName>
+		<issue>Exhibitionism</issue>
+		<label>approved</label>
+		<description>Intimate displays of sexuality stir primal feelings that most people would try to deny.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>
+		<defaultSelectionWeight>5</defaultSelectionWeight>
+	</PreceptDef>	
+
+</Defs>

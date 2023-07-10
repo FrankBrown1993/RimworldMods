@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[
+		defName="SixtyNine" or
+		defName="Butterfly" or
+		defName="BreastJob" or
+		defName="Handjob" or
+		defName="Fisting" or
+		defName="Fingering" or
+		defName="CunnilingusStanding" or
+		defName="Rimming" or
+		defName="ReverseCowgirl" or
+		defName="FaceSitting" or
+		defName="Footjob" or
+		defName="KissMakeout" or
+		defName="MutualMasturbation" or
+		defName="Threesome1Male2Female" or
+		defName="MasturbationWithPenis_Standing" or
+		defName="MasturbationWithPenis_InBed" or
+		defName="MasturbationWithVagina_Standing" or
+		defName="MasturbationWithVagina_InBed" or
+		defName="MasturbationWithBreasts_Standing" or
+		defName="MasturbationWithBreasts_InBed" or
+		defName="MasturbationWithBreastsPlusPenis_Standing" or
+		defName="MasturbationWithBreastsPlusPenis_InBed" or
+		defName="MasturbationWithAnus_Standing" or
+		defName="MasturbationWithAnus_InBed" or
+		defName="MasturbationHumping_InBed"]</xpath>
+	</Operation>
+</Patch>

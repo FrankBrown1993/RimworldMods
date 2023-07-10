@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>UnderwearThoughts</defName>
+    <workerClass>Overt_Underwear.ThoughtWorker_Underwear</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>forced to wear underwear</label>
+        <description>Urgh, it's so uncomfortable!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>exposed underwear</label>
+        <description>People can see my underwear, it's embarassing!</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+	  <li>
+        <label>visible underwear</label>
+        <description>So what if my underwear is showing? People need to grow up.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+	  <li>
+        <label>faunting underwear</label>
+        <description>My underwear is on display... How risque!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

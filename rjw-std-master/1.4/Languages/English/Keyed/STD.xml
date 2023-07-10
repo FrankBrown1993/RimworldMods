@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- Settings -->
+	<std_sex>STDs from sex</std_sex>
+	<std_sex_desc>Pawns will catch STDs from sex with infected pawn.</std_sex_desc>
+	<std_floor>STDs from environment</std_floor>
+	<std_floor_desc>Pawns will catch STDs from sex in dirty environment.</std_floor_desc>
+	<std_show_roll_to_catch>Show STD catch roll</std_show_roll_to_catch>
+	<std_show_roll_to_catch_desc>Logs the process of handing out STDs after sex for debug purposes (or for anyone who's curious)</std_show_roll_to_catch_desc>
+
+	<std_min_severity_to_pitch>Min STD severity to spread</std_min_severity_to_pitch>
+	<std_min_severity_to_pitch_desc>STD infections must be at least this severe to spread between pawns</std_min_severity_to_pitch_desc>
+
+	<std_env_pitch_cleanliness_exaggeration>Clean rooms spread modifier</std_env_pitch_cleanliness_exaggeration>
+	<std_env_pitch_cleanliness_exaggeration_desc><![CDATA[1.0f - this * RoomStatDefOf.Cleanliness.
+RoomStatDefOf.Cleanliness >= 0]]></std_env_pitch_cleanliness_exaggeration_desc>
+	<std_env_pitch_dirtiness_exaggeration>Dirty rooms spread modifier</std_env_pitch_dirtiness_exaggeration>
+	<std_env_pitch_dirtiness_exaggeration_desc><![CDATA[1.0f - this * RoomStatDefOf.Cleanliness.
+RoomStatDefOf.Cleanliness < 0]]></std_env_pitch_dirtiness_exaggeration_desc>
+	<std_outdoor_cleanliness>Outdoor Cleanliness</std_outdoor_cleanliness>
+	<std_outdoor_cleanliness_desc><![CDATA[Cleanliness stat for sex outdoor
+RoomStatDefOf.Cleanliness = this]]></std_outdoor_cleanliness_desc>
+	<opp_inf_initial_immunity>Immunodeficiency spread</opp_inf_initial_immunity>
+	<opp_inf_initial_immunity_desc>Chance to get additional infections due to Immunodeficiency</opp_inf_initial_immunity_desc>
+
+	<pawn_spawn_with_std_mul>Pawn spawn STD multiplier</pawn_spawn_with_std_mul>
+	<pawn_spawn_with_std_mul_desc>Multiplier to spawn pawn with STDs (std base chance * this).</pawn_spawn_with_std_mul_desc>
+	<nymph_spawn_with_std_mul>Nymph spawn STD multiplier</nymph_spawn_with_std_mul>
+	<nymph_spawn_with_std_mul_desc>Multiplier to spawn nymphs with STDs (std base chance * this)</nymph_spawn_with_std_mul_desc>
+	
+	<!-- STDs -->
+	<RJW_Opportunistic_Infection_Message>{0} has developed an infection due to a weakened immune system.</RJW_Opportunistic_Infection_Message>
+	<!--RJW_Poisoned_by_Rimming_Message>{0} has gotten food poisoning by rimming {1}</RJW_Poisoned_by_Rimming_Message-->
+	<RJW_Syphilis_Damage_Message>{0} has suffered permanent damage to {1} {2} due to an advancement of {3} infection.</RJW_Syphilis_Damage_Message>
+
+	<!--Breast size changes-->
+	<!--<RJW_BreastsHaveGrownFromBoobitis>{0} breasts have grown from boobitis.</RJW_BreastsHaveGrownFromBoobitis>-->
+	<RJW_BreastsHaveGrownFromBoobitis>{0} has {1} {2} grown to {3} cup from {4}.</RJW_BreastsHaveGrownFromBoobitis>
+</LanguageData>

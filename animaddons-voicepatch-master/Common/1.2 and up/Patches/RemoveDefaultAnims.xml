@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/Rimworld_Animations.AnimationDef[
+		defName="Dog_Doggystyle" or
+		defName="Doggystyle" or
+		defName="Blowjob" or
+		defName="ReverseStandAndCarry" or
+		defName="Cowgirl" or
+		defName="Tribadism" or
+		defName="Double_Penetration" or
+		defName="Horse_Cowgirl" or
+		defName="ReverseCowgirl" or
+		defName="Cunnilingus"]</xpath>
+	</Operation>
+</Patch>

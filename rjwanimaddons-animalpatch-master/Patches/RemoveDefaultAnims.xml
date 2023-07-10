@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RJWAnimAddons-VoicePatch</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Dog_DoggystyleF"]</xpath>
+          <success>Always</success>
+        </li>
+		<li Class="PatchOperationRemove">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Dog_DoggystyleM"]</xpath>
+          <success>Always</success>
+        </li>
+		<li Class="PatchOperationRemove">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Horse_CowgirlF"]</xpath>
+          <success>Always</success>
+        </li>
+		<li Class="PatchOperationRemove">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Horse_CowgirlM"]</xpath>
+          <success>Always</success>
+        </li>
+      </operations>
+	</match>
+    <nomatch Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Dog_Doggystyle"]</xpath>
+          <success>Always</success>
+        </li>
+		<li Class="PatchOperationRemove">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Horse_Cowgirl"]</xpath>
+          <success>Always</success>
+        </li>
+      </operations>
+	</nomatch>
+  </Operation>
+</Patch>

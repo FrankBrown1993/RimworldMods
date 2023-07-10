@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>Hucow</defName>
+		<label>Hucow</label>
+		<description>This person has been converted to a hucow thanks to someone using the convert to hucow ability. As a result, lactation production speed and yield have been increased, but work and movement speed have been decreased.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="CRIALactation.HediffCompProperties_StopOnceNotLactating" />
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<MilkProductionYield>2.5</MilkProductionYield> <!-- this will pair up with MC hediffs. With the hyper lact max x2 you'll end up with x5! -->
+					<MilkProductionSpeed>1.5</MilkProductionSpeed> <!-- this will pair up with MC hediffs-->
+					<WorkSpeedGlobal>0.7</WorkSpeedGlobal>
+					<MoveSpeed>0.7</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>InducingLactation</defName>
+		<label>inducing lactation</label>
+		<description>This person's breasts are being encouraged to lactate. This is a long, arduous process of breast and nipple stimulation.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<!--<li Class="CRIALactation.HediffCompProperties_LactationInduction" />--> 
+			<!-- changed this up to use severity from a new hediff for the cooldown so it can be adjusted in settings easily-->
+		</comps>
+		<isBad>false</isBad>
+		<initialSeverity>0.01</initialSeverity> <!--lactation starts at severity 1. there are settings in game to adjust the gain rate-->
+	</HediffDef>
+
+	<HediffDef>
+		<defName>InducingLactationCooldown</defName>
+		<label>induced lactation recently</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person's breasts are being encouraged to lactate and have been encouraged recently. This causes feelings of soreness, swelling and discomfort.</description>
+		<defaultLabelColor>(1, 0.50, 0.50)</defaultLabelColor>
+		<isBad>false</isBad>
+		<initialSeverity>0.3</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+					<MoveSpeed>0.9</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

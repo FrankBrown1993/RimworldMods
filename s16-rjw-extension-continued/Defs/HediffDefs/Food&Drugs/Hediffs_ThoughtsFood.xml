@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <HediffDef ParentName="S16LewdApparelBase">
+    <defName>S16AteGirlCumRaw</defName>
+    <label>Ate raw love juice</label>
+    <description>Love juice eaten raw.</description>
+    <isBad>false</isBad>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.00</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	    <minSeverity>0.01</minSeverity>
+        <label>love juice</label>
+		<becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="S16LewdApparelBase">
+    <defName>S16AteLoveCookie</defName>
+    <label>Ate a love cookie</label>
+    <description>Ate a love cookie.</description>
+    <isBad>false</isBad>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.00</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	    <minSeverity>0.01</minSeverity>
+        <label>love cookie</label>
+		<becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="S16LewdApparelBase">
+    <defName>S16AteLoveNectar</defName>
+    <label>Drunk love nectar</label>
+    <description>Drunk love nectar.</description>
+    <isBad>false</isBad>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.00</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	    <minSeverity>0.01</minSeverity>
+        <label>love nectar</label>
+		<becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

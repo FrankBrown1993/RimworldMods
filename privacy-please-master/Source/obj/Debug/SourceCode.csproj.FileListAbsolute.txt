@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\privacy-please\1.4\Assemblies\Privacy-Please.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\privacy-please\1.4\Assemblies\Privacy-Please.pdb
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\privacy-please\Source\obj\Debug\SourceCode.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\privacy-please\Source\obj\Debug\Privacy-Please.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\privacy-please\Source\obj\Debug\Privacy-Please.pdb
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\privacy-please\Source\obj\Debug\SourceCode.csprojAssemblyReference.cache

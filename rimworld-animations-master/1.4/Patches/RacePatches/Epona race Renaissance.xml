@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Epona race Renaissance</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Epona"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[hediffGraphics/Epona_OHPG_female="Things/Pawn/Addons/Breasts/Breasts"]/drawnInBed</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Epona"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[hediffGraphics/Epona_OHPG_female="Things/Pawn/Addons/Breasts/Breasts"]/drawnInBed</xpath>
+						<value>
+							<drawnInBed>false</drawnInBed>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>	 
+</Patch>

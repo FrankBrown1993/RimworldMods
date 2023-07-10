@@ -1,0 +1,204 @@
+v.1.0.1
+- added placeholders for vanilla fat body
+- added clothespins
+v.1.0.2
+- added thong and micro thong
+- added hediffs and thoughts to things
+v.1.0.3
+- changed piercing layer from 0 to 3
+- changed all items HP and deterioration rate to 100/1
+- fixed bug with double wired vibrator offsets
+- lewd apparel is now a new apparel category
+- added categories for vibrators, piercing and underwear
+- rebalanced clothespins SexFrequency, SexAbility, Vulnerability offsets and hediff progression speed
+- rebalanced clothespins normal pawn thoughts
+- rebalanced panties normal pawn thoughts
+- rebalanced vibrators hediff progression speed
+v.1.0.4
+- added anal vibrator
+- added stockpile textures for all things instead of pinkboxes
+- added one more layer for vibrators, so now they are displayed under underwear
+v.1.0.5
+- fixed missed textures of anal vibrator for BB, FemJ and FemP bodies
+- fixed some names/parent names
+v.1.0.6
+- added effecter to vibrator hediffs (pawns with vibrators equipped will periodically throw hearts same as when lovin)
+- added nipple barbells (personality support Bloodlust)
+- fixed texture bug with normal vibrator
+- clothespins now require ComplexFurniture research
+- panties now require ComplexClothing research
+- changed stockpile texture for anal vibrator
+- vibrator mode can be changed at CraftingSpot, TableMachining and FabricationBench (normal to anal, anal to normal, two normal into double, double into two normal)
+- added RJW dependancy and LoadAfter
+v.1.0.7
+- fixed nudity bug
+- fixed vibrators mass
+- added cumming from sextoy cum spawn framework (experimental)
+- added love juice as food (PS Nudist, Psychopath, Cannibal, Masochist, Nymphomaniac, Gourmand, Misogynist)
+- added love cookies as food (PS Gourmand, Greedy, TooSmart, FastLearner, Kind, TorturedArtist)
+- added love nectar as food (PS TooSmart, Kind, TorturedArtist, Nymphomaniac, Nudist, Masochist, Misogynist)
+- added heavy nipple rings (PS Beauty)
+- added PS Masochist to clothespins
+- added PS Nymphomaniac to double wired vibrator
+- added PS Tough to wired anal vibrator
+- added PS Nimble to micro thong
+- rebalanced anal vibrator hediff
+v.1.0.8
+- alternative nudity fix
+- fixed vibrator comp colour bug (probably)
+- reworked apparel tag system
+- fixed anal vibrator description
+- added nipple vibrators (PS Tough)
+- added servant girl dress (PS Masochist, Nymphomaniac, Nudist)
+- added Kurin body support (separate category, don't forget to forbid for humans)
+- added conversion spot for vibrator mode changes
+- moved change recipes to conversion spot
+- reduced vibrator mode change work amount from 50 to 5
+- removed vibrator making from FabricationBench
+v.1.0.9
+- minor fixes
+- retextured love cookies
+- retextured servant girl dress (for human bodies)
+- changed stockpile limit for love juice to 25
+- added 1.2 unstable support
+- added the Waifu Randy storyteller (because i can)
+- added transparent skirt (PS Masochist, Nymphomaniac, Nudist)
+v.1.1.0
+- typos fixes
+- minor thoughts descriptions changes
+- slightly increased time to produce love juice for normal and double vibrators
+- changed mood modifier PS Masochist, Nymphomaniac for servant girl dress
+- apparel layer fix for Kurin version (?)
+- reworked anal vibrator PS Tough
+- reworked double vibrator PS Nymphomaniac
+- added special goods orbital trader
+- added disco top (PS Masochist, Nymphomaniac)
+v.1.1.1
+- minor fixes
+- added disco top crafting recipes
+- renamed conversion spot to special crafting spot
+- changed special crafting spot work speed factor from 0.5 to 1
+- moved all lewd apparel production recipes to the special crafting spot
+- changed all items tradeabilty from buyable to all
+- fixed missing kurin thong and kurin micro thong names
+- rebalanced vibrator mood bonuses
+- fixed missing stages PS Tough for anal and nipple vibrators
+- vibrator PS thoughts now replace standard ones instead of adding extra
+- Kurin apparel defs are in separate files now
+- rebalanced special goods orbital trader
+- added PS Wimp to wired vibrator
+- added nipple stickers (PS Nudist, Kind, Brawler)
+v.1.1.2
+- fixed nudist thoughts for open dress
+- integrated RF Body Type Extended files
+- fixed texture shifting
+- reworked apparel layer system
+- deleted HD heads
+- added PS Masochist, DislikesMen, Nymphomaniac to nipple stickers
+v.1.1.3
+- renamed hediff and thought def files
+- fixed some more texture misplacings
+- fixed nipple stickers layer
+- fixed vulnerability offset for lewd panties
+- fixed love juice texture
+- rebalanced special goods trader
+- added text for nipple stickers PS Masochist, DislikesMen, Nymphomaniac, TorturedArtist
+- added black nipple stickers
+- added intimate tape
+- added Lewd studies
+- added research prerequisites for apparel
+- added Lactine
+- added breast milk (PS Nudist, Rapist, Zoophile, Nymphomaniac, DislikesWomen, Bloodlust, Cannibal, TooSmart, Greedy, Gourmand, TorturedArtist)
+- added black market orbital trader
+v.1.1.4
+- fixed bug with jump packs and broadshieds textures
+- fixed missing recipe for nipple stickers
+- retextured lactine
+- changed joy for lactine to 0.5
+- changed thing category for breast milk
+- removed slaves from black market orbital trader
+- rebalanced special goods orbital trader
+- added research prerequisite for love cookies and love nectar bottles
+- added alpha lactine (wip)
+- added stuffable disco top
+- added Z dress
+v.1.1.5
+- replaced Hediff.Apparel by LoonyLadle by Vanilla Expanded Framework (fixed apparel hediffs remaining after saveload)
+- reworked Anime Randy storyteller
+- reworked dress parent defs
+- reworked apparel layer system
+- reworked special goods orbital trader
+- reworked Z dress (now stuffable)
+- reworked lactine description
+- reworked lactine recipe description
+- reworked research prerequisite system for S16_Base
+- reworked milk mote texture
+- reworked some stats
+- changed pink X on unsupported bodies to empty images
+- changed texture path for integrated RF bodies apparel
+- changed apparel and item texture paths and names for better navigation
+- changed apparel defnames to more informative ones
+- changed apparel categories and tag names
+- removed non stuffable disco top
+- removed quality for vibrators
+- removed black market orbital trader
+- fixed some typos
+- fixed oversized textures for broadshield packs on RF bodies
+- fixed torch belt missing texture for Vanilla Expanded Vikings
+- added LoadBefore for Beautiful Bodies
+- added IncompatibleWith for RF Body Type Extend
+- added separate defs for base apparel, nipple stickers
+- added separate thought defs for tops, nipple stickers
+- added separate thing categories for tops, nipple stickers
+- added apparel tier tags
+- added description, thoughts, custom texture, production recipe for alpha lactine
+- added thoughts for lactine long effect
+- added patch for breast milk to be royal food
+- added changenote in the mod files
+v.1.1.6
+- returned from VEF back to Hediff.Apparel by LoonyLaddle edited by RatherNot
+- NSFW Kurin support is back
+- added thing def names for all apparel
+- added carbon armor
+v.1.1.7
+- wired vibrator hediffs are now loopable
+- changed wired vibrators' cycle duration
+- changed love juice spawn rate on wired vibrators 3 times
+- changed "Scenario can add" for LactineLong to "false"
+- reworked def files for milk with other food hediffs
+- renamed HediffsDrugs def file to HediffsDrugsLong
+- added SexSatisfaction bonus to wired vibrators
+- added separate folders for hediff defs
+- added separate folders for thought defs
+- added sextoys research tabs
+- added thing category for sextoys
+- added flogger
+v.1.1.8
+- fixed carbon armor production recipe
+- changed love juice to be rottable in 8 hours
+- changed double vibrator thoughts descriptons
+- changed flogged thoughts descriptons
+- added hediff, mental state and trait giver to flogged hediff
+- added mindbroken training line
+- added masochist training line (wip)
+- added nympho training line (wip)
+v.1.1.9
+- resized Z-dress, carbon armor, servant dress and heavy nipple rings to 256x256, placeholder images for these items were resized to 64x64
+- resized flogger texture to 256x256
+- wired vibrators' stockpile texture is a pink box again
+- added whip (texture by Monti) (no functionality yet)
+- added wand vibrator (texture by Monti) (no functionality yet)
+- added chain harness (texture by Monti)
+v.1.2.0
+- rebalanced wired vibrators' hediff speed decreased by -0.25 per day
+- rebalanced mindbroken trait
+- rebalanced flogged hediff vulnerability offset
+- reworked chain harness stockpile texture
+- reworked chain harness thought descriptions
+- resized vibrator box textures
+- resized simple nipple rings texture x0.25
+- cleared some autobackup textures
+v.1.2.1
+- update to Rimworld 1.3
+v.1.2.2
+- update for kurins

@@ -1,0 +1,13 @@
+one-piece V shaped bikini. (concerned about the east side being weird.)
+slave bikini outfit (starwars inspired)
+potentially patch for the default slave collar to be smaller and more in line with the necklaces.
+some kind of jacket/duster thats cropped. 
+thigh high socks + thong
+short skirt
+skintight bodysuit
+some kind of living/parsite/tentacle armour
+test futa bulges.
+
+Texturing experiments that still need to be done.
+How to make something look glossy with the default color generator? (it turns white into whatever the color picked is.)
+mesh clothing. Instead of being filled, manually draw lines to make it look like mesh. (details might be too small and it might just look weird while in game)

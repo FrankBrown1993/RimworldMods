@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<SoundDef>
+		<defName>Voiceline_MGrunt</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Grunt1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Grunt2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Grunt3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Grunt4</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>45</min>
+			  <max>70</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.0</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Voiceline_MScream</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Scream1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Scream2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Scream3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>45</min>
+			  <max>70</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.0</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Voiceline_MMoan</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Moan1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Moan2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Moan3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/Moan4</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>35</min>
+			  <max>40</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.0</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>Voiceline_MMoanShort</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/MoanShort1</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/MoanShort2</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/MVoice/MoanShort3</clipPath>
+			  </li>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Sex/Silent/Silent</clipPath>
+			  </li>
+			</grains>
+			<volumeRange>
+			  <min>35</min>
+			  <max>40</max>
+			</volumeRange>
+			<pitchRange>
+			  <min>0.9</min>
+			  <max>1.0</max>
+			</pitchRange>
+			<distRange>
+			  <min>0</min>
+			  <max>40</max>
+			</distRange>
+			<repeatMode>NeverTwice</repeatMode>
+			<sustainLoop>false</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>		
+
+</Defs>

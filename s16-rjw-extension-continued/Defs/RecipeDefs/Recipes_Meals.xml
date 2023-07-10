@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef Name="S16CookMealBase" Abstract="True">
+    <fixedIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+		<li>S16Food</li>
+      </categories>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+   <RecipeDef Name="S16CookMealCumOnly" Abstract="True">
+    <fixedIngredientFilter>
+      <categories>
+		<li>S16Food</li>
+      </categories>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef Name="S16CookMealNormal" Abstract="True">
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+  <RecipeDef ParentName="S16CookMealBase">
+    <defName>S16CookLoveCookie</defName>
+    <label>make love cookie</label>
+    <description>Make some cute heart-shaped cookies.</description>
+    <jobString>Making love cookie.</jobString>
+	<workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>S16Food</li>
+          </categories>
+        </filter>
+        <count>0.1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+    <products>
+      <S16LoveCookie>1</S16LoveCookie>
+    </products>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+	<recipeUsers>
+        <li>ElectricStove</li>
+		<li>FueledStove</li>
+    </recipeUsers>
+	<researchPrerequisite>S16_CumCooking</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>S16CookLoveCookieBulk</defName>
+    <label>make love cookie x4</label>
+    <description>Make some cute heart-shaped cookies.</description>
+    <jobString>Making 4 love cookies.</jobString>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>S16Food</li>
+          </categories>
+        </filter>
+        <count>0.4</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <S16LoveCookie>4</S16LoveCookie>
+    </products>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+	<recipeUsers>
+        <li>ElectricStove</li>
+		<li>FueledStove</li>
+    </recipeUsers>
+	<researchPrerequisite>S16_CumCooking</researchPrerequisite>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="S16CookMealCumOnly">
+    <defName>S16CookLoveNectar</defName>
+    <label>make love nectar bottle</label>
+    <description>Make a bottle of concentrated girls' pleasure.</description>
+    <jobString>Making love nectar bottle</jobString>
+	<workAmount>400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>S16Food</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <S16LoveNectar>1</S16LoveNectar>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+        <li>ElectricStove</li>
+		<li>FueledStove</li>
+    </recipeUsers>
+  <researchPrerequisite>S16_CumCooking</researchPrerequisite>
+  </RecipeDef>
+</Defs>

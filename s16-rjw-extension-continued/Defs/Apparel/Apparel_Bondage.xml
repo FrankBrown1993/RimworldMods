@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="S16_ChainHarnessA" ParentName="S16_MetallicBase">
+    <defName>S16_ChainHarnessA</defName>
+    <label>chain harness</label>
+    <description>Rough and heavy chains.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Bondage/S16_ChainHarnessA/S16_ChainHarnessA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <tradeability>All</tradeability>
+	<costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>                                                   
+      <WorkToMake>20000</WorkToMake>
+      <Mass>4</Mass>
+      <EquipDelay>10</EquipDelay>
+	  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+    </statBases>
+    <thingCategories>
+      <li>S16_Bondage</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <SexSatisfaction>0.2</SexSatisfaction>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Legs</li>
+		<li>Torso</li>
+		<li>Arms</li>
+		<li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Bondage/S16_ChainHarnessA/S16_ChainHarnessA</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>S16_Bondage</li>
+		<li>S16_Tier1</li>
+      </tags>
+	  <gender>Female</gender>
+    </apparel>
+	<comps>	
+		<li Class="s16_extension.CompProperties_HediffApparel">
+			<hediffDef>S16_ChainHarnessAHed</hediffDef>
+			<partsToAffect>
+					<li>Torso</li>
+			</partsToAffect>
+		</li>
+    <li><compClass>CompColorable</compClass></li>
+    </comps>
+	<recipeMaker>
+      <recipeUsers>
+		<li>S16_CraftingSpot</li>
+      </recipeUsers>
+	<researchPrerequisites>
+      <li>S16_BasicBondage</li>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+  
+	<rjw.bondage_gear_def ParentName="BondageGearBase">
+    <defName>S16_NippleWristCuffs</defName>
+    <label>nipple wrist cuffs</label>
+    <description>wip</description>
+	<thingClass>rjw.restraints</thingClass>
+    <graphicData>
+      <texPath>Things/Apparel/Bondage/S16_NippleWristCuffs/S16_NippleWristCuffs</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <tradeability>All</tradeability>
+	<costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>                                                   
+      <WorkToMake>20000</WorkToMake>
+      <Mass>4</Mass>
+      <EquipDelay>10</EquipDelay>
+	  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+    </statBases>
+    <thingCategories>
+      <li>S16_Bondage</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <SexSatisfaction>0.2</SexSatisfaction>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <apparel>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Legs</li>
+		<li>Torso</li>
+		<li>Arms</li>
+		<li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Bondage/S16_NippleWristCuffs/S16_NippleWristCuffs</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>S16_Bondage</li>
+		<li>S16_Tier1</li>
+      </tags>
+	  <gender>Female</gender>
+    </apparel>
+	<soul_type>rjw.bondage_gear_soul</soul_type>
+	<equipped_hediff>S16_NippleWristCuffsHed</equipped_hediff>
+	<gives_bound_moodlet>false</gives_bound_moodlet>
+    <comps>
+      <li Class="s16_extension.CompProperties_HediffApparel">
+        <hediffDef>S16_NippleWristCuffs_MainHed</hediffDef>
+        <partsToAffect>
+          <li>Torso</li>
+        </partsToAffect>
+      </li>
+    </comps>
+	<recipeMaker>
+      <recipeUsers>
+		<li>S16_CraftingSpot</li>
+      </recipeUsers>
+	<researchPrerequisites>
+      <li>S16_IndustrialBondage</li>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    </recipeMaker>
+		<HediffTargetBodyPartDefs>
+			<li>Arm</li>
+		</HediffTargetBodyPartDefs>
+		<BoundBodyPartGroupDefs>
+			<li>Arms</li>
+		</BoundBodyPartGroupDefs>
+	</rjw.bondage_gear_def>
+</Defs>

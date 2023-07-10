@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+	
+			<li Class="PatchOperationAdd">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="FilthCum"][not(comps)]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="FilthGirlCum"][not(comps)]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThoughtDef[defName="CheatedOnMe"]/nullifyingPrecepts</xpath>
+				<value>
+					<li>Lovin_FreeApproved</li>
+				</value>
+			</li>	
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThoughtDef[defName="Affair"]/nullifyingPrecepts</xpath>
+				<value>
+					<li>Lovin_FreeApproved</li>
+				</value>
+			</li>
+		
+		</operations>
+	</Operation>
+</Patch>

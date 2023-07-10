@@ -1,0 +1,83 @@
+RJWAnimAddons-Animalpatch:
+
+5/3/2023: 1.5.24 Updated all Biomes! patches, Added Biomes!Caverns(Thanks Middle_aged_dragon)
+
+4/14/2023: 1.5.23 Added VAE Waste Animals(Thanks Middle_aged_dragon)
+
+2/21/2023: 1.5.22 Added pphhyy's Demigryphs (Thanks Middle_aged_dragon),Added Tentacle Love (Thanks gentai)
+
+2/15/2023: 1.5.21 Updated vanilla bodies (added new mechs from biotech) Added pphhyy Sanguinary Animals, Secure_Contain_Rimworld, Thanks Middle_aged_dragon!
+
+1/9/2023: 1.5.20 Updated Steves Animals (Bastyon)
+
+12/20/2022: 1.5.19 Updated Biomes! Prehistoric
+
+11/11/2022: 1.5.18 Added patches:Sowoboe Bugs, Rimwars Gizka. Updated Alpha Animals Thanks Middle_aged_dragon
+
+10/25/2022: 1.5.17 Added 1.4 tag
+
+10/17/2022: 1.5.16 Updated Magical Menagerie patch to check for new name: Alpha Mythology Added Biomes!Prehistoric patch
+
+8/4/2022: 1.5.15 Added patch: MoolohsDndMenagerie, Thanks Middle_aged_dragon!
+
+7/27/2022: 1.5.14 kemomimihouse hotfix
+
+7/26/2022: 1.5.13 Added patches: CreaturesofKi, kemomimihouse, ReGrowthMutatedAnimalsPack, Nexomon, LordoftheRims-Dwarves, JurassicRimworld(Continued), HildasCreatures-Deerfox(Continued) Thanks Middle_aged_dragon!
+
+5/26/2022: 1.5.12 Added patches: VanillaGeneticsExpanded, ScaledWorld. Updated Dragon'sDescent
+
+4/11/2022: 1.5.11 Added Yeti from HC_Creatures_1
+
+2/28/2022: 1.5.10 Added ReGrowth Remastered: Extinct Animals
+
+1/13/2022: 1.5.9 Added PokeWorld patch
+
+9/12/2021: 1.5.8 Added patches for Mincho animals, Huri, HC_Creatures_1, Vanilla Animals Expanded — Caves. Updated patch for Race to the Rim
+
+9/9/2021: 1.5.7 Updated Warhammer"ish":Dryad patch
+
+9/6/2021: 1.5.6 Added patches for HC_Animals, ReGrowth: Extinct Animals. Added raptors to AlphaAnimals patch.
+
+7/22/2021: 1.5.5 Added 1.3 tag. Added URI to manifest to keep track of future versions in mod manager Added Hybrid Animals patch, updated Bastyon patch. fixed requireGender error for 1.1 users
+
+6/23/2021: 1.5.4 Actually more accurate gender detection this time. Requires Animation Framework V:1.1.5 from June 23rd 2021
+
+6/23/2021: 1.5.3 Updated defs for increased gender detection accuracy for Voice Patch
+
+6/3/2021: 1.5.2 Added patches for RimofMadness-Arachnophobia, Grimworld-racepack, Half-LifeCreatures, Rim-EffectCore, MojaveWastelandCreatures, RimtroidEvolution, MechanitePlague, Bastyon.
+
+5/12/2021: 1.5.1 Added IridiumX's new animations for 1.1 users. Updated about.xml description to include new animations.
+
+5/11/2021: 1.5.0 Added two animations by IridiumX: Beast_Oral and Beast_Muzzlefuck. Added patches for 虫娘Insectgirls and FenriWolves. 
+
+3/20/2021: 1.4.2 Added support for Animation Framework patching in voiceline volume slider
+
+3/4/2021: 1.4.1 Nejarrie added patches for RacetotheRim and DragonsDecentVoidDwellers (Thanks Nejarrie!)
+
+2/20/2021: 1.4.0 Added Humanoid Beast animations for 2 legged "animals". Added patches for EroticCreatureCollection, WarhammerGor(its back!). Updated MagicalMenagerie patch
+
+2/9/2021: 1.3.2 Added load folders. Added interactionDefs. Removed WarhammerGor patch (doesnt have animals, oops)
+
+1/30/2021: 1.3.1 Added Vanilla Expanded Endangered
+
+12/8/2020: 1.3.0 "The Implant Update" Mechanoids now finally animate when they implant. Added Mech_DoggystyleM and Mech_DoggystyleF. Updated Alpha Animals, MechanoidsExtraordinaire, MoreMechanoids, HALORimworldHereticMechanoids. Added patches for Orassans (Gryphon), Ni'Hal (Drake), RedDragon, Frilleus, WarhammerishDryad, WarhammerDaemonettes, WarhammerGor, WarhammerSkaven, Rimsenal-FederationFactionPack.
+
+8/26/2020: 1.2.0 added patches for HALORimworldHereticMechanoids, MoreMonsterGirls, MorrowRim-JusttheAnimals, MorrowRim-OrsimerRace, ReGrowth-Wasteland-AnimalAddon, SaveOurShip2-Extensions, StarWarsAnimalCollection, SuperMarioAnimalsandExtras, HouseMaidNukos, RimcraftAnimals
+
+8/24/2020: 1.1.1 Moving homes, added 1.2 support in About.xml, adds patches for Kyulen-NinetailFox, SacredWhiteFox
+
+7/20/2020: 1.1.0 Major update, adds support for c0ffee's new cowgirl anim. Adds patches for AlienVsPredator, AnimalCollabProj, CallofCthulhu-CosmicHorrors, Dragon'sDescent, FalloutRacesTheRobotsPack, ForsakensFauna, GeneticRimCosmicHorrorsPatch, Horrors(Continued), MagicalMenagerie, MorrowRim, TheZerg!, [O21]PokemonRim.
+
+7/13/2020: 1.0.1 Added support for male sounds from Voice Patch. Overwrites default animations in favor of new gender detected versions
+
+7/11/2020: Major update, it's now a patch mod that actually patches content! Imagine that... Animal Patch... patching. It now only loads modded animals that it detects in your game. Uses the much smaller animal body defName list to load faster and increase mod support. I also adjusted the human on animal animation, human should be standing now and uses the fuck sound when fucking
+
+7/8/2020: Added experimental version that uses BodyTypes instead of Race. Should load more efficiently 
+
+7/3/2020: Hotfix forgot to include vatgrown insects in Vanilla Factions Expanded - Insects (oops)
+
+7/3/2020: Added lots more modded animals (I have a lot of free time)
+
+6/30/2020: Added Animations_Beast2.xml file for male/futa on animal animations (will likely need tweaks using offset manager)
+
+6/27/2020: Initial upload

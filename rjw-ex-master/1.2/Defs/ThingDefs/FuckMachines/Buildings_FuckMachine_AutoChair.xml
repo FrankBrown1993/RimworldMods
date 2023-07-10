@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="FuckMachineBase" Class="rjwex.Building_FuckMachine_Def">
+		<defName>FuckMachineAutoChair</defName>
+		<label>Autochair fuck machine</label>
+		<description>Model popular on glitterworlds. Variable shape fits any user, wide range of instruments provides unique sensations. This equipped with platesteel restraints armchair doesn't have any external controls and instead guided by wireless neurointerface, it decides by itself what feelings user will experience this time.</description>
+		<thingClass>rjwex.Building_FuckMachine</thingClass>
+		<graphicData>
+			<texPath>Buildings/FuckMachines/AutoChair/FMAutoChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<staticSunShadowHeight>0.05</staticSunShadowHeight>
+		<castEdgeShadows>False</castEdgeShadows>
+		<size>(1,1)</size>
+		<uiIconPath>Buildings/FuckMachines/AutoChair/FMAutoChair_south</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>20</Mass>
+			<Beauty>10</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<Gold>10</Gold>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="rjwex.CompProperties_PublicPrivateComp" />
+		</comps>
+		<techLevel>Industrial</techLevel>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>Electricity</li>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<forced>true</forced>
+		<automatic>True</automatic>
+		<vertical>True</vertical>
+		<powered>True</powered>
+		<quality>1.5</quality>
+		<height>0.20</height>
+		<mode>Normal</mode>
+	</ThingDef>
+</Defs>

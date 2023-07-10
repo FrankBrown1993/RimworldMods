@@ -1,0 +1,52 @@
+RJWAnimAddons-Voicepatch:
+
+2/15/2023: 1.4.1 Bugfix: Base RJW animations will play voice sounds again when AC's Animation Patch loaded
+
+10/25/2022: 1.4.0 Added 1.4 tag, Updated soundDefs they use AudioGrain_Clip instead of folder now, shouldnt throw errors in 1.4
+
+8/19/2022: 1.3.0 Restructured for better compatibility for AC's animation patch (currently 99% of anims are not voice supported while using AC's patch. Will update all anims in AC's patch later)
+
+7/22/2021: 1.2.8 Added 1.3 tag. Added URI to manifest to keep track of future versions in mod manager
+
+6/28/2021: 1.2.7 Fixed a mistake I made back in March update. Fast moan sounds should play again.
+
+6/23/2021: 1.2.6 Uses RimWorld's gender to determine voice instead of RJW's gender.  Requires Animation Framework V:1.1.5 from June 23rd 2021 (huge thanks to Karmanherlo)
+fixed requireGender error for 1.1 users
+
+6/23/2021: 1.2.5 Uses gender to determine voice instead of genitals. (Thanks Karmanherlo)
+
+5/14/2021: 1.2.4 Updated base animation defs to match new genital angle rotation changes (didn't make change for 1.1 users, sorry I'm to lazy for that)
+
+3/20/2021: 1.2.3 Added support for Animation Framework patching in voiceline volume slider
+
+2/19/2021: 1.2.2 Fixed interaction def errors for 1.1 users
+
+2/9/2021: 1.2.1 Added load folders. Updated interactionDefs and sexTypes for RJW 4.6.0
+
+1/30/2021: 1.2.0 Added new male sounds. Reduced range of audio. Removed unused "Fast" versions. Added interactionDef nodes for increased accuracy for Oral animations.
+
+8/26/2020: 1.1.2 Removed Abstract Concepts animations and added them to Xtra Animations. Slightly reduced female sounds.
+
+8/24/2020: 1.1.1 Moving homes, added 1.2 support in About.xml
+
+7/19/2020: 1.1.0 Added C0ffee's new Horse_Cowgirl and Cunnilingus animations. Added AbstractConcept's animations with minor tweaks, mostly adjusting sound effects. Disabled AC's cunnilingus animation in favor of C0ffee's. Can be enabled by removing comment in the Animations_VoicePatchFemaleFutaAC.xml file.
+
+7/13/2020: Made previews just links to the soundcloud playlists
+
+7/13/2020: Added sound previews. Let me know if they are taking up to much space. I wish they could be smaller.
+
+7/13/2020: Added two voice packs; Hentai and Super Hentai. Hentai pack uses the sounds that were originally in this mod and adds new higher pitch moan sounds.
+
+7/13/2020: Major Update, now 1.0.0! Adds gender detection and voices for all default animations. Adds all new audio for females and now males. Added new moan sound groups for closed/full mouth sounds. Overwrites default animations in favor of new gender detected versions. Tutorial updated for new sounds
+
+7/11/2020: Updated Tutorial below
+
+7/11/2020: Voice Patch is now its own mod and can be toggled on and off easily in your load order. You still need animations that support it though.
+
+7/4/2020: Added a short tutorial on how to add these sounds to your own animations
+
+7/3/2020: Animal list hotfix
+
+7/3/2020: Updated animal list
+
+7/2/2020: Initial upload

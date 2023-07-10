@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RJWAnimAddons-VoicePatch</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="CunnilingusF"]/sexTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <sexTypes>
+			    <li>Cunnilingus</li>
+			  </sexTypes>
+          </value>
+        </li>
+		<li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="CunnilingusF"]/interactionDefTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <interactionDefTypes>
+			    <li>Cunnilingus</li>
+			    <li>CunnilingusF</li>
+			    <li>CunnilingusRape</li>
+			    <li>CunnilingusRapeF</li>
+			  </interactionDefTypes>
+          </value>
+        </li>
+      </operations>
+    </match>
+	<nomatch Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Cunnilingus"]/sexTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <sexTypes>
+			    <li>Cunnilingus</li>
+			  </sexTypes>
+          </value>
+        </li>
+		<li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Cunnilingus"]/interactionDefTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <interactionDefTypes>
+			    <li>Cunnilingus</li>
+			    <li>CunnilingusF</li>
+			    <li>CunnilingusRape</li>
+			    <li>CunnilingusRapeF</li>
+			  </interactionDefTypes>
+          </value>
+        </li>
+		<li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Blowjob"]/sexTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <sexTypes>
+			    <li>Fellatio</li>
+			  </sexTypes>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Rimworld_Animations.AnimationDef[defName="Blowjob"]/interactionDefTypes</xpath>
+          <success>Always</success>
+          <value>
+			  <interactionDefTypes>
+			    <li>Fellatio</li>
+			    <li>FellatioF</li>
+			    <li>FellatioRape</li>
+			    <li>FellatioRapeF</li>
+			  
+		    	<li>Beakjob</li>
+			    <li>BeakjobF</li>
+			    <li>BeakjobRape</li>
+			    <li>BeakjobRapeF</li>
+			    </interactionDefTypes>
+          </value>
+        </li>
+      </operations>
+    </nomatch>
+  </Operation>
+</Patch>
