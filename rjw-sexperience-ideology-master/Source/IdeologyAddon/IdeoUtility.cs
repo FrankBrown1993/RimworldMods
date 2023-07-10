@@ -12,9 +12,9 @@ namespace RJWSexperience.Ideology
 			if (ideo == null)
 				return false;
 
-			if (ideo.HasPrecept(VariousDefOf.Submissive_Female) && pawn.gender == Gender.Female)
+			if (ideo.HasPrecept(RsiDefOf.Precept.Submissive_Female) && pawn.gender == Gender.Female)
 				return true;
-			else if (ideo.HasPrecept(VariousDefOf.Submissive_Male) && pawn.gender == Gender.Male)
+			else if (ideo.HasPrecept(RsiDefOf.Precept.Submissive_Male) && pawn.gender == Gender.Male)
 				return true;
 
 			return false;
@@ -89,7 +89,7 @@ namespace RJWSexperience.Ideology
 			Hediff pregnancy = PregnancyHelper.GetPregnancy(pawn);
 
 			// Currently RJW does not check Biotech pregnancy
-			if (pregnancy == null && VariousDefOf.PregnantHuman != null)
+			if (pregnancy == null && RsiDefOf.Hediff.PregnantHuman != null)
 			{
 				pregnancy = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.PregnantHuman);
 			}

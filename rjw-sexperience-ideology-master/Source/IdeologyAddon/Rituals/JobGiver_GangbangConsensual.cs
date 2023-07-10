@@ -1,43 +1,36 @@
-﻿using System;
+﻿using RimWorld;
+using rjw;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
-using Verse.AI.Group;
-using RimWorld;
-using rjw;
 
 namespace RJWSexperience.Ideology
 {
-    public class JobGiver_GangbangConsensual : ThinkNode_JobGiver
-    {
-        protected override Job TryGiveJob(Pawn pawn)
-        {
-            if (pawn.Drafted) return null;
-            DutyDef dutyDef = null;
-            PawnDuty duty = null;
-            if (pawn.mindState != null)
-            {
-                duty = pawn.mindState.duty;
-                dutyDef = duty.def;
-            }
-            else return null;
+	public class JobGiver_GangbangConsensual : ThinkNode_JobGiver
+	{
+		protected override Job TryGiveJob(Pawn pawn)
+		{
+			if (pawn.Drafted || pawn.mindState == null)
+			{
+				return null;
+			}
 
-            if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
-            {
-                return null;
-            }
+			PawnDuty duty = pawn.mindState.duty;
 
-            Pawn target = duty.focusSecond.Pawn;
+			if (duty.def == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
+			{
+				return null;
+			}
 
-            if (!pawn.CanReach(target, PathEndMode.ClosestTouch, Danger.None)) return null;
+			Pawn target = duty.focusSecond.Pawn;
 
-            return JobMaker.MakeJob(VariousDefOf.Gangbang, target);
-        }
-    }
+			if (!pawn.CanReach(target, PathEndMode.ClosestTouch, Danger.None))
+				return null;
 
+			return JobMaker.MakeJob(RsiDefOf.Job.Gangbang, target);
+		}
+	}
 
 	public class JobDriver_Gangbang : JobDriver_SexBaseInitiator
 	{
@@ -56,26 +49,28 @@ namespace RJWSexperience.Ideology
 			this.FailOn(() => Partner.Drafted);
 			yield return Toils_Goto.GotoThing(iTarget, PathEndMode.OnCell);
 
-			Toil StartPartnerJob = new Toil();
-			StartPartnerJob.defaultCompleteMode = ToilCompleteMode.Instant;
-			StartPartnerJob.socialMode = RandomSocialMode.Off;
-			StartPartnerJob.initAction = delegate
+			Toil StartPartnerJob = new Toil
 			{
-
-				var dri = Partner.jobs.curDriver as JobDriver_SexBaseRecieverRaped;
-				if (dri == null)
-                {
-					Job gettin_loved = JobMaker.MakeJob(VariousDefOf.GettinGangbang, pawn, Bed);
-					Partner.jobs.StartJob(gettin_loved, JobCondition.InterruptForced);
+				defaultCompleteMode = ToilCompleteMode.Instant,
+				socialMode = RandomSocialMode.Off,
+				initAction = delegate
+				{
+					if (!(Partner.jobs.curDriver is JobDriver_SexBaseRecieverRaped))
+					{
+						Job gettin_loved = JobMaker.MakeJob(RsiDefOf.Job.GettinGangbang, pawn, Bed);
+						Partner.jobs.StartJob(gettin_loved, JobCondition.InterruptForced);
+					}
 				}
 			};
 			yield return StartPartnerJob;
 
-			Toil SexToil = new Toil();
-			SexToil.defaultCompleteMode = ToilCompleteMode.Never;
-			SexToil.defaultDuration = duration;
-			SexToil.handlingFacing = true;
-			SexToil.FailOn(() => Partner.CurJob.def != VariousDefOf.GettinGangbang);
+			Toil SexToil = new Toil
+			{
+				defaultCompleteMode = ToilCompleteMode.Never,
+				defaultDuration = duration,
+				handlingFacing = true
+			};
+			SexToil.FailOn(() => Partner.CurJob.def != RsiDefOf.Job.GettinGangbang);
 			SexToil.initAction = delegate
 			{
 				Start();
@@ -108,28 +103,30 @@ namespace RJWSexperience.Ideology
 	}
 
 	public class JobDriver_GangbangReceiver : JobDriver_SexBaseRecieverLoved
-    {
+	{
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			setup_ticks();
 			parteners.Add(Partner);// add job starter, so this wont fail, before Initiator starts his job
 
-			Toil get_banged = new Toil();
-			get_banged.defaultCompleteMode = ToilCompleteMode.Never;
-			get_banged.handlingFacing = true;
-			get_banged.initAction = delegate
+			Toil get_banged = new Toil
 			{
-				pawn.pather.StopDead();
-				pawn.jobs.curDriver.asleep = false;
-			};
-			get_banged.tickAction = delegate
-			{
-				if ((parteners.Count > 0) && pawn.IsHashIntervalTick(ticks_between_hearts / parteners.Count) && pawn.IsHashIntervalTick(ticks_between_hearts))
-					ThrowMetaIconF(pawn.Position, pawn.Map, FleckDefOf.Heart);
+				defaultCompleteMode = ToilCompleteMode.Never,
+				handlingFacing = true,
+				initAction = delegate
+				{
+					pawn.pather.StopDead();
+					pawn.jobs.curDriver.asleep = false;
+				},
+				tickAction = delegate
+				{
+					if ((parteners.Count > 0) && pawn.IsHashIntervalTick(ticks_between_hearts / parteners.Count) && pawn.IsHashIntervalTick(ticks_between_hearts))
+						ThrowMetaIconF(pawn.Position, pawn.Map, FleckDefOf.Heart);
+				}
 			};
 			get_banged.AddEndCondition(new Func<JobCondition>(() =>
 			{
-				if (parteners.Count <= 0)
+				if (parteners.Count == 0)
 				{
 					return JobCondition.Succeeded;
 				}
@@ -148,12 +145,12 @@ namespace RJWSexperience.Ideology
 					Partner.jobs.jobQueue.EnqueueFirst(tobed);
 				}
 				else if (pawn.HostileTo(Partner))
+				{
 					pawn.health.AddHediff(xxx.submitting);
+				}
 			});
 			get_banged.socialMode = RandomSocialMode.Off;
 			yield return get_banged;
-
 		}
 	}
-
 }

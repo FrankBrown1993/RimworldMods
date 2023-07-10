@@ -1,3 +1,15 @@
+## Version 1.0.2.1
+* Fixed SecondaryRomanceChanceFactor patch
+## Version 1.0.2.0
+* Removed Incestuos_IncestOnly conflict with Zoophile
+* Patched manual romance to respect incestuous precepts
+* Patched SecondaryRomanceChanceFactor for incest precept
+* Added settings to disable ether of patches if needed
+* Changed Incestuos_IncestOnly would_fuck multiplier for blood related pawns: 2.0 -> 1.0
+* Changed Incestuos_IncestOnly would_fuck multiplier for non-blood related pawns: 1.0 -> 0.1
+* Removed "not obedient" social thought for raping a slave
+* Bestiality_Acceptable now nullifies RJW bestiality thoughts
+* Fixed swapped baseMoodEffect of holy and elevated pregnancy precepts
 ## Version 1.0.1.2
 * Removed 100% certainty spam for sex proselyzing
 * Maybe removed sex proselyzing error with bestiality

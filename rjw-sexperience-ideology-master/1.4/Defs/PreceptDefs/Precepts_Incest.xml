@@ -27,16 +27,9 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>CloseRelative</li>
+                </hasOneOfRelationDegrees>
               </relations>
             </filter>
             <historyEventDef>RSI_CloseRelativeMarriage</historyEventDef>
@@ -44,24 +37,9 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                  <li>GreatGrandparent</li>
-                  <li>GreatGrandchild</li>
-                  <li>GranduncleOrGrandaunt</li>
-                  <li>GrandnephewOrGrandniece</li>
-                  <li>CousinOnceRemoved</li>
-                  <li>SecondCousin</li>
-                  <li>Cousin</li>
-                  <li>Kin</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>FarRelative</li>
+                </hasOneOfRelationDegrees>
               </relations>
             </filter>
             <historyEventDef>RSI_IncestuosMarriage</historyEventDef>
@@ -90,16 +68,9 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>CloseRelative</li>
+                </hasOneOfRelationDegrees>
               </relations>
             </filter>
             <historyEventDef>RSI_CloseRelativeSex</historyEventDef>
@@ -107,24 +78,9 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                  <li>GreatGrandparent</li>
-                  <li>GreatGrandchild</li>
-                  <li>GranduncleOrGrandaunt</li>
-                  <li>GrandnephewOrGrandniece</li>
-                  <li>CousinOnceRemoved</li>
-                  <li>SecondCousin</li>
-                  <li>Cousin</li>
-                  <li>Kin</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>FarRelative</li>
+                </hasOneOfRelationDegrees>
               </relations>
             </filter>
             <historyEventDef>RSI_IncestuosSex</historyEventDef>
@@ -145,6 +101,29 @@
     <displayOrderInIssue>60</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>100</defaultSelectionWeight>
+    <modExtensions>
+      <li Class="RJWSexperience.Ideology.Precepts.DefExtension_Incest">
+        <allowManualRomanceOnlyFor>
+          <li>CloseRelative</li>
+          <li>FarRelative</li>
+          <li>NotRelated</li>
+        </allowManualRomanceOnlyFor>
+        <bloodRelationDegreeRomanceFactors>
+          <li>
+            <bloodRelationDegree>CloseRelative</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+          <li>
+            <bloodRelationDegree>FarRelative</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+          <li>
+            <bloodRelationDegree>NotRelated</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+        </bloodRelationDegreeRomanceFactors>
+      </li>
+    </modExtensions>
   </PreceptDef>
 
   <PreceptDef>
@@ -172,16 +151,9 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>CloseRelative</li>
+                </hasOneOfRelationDegrees>
                 <hasNoneOfRelations>
                   <li>Spouse</li>
                 </hasNoneOfRelations>
@@ -190,6 +162,22 @@
             <multiplier>0.5</multiplier>
           </li>
         </rules>
+      </li>
+      <li Class="RJWSexperience.Ideology.Precepts.DefExtension_Incest">
+        <allowManualRomanceOnlyFor>
+          <li>FarRelative</li>
+          <li>NotRelated</li>
+        </allowManualRomanceOnlyFor>
+        <bloodRelationDegreeRomanceFactors>
+          <li>
+            <bloodRelationDegree>FarRelative</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+          <li>
+            <bloodRelationDegree>NotRelated</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+        </bloodRelationDegreeRomanceFactors>
       </li>
     </modExtensions>
   </PreceptDef>
@@ -223,24 +211,10 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                  <li>GreatGrandparent</li>
-                  <li>GreatGrandchild</li>
-                  <li>GranduncleOrGrandaunt</li>
-                  <li>GrandnephewOrGrandniece</li>
-                  <li>CousinOnceRemoved</li>
-                  <li>SecondCousin</li>
-                  <li>Cousin</li>
-                  <li>Kin</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>CloseRelative</li>
+                  <li>FarRelative</li>
+                </hasOneOfRelationDegrees>
                 <hasNoneOfRelations>
                   <li>Spouse</li>
                 </hasNoneOfRelations>
@@ -282,24 +256,10 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                  <li>GreatGrandparent</li>
-                  <li>GreatGrandchild</li>
-                  <li>GranduncleOrGrandaunt</li>
-                  <li>GrandnephewOrGrandniece</li>
-                  <li>CousinOnceRemoved</li>
-                  <li>SecondCousin</li>
-                  <li>Cousin</li>
-                  <li>Kin</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>CloseRelative</li>
+                  <li>FarRelative</li>
+                </hasOneOfRelationDegrees>
                 <hasNoneOfRelations>
                   <li>Spouse</li>
                 </hasNoneOfRelations>
@@ -308,6 +268,18 @@
             <multiplier>0.1</multiplier>
           </li>
         </rules>
+      </li>
+      <li Class="RJWSexperience.Ideology.Precepts.DefExtension_Incest">
+        <bloodRelationDegreeRomanceFactors>
+          <li>
+            <bloodRelationDegree>CloseRelative</bloodRelationDegree>
+            <romanceChanceFactor>0.03</romanceChanceFactor> <!-- same as vanilla "parent" -->
+          </li>
+          <li>
+            <bloodRelationDegree>FarRelative</bloodRelationDegree>
+            <romanceChanceFactor>0.03</romanceChanceFactor>
+          </li>
+        </bloodRelationDegreeRomanceFactors>
       </li>
     </modExtensions>
   </PreceptDef>
@@ -320,9 +292,6 @@
     <impact>High</impact>
     <displayOrderInIssue>0</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
-    <conflictingMemes>
-      <li>Zoophile</li>
-    </conflictingMemes>
     <comps>
       <li Class="PreceptComp_KnowsMemoryThought">
         <eventDef>RSI_NonIncestuosMarriage</eventDef>
@@ -339,29 +308,34 @@
           <li>
             <filter>
               <relations>
-                <hasOneOfRelations>
-                  <li>Parent</li>
-                  <li>Child</li>
-                  <li>Sibling</li>
-                  <li>HalfSibling</li>
-                  <li>Grandparent</li>
-                  <li>Grandchild</li>
-                  <li>NephewOrNiece</li>
-                  <li>UncleOrAunt</li>
-                  <li>GreatGrandparent</li>
-                  <li>GreatGrandchild</li>
-                  <li>GranduncleOrGrandaunt</li>
-                  <li>GrandnephewOrGrandniece</li>
-                  <li>CousinOnceRemoved</li>
-                  <li>SecondCousin</li>
-                  <li>Cousin</li>
-                  <li>Kin</li>
-                </hasOneOfRelations>
+                <hasOneOfRelationDegrees>
+                  <li>NotRelated</li>
+                </hasOneOfRelationDegrees>
               </relations>
             </filter>
-            <multiplier>2.0</multiplier>
+            <multiplier>0.1</multiplier>
           </li>
         </rules>
+      </li>
+      <li Class="RJWSexperience.Ideology.Precepts.DefExtension_Incest">
+        <allowManualRomanceOnlyFor>
+          <li>CloseRelative</li>
+          <li>FarRelative</li>
+        </allowManualRomanceOnlyFor>
+        <bloodRelationDegreeRomanceFactors>
+          <li>
+            <bloodRelationDegree>CloseRelative</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+          <li>
+            <bloodRelationDegree>FarRelative</bloodRelationDegree>
+            <romanceChanceFactor>1</romanceChanceFactor>
+          </li>
+          <li>
+            <bloodRelationDegree>NotRelated</bloodRelationDegree>
+            <romanceChanceFactor>0.03</romanceChanceFactor>
+          </li>
+        </bloodRelationDegreeRomanceFactors>
       </li>
     </modExtensions>
   </PreceptDef>

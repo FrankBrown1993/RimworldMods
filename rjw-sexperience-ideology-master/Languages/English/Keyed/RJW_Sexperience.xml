@@ -9,4 +9,16 @@
   <RSNotAnimal>not animal</RSNotAnimal>
   <RSShouldCanFuck>capable of sex is required</RSShouldCanFuck>
 
+	<RSI_PatchRomanceChanceFactor>Enable romance patch for incest precepts*</RSI_PatchRomanceChanceFactor>
+	<RSI_PatchRomanceChanceFactorTip>Patch for incest precepts to affect RomanceChanceFactor. May conflict with romance mods./n/n* Requires a game restart to apply changes</RSI_PatchRomanceChanceFactorTip>
+	<RSI_PatchIncestuousManualRomance>Enable manual romance patch for incest precepts*</RSI_PatchIncestuousManualRomance>
+	<RSI_PatchIncestuousManualRomanceTip>Patch for incest precepts to affect manual romance options./n/n* Requires a game restart to apply changes</RSI_PatchIncestuousManualRomanceTip>
+
+  <RSI_PreceptTipModifyBestialityMtb>Time between bestiality attempts x{0}</RSI_PreceptTipModifyBestialityMtb>
+  <RSI_PreceptTipModifyFappinMtb>Time between masturbation attempts x{0}</RSI_PreceptTipModifyFappinMtb>
+  <RSI_PreceptTipModifyNecroMtb>Time between necrophilia attempts x{0}</RSI_PreceptTipModifyNecroMtb>
+  <RSI_PreceptTipModifyRapeCPMtb>Time between rape attempts x{0}</RSI_PreceptTipModifyRapeCPMtb>
+
+  <!-- Rewrite vanilla key -->
+  <!-- <CantRomanceTargetIncest>forbidden by ideology</CantRomanceTargetIncest> -->
 </LanguageData>

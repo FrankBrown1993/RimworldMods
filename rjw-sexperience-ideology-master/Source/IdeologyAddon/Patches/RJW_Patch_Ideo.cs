@@ -19,7 +19,7 @@ namespace RJWSexperience.Ideology.Patches
 			Ideo ideo = pawn.Ideo;
 			if (ideo != null && !pawn.IsSubmissive())
 			{
-				__result = __result || ideo.HasMeme(VariousDefOf.Rapist);
+				__result = __result || ideo.HasMeme(RsiDefOf.Meme.Rapist);
 			}
 		}
 	}
@@ -32,7 +32,7 @@ namespace RJWSexperience.Ideology.Patches
 			Ideo ideo = pawn.Ideo;
 			if (ideo != null)
 			{
-				__result = __result || ideo.HasMeme(VariousDefOf.Zoophile);
+				__result = __result || ideo.HasMeme(RsiDefOf.Meme.Zoophile);
 			}
 		}
 	}
@@ -45,7 +45,7 @@ namespace RJWSexperience.Ideology.Patches
 			Ideo ideo = pawn.Ideo;
 			if (ideo != null)
 			{
-				__result = __result || ideo.HasMeme(VariousDefOf.Necrophile);
+				__result = __result || ideo.HasMeme(RsiDefOf.Meme.Necrophile);
 			}
 		}
 	}
@@ -85,10 +85,10 @@ namespace RJWSexperience.Ideology.Patches
 
 		private static void AfterSexHuman(Pawn human, Pawn partner)
 		{
-			RsiHistoryEventDefOf.RSI_NonIncestuosSex.RecordEventWithPartner(human, partner);
+			RsiDefOf.HistoryEvent.RSI_NonIncestuosSex.RecordEventWithPartner(human, partner);
 
 			if (partner.IsAnimal())
-				RsiHistoryEventDefOf.RSI_SexWithAnimal.RecordEventWithPartner(human, partner);
+				RsiDefOf.HistoryEvent.RSI_SexWithAnimal.RecordEventWithPartner(human, partner);
 		}
 	}
 
@@ -113,11 +113,13 @@ namespace RJWSexperience.Ideology.Patches
 
 		public static float PreceptSextype(Pawn pawn, Pawn partner, float score, List<HistoryEventDef> historyEventDefs)
 		{
-			foreach(HistoryEventDef eventDef in historyEventDefs)
+			for (int i = 0; i < historyEventDefs.Count; i++)
 			{
+				HistoryEventDef eventDef = historyEventDefs[i];
+
 				if (eventDef.CreateEventWithPartner(pawn, partner).DoerWillingToDo())
 				{
-					float mult = 8.0f * Math.Max(0.3f, 1 / Math.Max(0.01f, pawn.GetStatValue(xxx.sex_drive_stat)));
+					float mult = 8.0f * Math.Max(0.3f, 1 / Math.Max(0.01f, pawn.GetStatValue(xxx.sex_drive_stat, cacheStaleAfterTicks: 60)));
 					return score * mult;
 				}
 			}
@@ -148,7 +150,7 @@ namespace RJWSexperience.Ideology.Patches
 		public static void Postfix(Pawn pawn, ref bool __result)
 		{
 			Ideo ideo = pawn.Ideo;
-			if (ideo?.HasMeme(VariousDefOf.Zoophile) == true)
+			if (ideo?.HasMeme(RsiDefOf.Meme.Zoophile) == true)
 			{
 				SaveStorage.DataStore.GetPawnData(pawn).CanDesignateBreeding = true;
 				__result = true;
@@ -213,14 +215,14 @@ namespace RJWSexperience.Ideology.Patches
 			Ideo mainideo = playerfaction.ideos.PrimaryIdeo;
 			if (mainideo != null)
 			{
-				if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysFather))
+				if (mainideo.HasPrecept(RsiDefOf.Precept.BabyFaction_AlwaysFather))
 				{
 					Pawn parent = baby.GetFather() ?? baby.GetMother();
 
 					ideo = parent.Ideo;
 					return parent.Faction;
 				}
-				else if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysColony))
+				else if (mainideo.HasPrecept(RsiDefOf.Precept.BabyFaction_AlwaysColony))
 				{
 					ideo = mainideo;
 					return playerfaction;
@@ -241,7 +243,7 @@ namespace RJWSexperience.Ideology.Patches
 			if (props.pawn?.Ideo == null || !props.hasPartner())
 				return;
 
-			if (props.partner.Ideo?.HasPrecept(VariousDefOf.ProselyzingByOrgasm) == true)
+			if (props.partner.Ideo?.HasPrecept(RsiDefOf.Precept.ProselyzingByOrgasm) == true)
 			{
 				// Pawn is the one having the orgasm
 				// Partner is "giving" the orgasm, hence the pawn will be converted towards the partners ideology

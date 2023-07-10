@@ -1,56 +1,46 @@
-﻿using System;
+﻿using RimWorld;
+using rjw;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
-using Verse.AI.Group;
-using RimWorld;
-using rjw;
-
 
 namespace RJWSexperience.Ideology
 {
-    public class JobGiver_GangbangVictim : ThinkNode_JobGiver
-    {
-        protected override Job TryGiveJob(Pawn pawn)
-        {
-            if (pawn.Drafted) return null;
-			DutyDef dutyDef = null;
-            PawnDuty duty = null;
-            if (pawn.mindState != null)
-            {
-                duty = pawn.mindState.duty;
-                dutyDef = duty.def;
-            }
-            else return null;
+	public class JobGiver_GangbangVictim : ThinkNode_JobGiver
+	{
+		protected override Job TryGiveJob(Pawn pawn)
+		{
+			if (pawn.Drafted || pawn.mindState == null)
+			{
+				return null;
+			}
 
-			if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
-            {
-                return null;
+			PawnDuty duty = pawn.mindState.duty;
+
+			if (duty.def == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
+			{
+				return null;
 			}
 
 			Pawn target = duty.focusSecond.Pawn;
 
-            if (!pawn.CanReach(target, PathEndMode.ClosestTouch, Danger.None)) return null;
+			if (!pawn.CanReach(target, PathEndMode.ClosestTouch, Danger.None)) return null;
 
-            return JobMaker.MakeJob(VariousDefOf.RapeVictim, target);
-        }
-    }
-
+			return JobMaker.MakeJob(RsiDefOf.Job.RapeVictim, target);
+		}
+	}
 
 	/// <summary>
 	/// copied from rjw
 	/// </summary>
 	public class JobDriver_RapeVictim : JobDriver_Rape
 	{
-        public override bool TryMakePreToilReservations(bool errorOnFailed)
-        {
+		public override bool TryMakePreToilReservations(bool errorOnFailed)
+		{
 			return true;
-        }
+		}
 
-        protected override IEnumerable<Toil> MakeNewToils()
+		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			if (RJWSettings.DebugRape) ModLog.Message("" + this.GetType().ToString() + "::MakeNewToils() called");
 			setup_ticks();
@@ -64,25 +54,28 @@ namespace RJWSexperience.Ideology
 
 			SexUtility.RapeTargetAlert(pawn, Partner);
 
-			Toil StartPartnerJob = new Toil();
-			StartPartnerJob.defaultCompleteMode = ToilCompleteMode.Instant;
-			StartPartnerJob.socialMode = RandomSocialMode.Off;
-			StartPartnerJob.initAction = delegate
+			Toil StartPartnerJob = new Toil
 			{
-				var dri = Partner.jobs.curDriver as JobDriver_SexBaseRecieverRaped;
-				if (dri == null)
+				defaultCompleteMode = ToilCompleteMode.Instant,
+				socialMode = RandomSocialMode.Off,
+				initAction = delegate
 				{
-					Job gettin_raped = JobMaker.MakeJob(PartnerJob, pawn);
+					if (!(Partner.jobs.curDriver is JobDriver_SexBaseRecieverRaped))
+					{
+						Job gettin_raped = JobMaker.MakeJob(PartnerJob, pawn);
 
-					Partner.jobs.StartJob(gettin_raped, JobCondition.InterruptForced, null, false, true, null);
+						Partner.jobs.StartJob(gettin_raped, JobCondition.InterruptForced, null, false, true, null);
+					}
 				}
 			};
 			yield return StartPartnerJob;
 
-			Toil SexToil = new Toil();
-			SexToil.defaultCompleteMode = ToilCompleteMode.Never;
-			SexToil.defaultDuration = duration;
-			SexToil.handlingFacing = true;
+			Toil SexToil = new Toil
+			{
+				defaultCompleteMode = ToilCompleteMode.Never,
+				defaultDuration = duration,
+				handlingFacing = true
+			};
 			SexToil.FailOn(() => Partner.CurJob.def != PartnerJob);
 			SexToil.initAction = delegate
 			{

@@ -1,56 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RimWorld;
 using rjw;
+using System;
+using System.Collections.Generic;
 using Verse;
 using Verse.AI;
-using RimWorld;
-
 
 namespace RJWSexperience.Ideology
 {
-    public class JobGiver_DrugOrgy : ThinkNode_JobGiver
-    {
-        protected override Job TryGiveJob(Pawn pawn)
-        {
-            if (pawn.Drafted) return null;
-            DutyDef dutyDef = null;
-            PawnDuty duty = null;
-            if (pawn.mindState != null)
-            {
-                duty = pawn.mindState.duty;
-                dutyDef = duty.def;
-            }
-            else return null;
+	public class JobGiver_DrugOrgy : ThinkNode_JobGiver
+	{
+		protected override Job TryGiveJob(Pawn pawn)
+		{
+			if (pawn.Drafted || pawn.mindState == null)
+			{
+				return null;
+			}
 
-            if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
-            {
-                return null;
-            }
-            
-            Pawn target = FindPartner(pawn, duty);
+			PawnDuty duty = pawn.mindState.duty;
 
-            if (target == null || !pawn.CanReserveAndReach(target, PathEndMode.ClosestTouch, Danger.None,1)) return JobMaker.MakeJob(VariousDefOf.DrugMasturbate);
+			if (duty.def == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
+			{
+				return null;
+			}
 
-            return JobMaker.MakeJob(VariousDefOf.DrugSex, target);
-        }
+			Pawn target = FindPartner(pawn, duty);
 
-        protected Pawn FindPartner(Pawn pawn, PawnDuty duty)
-        {
-            if (duty != null)
-            {
-                List<Pawn> pawns = pawn.Map.mapPawns.AllPawnsSpawned.FindAll(x => x.mindState?.duty?.def == duty.def);
-                return pawns.RandomElementByWeightWithDefault(x => SexAppraiser.would_fuck(pawn,x), 0.1f);
-            }
-            
-            
+			if (target == null || !pawn.CanReserveAndReach(target, PathEndMode.ClosestTouch, Danger.None, 1))
+				return JobMaker.MakeJob(RsiDefOf.Job.DrugMasturbate);
 
-            return null;
-        }
+			return JobMaker.MakeJob(RsiDefOf.Job.DrugSex, target);
+		}
 
-    }
+		protected Pawn FindPartner(Pawn pawn, PawnDuty duty)
+		{
+			if (duty != null)
+			{
+				List<Pawn> pawns = pawn.Map.mapPawns.AllPawnsSpawned.FindAll(x => x.mindState?.duty?.def == duty.def);
+				return pawns.RandomElementByWeightWithDefault(x => SexAppraiser.would_fuck(pawn, x), 0.1f);
+			}
+
+			return null;
+		}
+	}
 
 	/// <summary>
 	/// copied from rjw
@@ -65,7 +56,7 @@ namespace RJWSexperience.Ideology
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			setup_ticks();
-			var PartnerJob = VariousDefOf.GettinDrugSex;
+			var PartnerJob = RsiDefOf.Job.GettinDrugSex;
 
 			this.FailOnDespawnedNullOrForbidden(iTarget);
 			this.FailOn(() => !Partner.health.capacities.CanBeAwake);
@@ -73,47 +64,52 @@ namespace RJWSexperience.Ideology
 			this.FailOn(() => Partner == null);
 			yield return Toils_Goto.GotoThing(iTarget, PathEndMode.OnCell);
 
-			Toil WaitForPartner = new Toil();
-			WaitForPartner.defaultCompleteMode = ToilCompleteMode.Delay;
-			WaitForPartner.initAction = delegate
+			Toil WaitForPartner = new Toil
 			{
-				ticksLeftThisToil = 5000;
-			};
-			WaitForPartner.tickAction = delegate
-			{
-				pawn.GainComfortFromCellIfPossible();
-				if (pawn.Position.DistanceTo(Partner.Position) <= 1f)
+				defaultCompleteMode = ToilCompleteMode.Delay,
+				initAction = delegate
 				{
-					ReadyForNextToil();
+					ticksLeftThisToil = 5000;
+				},
+				tickAction = delegate
+				{
+					pawn.GainComfortFromCellIfPossible();
+					if (pawn.Position.DistanceTo(Partner.Position) <= 1f)
+					{
+						ReadyForNextToil();
+					}
 				}
 			};
 			yield return WaitForPartner;
 
-			Toil StartPartnerJob = new Toil();
-			StartPartnerJob.defaultCompleteMode = ToilCompleteMode.Instant;
-			StartPartnerJob.socialMode = RandomSocialMode.Off;
-			StartPartnerJob.initAction = delegate
+			Toil StartPartnerJob = new Toil
 			{
-				var dri = Partner.jobs.curDriver as JobDriver_DrugSexReceiver;
-				if (dri == null)
-                {
-					Job gettingQuickie = JobMaker.MakeJob(PartnerJob, pawn, Partner);
-					Partner.jobs.StartJob(gettingQuickie, JobCondition.InterruptForced);
+				defaultCompleteMode = ToilCompleteMode.Instant,
+				socialMode = RandomSocialMode.Off,
+				initAction = delegate
+				{
+					if (!(Partner.jobs.curDriver is JobDriver_DrugSexReceiver))
+					{
+						Job gettingQuickie = JobMaker.MakeJob(PartnerJob, pawn, Partner);
+						Partner.jobs.StartJob(gettingQuickie, JobCondition.InterruptForced);
+					}
 				}
 			};
 			yield return StartPartnerJob;
 
-			Toil SexToil = new Toil();
-			SexToil.defaultCompleteMode = ToilCompleteMode.Never;
-			SexToil.socialMode = RandomSocialMode.Off;
-			SexToil.defaultDuration = duration;
-			SexToil.handlingFacing = true;
+			Toil SexToil = new Toil
+			{
+				defaultCompleteMode = ToilCompleteMode.Never,
+				socialMode = RandomSocialMode.Off,
+				defaultDuration = duration,
+				handlingFacing = true
+			};
 			SexToil.FailOn(() => Partner.CurJob.def != PartnerJob);
 			SexToil.initAction = delegate
 			{
 				Partner.pather.StopDead();
 				Partner.jobs.curDriver.asleep = false;
-				
+
 				Start();
 				Sexprops.usedCondom = CondomUtility.TryUseCondom(pawn) || CondomUtility.TryUseCondom(Partner);
 			};
@@ -147,8 +143,7 @@ namespace RJWSexperience.Ideology
 	/// copied from rjw
 	/// </summary>
 	public class JobDriver_DrugSexReceiver : JobDriver_SexBaseRecieverLoved
-    {
-
+	{
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			setup_ticks();
@@ -168,23 +163,25 @@ namespace RJWSexperience.Ideology
 
 			yield return Toils_Reserve.Reserve(iTarget, 1, 0);
 
-				var get_loved = MakeSexToil();
-				get_loved.handlingFacing = false;
-				yield return get_loved;
+			var get_loved = MakeSexToil();
+			get_loved.handlingFacing = false;
+			yield return get_loved;
 		}
 
 		protected Toil MakeSexToil()
 		{
-			Toil get_loved = new Toil();
-			get_loved.defaultCompleteMode = ToilCompleteMode.Never;
-			get_loved.socialMode = RandomSocialMode.Off;
-			get_loved.handlingFacing = true;
-			get_loved.tickAction = delegate
+			Toil get_loved = new Toil
 			{
+				defaultCompleteMode = ToilCompleteMode.Never,
+				socialMode = RandomSocialMode.Off,
+				handlingFacing = true,
+				tickAction = delegate
+				{
+				}
 			};
 			get_loved.AddEndCondition(new Func<JobCondition>(() =>
 			{
-				if (parteners.Count <= 0)
+				if (parteners.Count == 0)
 				{
 					return JobCondition.Succeeded;
 				}
@@ -204,8 +201,7 @@ namespace RJWSexperience.Ideology
 	/// copied from rjw
 	/// </summary>
 	public class JobDriver_DrugMasturabate : JobDriver_Masturbate
-    {
-
+	{
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			setup_ticks();
@@ -252,6 +248,4 @@ namespace RJWSexperience.Ideology
 			};
 		}
 	}
-
-
 }

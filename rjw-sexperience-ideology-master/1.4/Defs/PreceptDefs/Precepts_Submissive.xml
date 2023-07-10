@@ -76,11 +76,11 @@
         <thought>BeenRaped_NotSubmissive</thought>
         <gender>Female</gender>
       </li>
-      <li Class="RJWSexperience.Ideology.Precepts.Comp_KnowsMemoryThought_Gendered">
+      <!--<li Class="RJWSexperience.Ideology.Precepts.Comp_KnowsMemoryThought_Gendered">
         <eventDef>RSI_RapedSlave</eventDef>
         <thought>Raped_Know_NotBeingSubmissive</thought>
         <doersGender>Male</doersGender>
-      </li>
+      </li>-->
     </comps>
   </PreceptDef>
 
@@ -140,11 +140,11 @@
         <thought>BeenRaped_NotSubmissive</thought>
         <gender>Male</gender>
       </li>
-      <li Class="RJWSexperience.Ideology.Precepts.Comp_KnowsMemoryThought_Gendered">
+      <!--<li Class="RJWSexperience.Ideology.Precepts.Comp_KnowsMemoryThought_Gendered">
         <eventDef>RSI_RapedSlave</eventDef>
         <thought>Raped_Know_NotBeingSubmissive</thought>
         <doersGender>Female</doersGender>
-      </li>
+      </li>-->
     </comps>
   </PreceptDef>
 

@@ -100,14 +100,14 @@
   <!-- Thoughts : Pregnant -->
 
   <ThoughtDef>
-    <defName>Pregnancy_Respected_Pregnant</defName>
+    <defName>Pregnancy_Respected_Pregnant</defName> <!-- should probably be Pregnancy_Holy_Pregnant -->
     <workerClass>RJWSexperience.Ideology.PreceptWorkers.ThoughtWorker_Precept_Pregnant</workerClass>
     <thoughtClass>Thought_Situational</thoughtClass>
     <stages>
       <li>
         <label>pregnant</label>
         <description>I am pregnant. This makes me a pillar of society.</description>
-        <baseMoodEffect>5</baseMoodEffect>
+        <baseMoodEffect>10</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -120,19 +120,19 @@
       <li>
         <label>pregnant</label>
         <description>I am soon making our colony stronger.</description>
-        <baseMoodEffect>10</baseMoodEffect>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   
   <ThoughtDef>
-    <defName>Pregnancy_Respected_Pregnant_Social</defName>
+    <defName>Pregnancy_Respected_Pregnant_Social</defName> <!-- should probably be Pregnancy_Holy_Pregnant_Social -->
     <workerClass>RJWSexperience.Ideology.PreceptWorkers.ThoughtWorker_Precept_Pregnant_Social</workerClass>
     <thoughtClass>Thought_SituationalSocial</thoughtClass>
     <stages>
       <li>
         <label>pregnant</label>
-        <baseOpinionOffset>10</baseOpinionOffset>
+        <baseOpinionOffset>20</baseOpinionOffset>
       </li>
     </stages>
   </ThoughtDef>
@@ -144,7 +144,7 @@
     <stages>
       <li>
         <label>pregnant</label>
-        <baseOpinionOffset>20</baseOpinionOffset>
+        <baseOpinionOffset>10</baseOpinionOffset>
       </li>
     </stages>
   </ThoughtDef>
